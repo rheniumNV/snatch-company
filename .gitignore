@@ -1,0 +1,8 @@
+node_modules
+dist
+*private.json
+.env
+/src/dev/resFeedback/ResFeedbackOriginal.json
+/src/dev/resFeedback/ResFeedbackMetaOriginal.json
+.idea
+/private/
