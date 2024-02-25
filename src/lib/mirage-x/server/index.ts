@@ -237,7 +237,7 @@ export class MirageXServer {
               } catch (e) {
                 console.error(e);
               }
-            }, 100);
+            }, 300);
           } else {
             func({ userId, lang }, ...args);
           }

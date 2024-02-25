@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { MainProp } from "../../common/prop";
 
 export namespace UnitProp {
@@ -337,11 +338,35 @@ export namespace UnitProp {
   });
 }
 
+export namespace UnitDynamicImpulseTrigger {
+  export const Void = (
+    triggerName: string
+  ): { triggerName: string; argType: "void" } => ({
+    triggerName,
+    argType: "void",
+  });
+  export const String = (
+    triggerName: string,
+    arg: string
+  ): { triggerName: string; argType: "string" } => ({
+    triggerName,
+    argType: "string",
+  });
+}
+
+type DynamicImpulseTriggers = {
+  [key: string]: {
+    triggerName: string;
+    argType: "void" | "string";
+  };
+};
+
 export type DetailBase = {
   code: string;
   propsConfig: {
     [key: string]: MainProp.Base;
   };
+  dynamicImpulseTriggers?: DynamicImpulseTriggers;
   children?: "multi";
 };
 
@@ -350,8 +375,22 @@ export type getDefaultProps<C extends DetailBase> = {
 };
 
 export type getMainProps<C extends DetailBase> = Partial<
-  getDefaultProps<C> &
-    (C["children"] extends "multi" ? { children?: React.ReactNode } : {})
+  getDefaultProps<C> & {
+    dynamicImpulseTriggerRefs: Partial<{
+      [K in keyof C["dynamicImpulseTriggers"]]: ReturnType<
+        typeof useRef<
+          (
+            ...arg: C["dynamicImpulseTriggers"][K] extends {
+              triggerName: string;
+              argType: "string";
+            }
+              ? [string]
+              : []
+          ) => void
+        >
+      >;
+    }>;
+  } & (C["children"] extends "multi" ? { children?: React.ReactNode } : {})
 >;
 
 export type getMirrorProps<C extends DetailBase> = {
@@ -375,6 +414,7 @@ export type UnitConfig<C extends DetailBase> = {
   code: string;
   defaultProps: getDefaultProps<C>;
   syncPropConfigList: SyncPropConfig[];
+  dynamicImpulseTriggers: DynamicImpulseTriggers;
 };
 
 export const generateUnitConfig = <C extends DetailBase>(
@@ -397,5 +437,6 @@ export const generateUnitConfig = <C extends DetailBase>(
       enumType: config.propsConfig[key].enumType,
       enumKeys: config.propsConfig[key].enumKeys,
     })),
+    dynamicImpulseTriggers: config.dynamicImpulseTriggers || {},
   };
 };

@@ -199,6 +199,13 @@ export const generateResUnitFromFeedback =
       )
     );
 
+    const feedbackInners =
+      feedbackRef?.Children.filter(
+        (o: Slot) =>
+          o.ID !== staticInnerMainRootId &&
+          !["DV/Static", "DV/Props"].includes(o.Name.Data)
+      ) ?? [];
+
     return (
       <Slot name={config.code} components={[<DynamicVariableSpace />]}>
         <Slot
@@ -246,6 +253,15 @@ export const generateResUnitFromFeedback =
               }}
             />
           )}
+          {feedbackInners.map((inner) => (
+            <raw
+              json={{
+                Object: inner,
+                Assets: rawFeedback.Assets,
+                TypeVersions: rawFeedback.TypeVersions,
+              }}
+            />
+          ))}
         </Slot>
         {feedbackOuters.map((outer: any) => (
           <raw

@@ -158,6 +158,31 @@ export const generateMain =
       []
     );
 
+    const { eventEmitter } = useMainRootContext();
+    Object.entries(config.dynamicImpulseTriggers).forEach(
+      ([key, { triggerName, argType }]) => {
+        const ref: ReturnType<
+          typeof useRef<(arg: string | void) => void>
+        > | null =
+          //@ts-ignore TODO:型パズル
+          rawProps.dynamicImpulseTriggerRefs?.[key];
+
+        useEffect(() => {
+          if (ref) {
+            ref.current = (arg: string | void) => {
+              eventEmitter({
+                type: "dynamicImpulseTrigger",
+                triggerName,
+                argType: argType,
+                arg,
+                unit: { id: unitId },
+              });
+            };
+          }
+        }, [ref]);
+      }
+    );
+
     return (
       <GeneralUnit
         id={unitId}

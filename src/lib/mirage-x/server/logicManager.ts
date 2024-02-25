@@ -186,6 +186,8 @@ export class LogicManager {
         };
         this.unitMap.set(event.unit.id, mergeUnit(existUnit, newUnit));
         break;
+      case "dynamicImpulseTrigger":
+        this.syncEventCallback?.(event);
       case "customEvent":
         this.syncEventCallback?.(event);
       default:

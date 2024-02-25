@@ -58,6 +58,16 @@ export type UpdatePropEvent = {
   };
 };
 
+export type DynamicImpulseTriggerEvent = {
+  type: "dynamicImpulseTrigger";
+  triggerName: string;
+  argType: "void" | "string";
+  arg: void | string;
+  unit: {
+    id: string;
+  };
+};
+
 export type CustomEventEvent = {
   type: "customEvent";
   code: string;
@@ -67,6 +77,7 @@ export type UnitChangeServerEvent =
   | GenerateUnitEvent
   | DestroyUnitEvent
   | UpdatePropEvent
+  | DynamicImpulseTriggerEvent
   | CustomEventEvent;
 
 export type UnitChangeClientEvent =
@@ -74,4 +85,5 @@ export type UnitChangeClientEvent =
   | DestroyUnitEvent
   | UpdatePropEvent
   | InitUnitPropOriginEvent
+  | DynamicImpulseTriggerEvent
   | CustomEventEvent;
