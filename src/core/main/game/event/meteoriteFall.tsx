@@ -1,16 +1,20 @@
 import { v4 as uuidv4 } from "uuid";
 import { SnatchCompanyEvent } from "./snatchCompanyEvent";
-import { BattleSection, GameStateInGame, Object } from "../type";
+import { BattleSection, GameStateInGame, SnatchCompanyObject } from "../type";
 import { ReactElement, useCallback } from "react";
-import { MovedSlot, Resource } from "../../../unit/package/SnatchCompany/main";
-import { Vector } from "../util";
-import { Box } from "../../../unit/package/ProceduralMesh/main";
+import {
+  Meteorite,
+  MovedSlot,
+  Resource,
+} from "../../../unit/package/SnatchCompany/main";
+import { Vector, getDpsSample } from "../util";
 import { SnatchCompany } from "..";
 import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import { HealthView } from "../../render/common/hpView";
+import { Slot } from "../../../unit/package/Primitive/main";
 
-const Meteorite = (props: {
-  object: Object;
+const MeteoriteView = (props: {
+  object: SnatchCompanyObject;
   attack2Objet: SnatchCompany["attack2Object"];
 }) => {
   const onHit = useCallback(
@@ -26,7 +30,9 @@ const Meteorite = (props: {
       moveTime={100}
     >
       <Resource onHit={onHit}>
-        <Box scale={[20, 20, 20]} />
+        <Slot scale={[5, 5, 5]}>
+          <Meteorite />
+        </Slot>
       </Resource>
       {props.object.health < props.object.maxHealth && (
         <HealthView
@@ -59,6 +65,7 @@ export class MeteoriteFall extends SnatchCompanyEvent {
 
   override start(gameState: GameStateInGame<BattleSection>): void {
     super.start(gameState);
+    const dpsSample = getDpsSample(gameState.section.level, this.triggerTime);
     if (gameState.mode === "inGame") {
       const section = gameState.section;
       if (section.mode === "battle") {
@@ -70,10 +77,18 @@ export class MeteoriteFall extends SnatchCompanyEvent {
             position,
             rotation: [0, 0, 0, 0],
             health:
-              100 + gameState.players.length * (250 + section.level ** 2 * 100),
+              100 +
+              (1 + (gameState.players.length - 1) * 0.8) * dpsSample * 4.5,
             maxHealth:
-              100 + gameState.players.length * (250 + section.level ** 2 * 100),
-            value: 0,
+              100 +
+              (1 + (gameState.players.length - 1) * 0.8) * dpsSample * 4.5,
+            reward: [
+              {
+                type: "exp",
+                value: 0.25,
+                damageReturn: true,
+              },
+            ],
           });
         });
       }
@@ -96,7 +111,7 @@ export class MeteoriteFall extends SnatchCompanyEvent {
         Vector.mul(Vector.normalize(object.position), -this.time * 5)
       );
       const distance = Vector.distance(currentPosition, [0, 0, 0]);
-      if (distance < 10) {
+      if (distance < 8) {
         object.health = 0;
         game.damage2Ship(Math.min(200, 50 + game.gameState.section.level * 30));
       }
@@ -117,6 +132,7 @@ export class MeteoriteFall extends SnatchCompanyEvent {
       });
       this.state = "finished";
     }
+    this.objects = this.objects.filter((object) => object.health > 0);
   }
 
   drawOnShip(props: {
@@ -126,7 +142,7 @@ export class MeteoriteFall extends SnatchCompanyEvent {
     return (
       <>
         {this.objects.map((object) => (
-          <Meteorite
+          <MeteoriteView
             key={object.id}
             object={object}
             attack2Objet={props.attack2Object}

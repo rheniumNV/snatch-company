@@ -3,7 +3,7 @@ import { SnatchCompanyEvent } from "./snatchCompanyEvent";
 import { BattleSection, GameStateInGame, SnatchCompanyObject } from "../type";
 import { ReactElement, useCallback } from "react";
 import {
-  Bird,
+  TreasureChest as Treasure,
   MovedSlot,
   Resource,
 } from "../../../unit/package/SnatchCompany/main";
@@ -12,15 +12,16 @@ import { SnatchCompany } from "..";
 import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import { HealthView } from "../../render/common/hpView";
 import { Slot } from "../../../unit/package/Primitive/main";
+import { Box } from "../../../unit/package/ProceduralMesh/main";
 
-type BirdObject = SnatchCompanyObject & {
+type ChestObject = SnatchCompanyObject & {
   targetPoint: Vector.Vector3;
   moveSpeed: number;
   startTime: number;
 };
 
-const BirdBiew = (props: {
-  object: BirdObject;
+const ChestView = (props: {
+  object: ChestObject;
   attack2Objet: SnatchCompany["attack2Object"];
 }) => {
   const onHit = useCallback(
@@ -43,12 +44,12 @@ const BirdBiew = (props: {
     <MovedSlot position={props.object.position} move={move} moveTime={moveTime}>
       <Resource onHit={onHit}>
         <Slot scale={[2, 2, 2]}>
-          <Bird />
+          <Treasure />
         </Slot>
       </Resource>
       {props.object.health < props.object.maxHealth && (
         <HealthView
-          position={[0, 3, 0]}
+          position={[0, 4, 0]}
           scale={[3, 3, 3]}
           health={props.object.health}
           maxHealth={props.object.maxHealth}
@@ -58,16 +59,16 @@ const BirdBiew = (props: {
   );
 };
 
-export class BirdStrike extends SnatchCompanyEvent {
-  code = "BirdStrike";
+export class TreasureChest extends SnatchCompanyEvent {
+  code = "TreasureChest";
   title = {
-    ja: "バードストライク",
-    en: "Bird Strike",
+    ja: "宝箱",
+    en: "Treasure Chest",
   };
 
   description = {
-    ja: "鳥が船に向かって飛んできています\n船を守ってください",
-    en: "Birds are flying towards the ship\nPlease protect the ship",
+    ja: "宝箱が流れてきます",
+    en: "Treasure chests are floating towards the ship",
   };
 
   constructor(triggerTime: number) {
@@ -75,18 +76,13 @@ export class BirdStrike extends SnatchCompanyEvent {
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
-  override objects: BirdObject[] = [];
-  birdSpawnCount = 0;
-  birdSpawnTimer = 0.5;
+  override objects: ChestObject[] = [];
+  spawnCount = 0;
+  spawnTimer = 0.5;
 
   override start(gameState: GameStateInGame<BattleSection>): void {
     super.start(gameState);
-    if (gameState.mode === "inGame") {
-      const section = gameState.section;
-      if (section.mode === "battle") {
-        this.birdSpawnCount = Math.floor(5);
-      }
-    }
+    this.spawnCount = 1;
   }
 
   override update(
@@ -100,43 +96,49 @@ export class BirdStrike extends SnatchCompanyEvent {
   ): void {
     super.update(game, deltaTime);
 
-    this.birdSpawnTimer -= deltaTime;
+    this.spawnTimer -= deltaTime;
     if (game.gameState.mode === "inGame") {
       const section = game.gameState.section;
       if (section.mode === "battle") {
-        if (this.birdSpawnTimer <= 0 && this.birdSpawnCount > 0) {
-          this.birdSpawnCount--;
-          this.birdSpawnTimer = 3;
+        if (this.spawnTimer <= 0 && this.spawnCount > 0) {
+          this.spawnCount--;
+          this.spawnTimer = 1.5;
           const dpsSample = getDpsSample(section.level, this.triggerTime);
           Array.from({
-            length:
-              1 +
-              Math.floor(
-                (1 + (game.gameState.players.length - 1) * 0.8) *
-                  Math.min(3, Math.max(5, dpsSample / 200))
-              ),
+            length: 1,
           }).forEach((_, i) => {
+            const z = 150;
+            const targetPoint: Vector.Vector3 = [
+              Math.random() * 200 - 100,
+              -8,
+              z + Math.random() * 10 - 5,
+            ];
             const position: Vector.Vector3 = [
-              Math.random() * 100 - 50,
-              Math.random() * 15 + 5,
-              Math.random() * 10 + 70,
+              targetPoint[0],
+              50 + Math.random() * 30,
+              targetPoint[2],
             ];
             this.objects.push({
               id: uuidv4(),
-              type: "plant",
+              type: "mineral",
               position,
               rotation: [0, 0, 0, 0],
-              health: 10,
-              maxHealth: 10,
+              health: 20 + dpsSample * 5,
+              maxHealth: 20 + dpsSample * 5,
               reward: [
                 {
+                  type: "shield",
+                  value: 50,
+                  damageReturn: false,
+                },
+                {
                   type: "exp",
-                  value: dpsSample * 0.002,
-                  damageReturn: true,
+                  value: 0.3,
+                  damageReturn: false,
                 },
               ],
-              targetPoint: [Math.random() * 16 - 8, 2, Math.random() * 10 - 5],
-              moveSpeed: Math.random() * 5 + 15,
+              targetPoint,
+              moveSpeed: 30,
               startTime: this.time,
             });
           });
@@ -145,39 +147,29 @@ export class BirdStrike extends SnatchCompanyEvent {
     }
 
     this.objects.forEach((object) => {
-      const move = Vector.normalize(
-        Vector.sub(object.targetPoint, object.position)
-      );
-      const maxMove = Vector.distance(object.targetPoint, object.position);
-      const currentPosition = Vector.add(
-        object.position,
-        Vector.mul(
-          move,
-          Math.min(maxMove, (this.time - object.startTime) * object.moveSpeed)
-        )
-      );
-      const distance = Vector.distance(currentPosition, object.targetPoint);
-      if (distance < 0.1) {
-        object.health = 0;
-        game.damage2Ship(20);
+      if (object.health <= 0) {
+        game.addSkill4Event();
+        game.announcement({
+          title: {
+            ja: "宝箱を回収しました",
+            en: "Treasure chests are collected",
+          },
+          description: {
+            ja: "おめでとう。レアスキルを1つ獲得しました。",
+            en: "Congratulations. You have acquired one rare skill.",
+          },
+          duration: 3,
+        });
+        this.state = "finished";
+        return;
+      }
+      const distance2Ship =
+        object.position[2] - this.time * game.gameState.ship.speed;
+      if (distance2Ship < -50) {
+        this.state = "finished";
       }
     });
 
-    if (this.objects.length === 0 && this.birdSpawnCount === 0) {
-      game.addSkill4Event();
-      game.announcement({
-        title: {
-          ja: "バードストライクをやり過ごした",
-          en: "Bird Strike has been overcome",
-        },
-        description: {
-          ja: "おめでとう。レアスキルを1つ獲得しました。",
-          en: "Congratulations. You have acquired one rare skill.",
-        },
-        duration: 3,
-      });
-      this.state = "finished";
-    }
     this.objects = this.objects.filter((object) => object.health > 0);
   }
 
@@ -186,15 +178,19 @@ export class BirdStrike extends SnatchCompanyEvent {
     attack2Object: SnatchCompany["attack2Object"];
   }): ReactElement {
     return (
-      <>
+      <MovedSlot
+        position={[0, 0, 0]}
+        move={[0, 0, -props.gameState.ship.speed]}
+        moveTime={100}
+      >
         {this.objects.map((object) => (
-          <BirdBiew
+          <ChestView
             key={object.id}
             object={object}
             attack2Objet={props.attack2Object}
           />
         ))}
-      </>
+      </MovedSlot>
     );
   }
 }

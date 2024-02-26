@@ -488,13 +488,16 @@ export const InGameRenderer = (props: {
       </Slot>
       <Slot>
         {props.gameState.section.mode === "battle" ? (
-          props.gameState.section.events
+          [
+            ...props.gameState.section.events,
+            ...props.gameState.section.subEvents,
+          ]
             .filter((event) => event.state === "processing")
             .map(
               (event) =>
                 props.gameState.section.mode === "battle" && (
                   <event.drawOnShip
-                    key={event.code}
+                    key={event.triggerTime}
                     gameState={{
                       ...props.gameState,
                       section: props.gameState.section,

@@ -1,0 +1,1251 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/TreasureChest
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Main
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:Main:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: TreasureBox.fbx
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data: []
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: Assets
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: Meshes
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: ID:Meshes:0
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.GizmoLink
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            _worker:
+                              ID: "?"
+                              Data: ID:Meshes:0
+                            _gizmo:
+                              ID: "?"
+                              Data: null
+                            _type:
+                              ID: "?"
+                              Data: FrooxEngine.SlotGizmo
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: Mesh
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.StaticMesh
+                              Data:
+                                ID: ID:Mesh:Components:FrooxEngine.StaticMesh:0
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                URL:
+                                  ID: "?"
+                                  Data: "@resdb:///ecc9c10ae3f00374c99019e181a85664c1f9e2d1b0bde6ff55b3bbfb37c313\
+                                    38.meshx"
+                                Readable:
+                                  ID: "?"
+                                  Data: false
+                        Children: []
+                      - Name:
+                          ID: "?"
+                          Data: Mesh
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.StaticMesh
+                              Data:
+                                ID: ID:Mesh:Components:FrooxEngine.StaticMesh:1
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                URL:
+                                  ID: "?"
+                                  Data: "@resdb:///132c24daf1eb84ee01f64a419374801db22b98eb42d231b23551d8e46c9054\
+                                    39.meshx"
+                                Readable:
+                                  ID: "?"
+                                  Data: false
+                        Children: []
+                  - Name:
+                      ID: "?"
+                      Data: Materials
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data: []
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: "Material: Material"
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.PBS_Metallic
+                              Data:
+                                ID: "ID:Material: Material:Components:FrooxEngine.PBS_Metallic:0"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                HighPriorityIntegration:
+                                  ID: "?"
+                                  Data: false
+                                _shader-ID: "?"
+                                TextureScale:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                TextureOffset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                DetailTextureScale:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                DetailTextureOffset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                AlbedoColor:
+                                  ID: "?"
+                                  Data:
+                                    - 780.3333333333334
+                                    - 780.3333333333334
+                                    - 780.3333333333334
+                                    - 333.3333333333333
+                                    - Linear
+                                AlbedoTexture:
+                                  ID: "?"
+                                  Data: ID:Textures:Components:FrooxEngine.StaticTexture2D:0
+                                EmissiveColor:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 333.3333333333333
+                                    - sRGB
+                                EmissiveMap:
+                                  ID: "?"
+                                  Data: null
+                                NormalScale:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                NormalMap:
+                                  ID: "?"
+                                  Data: ID:Textures:Components:FrooxEngine.StaticTexture2D:1
+                                HeightMap:
+                                  ID: "?"
+                                  Data: ID:Textures:Components:FrooxEngine.StaticTexture2D:2
+                                HeightScale:
+                                  ID: "?"
+                                  Data: 3.3333333333333335
+                                OcclusionMap:
+                                  ID: "?"
+                                  Data: null
+                                DetailAlbedoTexture:
+                                  ID: "?"
+                                  Data: null
+                                DetailNormalMap:
+                                  ID: "?"
+                                  Data: null
+                                DetailNormalScale:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                BlendMode:
+                                  ID: "?"
+                                  Data: Opaque
+                                AlphaCutoff:
+                                  ID: "?"
+                                  Data: 166.66666666666666
+                                OffsetFactor:
+                                  ID: "?"
+                                  Data: 0
+                                OffsetUnits:
+                                  ID: "?"
+                                  Data: 0
+                                RenderQueue:
+                                  ID: "?"
+                                  Data: -333.3333333333333
+                                Metallic:
+                                  ID: "?"
+                                  Data: 0
+                                Smoothness:
+                                  ID: "?"
+                                  Data: 83.33333333333333
+                                MetallicMap:
+                                  ID: "?"
+                                  Data: null
+                        Children: []
+                  - Name:
+                      ID: "?"
+                      Data: Textures
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.StaticTexture2D
+                          Data:
+                            ID: ID:Textures:Components:FrooxEngine.StaticTexture2D:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            URL:
+                              ID: "?"
+                              Data: "@resdb:///7fb394b1f6af13a31ff6fee3cb7555885fc8c5fda0728bc36bb265310d895f\
+                                f1.png"
+                            FilterMode:
+                              ID: "?"
+                              Data: Bilinear
+                            AnisotropicLevel:
+                              ID: "?"
+                              Data: 2666.6666666666665
+                            Uncompressed:
+                              ID: "?"
+                              Data: false
+                            DirectLoad:
+                              ID: "?"
+                              Data: false
+                            ForceExactVariant:
+                              ID: "?"
+                              Data: false
+                            PreferredFormat:
+                              ID: "?"
+                              Data: null
+                            PreferredProfile:
+                              ID: "?"
+                              Data: sRGB
+                            MipMapBias:
+                              ID: "?"
+                              Data: 0
+                            IsNormalMap:
+                              ID: "?"
+                              Data: false
+                            WrapModeU:
+                              ID: "?"
+                              Data: Repeat
+                            WrapModeV:
+                              ID: "?"
+                              Data: Repeat
+                            PowerOfTwoAlignThreshold:
+                              ID: "?"
+                              Data: 16.666666666666668
+                            CrunchCompressed:
+                              ID: "?"
+                              Data: true
+                            MaxSize:
+                              ID: "?"
+                              Data: null
+                            MipMaps:
+                              ID: "?"
+                              Data: true
+                            KeepOriginalMipMaps:
+                              ID: "?"
+                              Data: false
+                            MipMapFilter:
+                              ID: "?"
+                              Data: Box
+                            Readable:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.StaticTexture2D
+                          Data:
+                            ID: ID:Textures:Components:FrooxEngine.StaticTexture2D:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            URL:
+                              ID: "?"
+                              Data: "@resdb:///10b70e6ef4203d554ff0100f5ca371bcae64a8e5f3eca97a47d312146451b8\
+                                29.png"
+                            FilterMode:
+                              ID: "?"
+                              Data: Bilinear
+                            AnisotropicLevel:
+                              ID: "?"
+                              Data: 2666.6666666666665
+                            Uncompressed:
+                              ID: "?"
+                              Data: false
+                            DirectLoad:
+                              ID: "?"
+                              Data: false
+                            ForceExactVariant:
+                              ID: "?"
+                              Data: false
+                            PreferredFormat:
+                              ID: "?"
+                              Data: null
+                            PreferredProfile:
+                              ID: "?"
+                              Data: sRGB
+                            MipMapBias:
+                              ID: "?"
+                              Data: 0
+                            IsNormalMap:
+                              ID: "?"
+                              Data: true
+                            WrapModeU:
+                              ID: "?"
+                              Data: Repeat
+                            WrapModeV:
+                              ID: "?"
+                              Data: Repeat
+                            PowerOfTwoAlignThreshold:
+                              ID: "?"
+                              Data: 16.666666666666668
+                            CrunchCompressed:
+                              ID: "?"
+                              Data: true
+                            MaxSize:
+                              ID: "?"
+                              Data: null
+                            MipMaps:
+                              ID: "?"
+                              Data: true
+                            KeepOriginalMipMaps:
+                              ID: "?"
+                              Data: false
+                            MipMapFilter:
+                              ID: "?"
+                              Data: Box
+                            Readable:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.StaticTexture2D
+                          Data:
+                            ID: ID:Textures:Components:FrooxEngine.StaticTexture2D:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            URL:
+                              ID: "?"
+                              Data: "@resdb:///d4ba72389054f4836a361d4ed194101dce38b7d3de148b23e6205c366d307f\
+                                7a.png"
+                            FilterMode:
+                              ID: "?"
+                              Data: Bilinear
+                            AnisotropicLevel:
+                              ID: "?"
+                              Data: 2666.6666666666665
+                            Uncompressed:
+                              ID: "?"
+                              Data: false
+                            DirectLoad:
+                              ID: "?"
+                              Data: false
+                            ForceExactVariant:
+                              ID: "?"
+                              Data: false
+                            PreferredFormat:
+                              ID: "?"
+                              Data: null
+                            PreferredProfile:
+                              ID: "?"
+                              Data: Linear
+                            MipMapBias:
+                              ID: "?"
+                              Data: 0
+                            IsNormalMap:
+                              ID: "?"
+                              Data: false
+                            WrapModeU:
+                              ID: "?"
+                              Data: Repeat
+                            WrapModeV:
+                              ID: "?"
+                              Data: Repeat
+                            PowerOfTwoAlignThreshold:
+                              ID: "?"
+                              Data: 16.666666666666668
+                            CrunchCompressed:
+                              ID: "?"
+                              Data: true
+                            MaxSize:
+                              ID: "?"
+                              Data: null
+                            MipMaps:
+                              ID: "?"
+                              Data: true
+                            KeepOriginalMipMaps:
+                              ID: "?"
+                              Data: false
+                            MipMapFilter:
+                              ID: "?"
+                              Data: Box
+                            Readable:
+                              ID: "?"
+                              Data: false
+                    Children: []
+              - Name:
+                  ID: "?"
+                  Data: RootNode
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: TreasureBox_bottom
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -78555.66666666667
+                        - 0
+                        - 0
+                        - 78555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Mesh:Components:FrooxEngine.StaticMesh:0
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: "ID:Material: Material:Components:FrooxEngine.PBS_Metallic:0"
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                        - Type: FrooxEngine.MeshCollider
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 333333333.3333333
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Offset:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Type:
+                              ID: "?"
+                              Data: NoCollision
+                            Mass:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            CharacterCollider:
+                              ID: "?"
+                              Data: false
+                            IgnoreRaycasts:
+                              ID: "?"
+                              Data: false
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Mesh:Components:FrooxEngine.StaticMesh:0
+                            Sidedness:
+                              ID: "?"
+                              Data: Front
+                            ActualSpeculativeMargin:
+                              ID: "?"
+                              Data: null
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: TreasureBox_top
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: ID:TreasureBox_top:0
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 95444.33333333333
+                        - -62222.333333333336
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -78555.66666666667
+                        - 0
+                        - 0
+                        - 78555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Mesh:Components:FrooxEngine.StaticMesh:1
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: "ID:Material: Material:Components:FrooxEngine.PBS_Metallic:0"
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                        - Type: FrooxEngine.MeshCollider
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 333333333.3333333
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Offset:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Type:
+                              ID: "?"
+                              Data: NoCollision
+                            Mass:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            CharacterCollider:
+                              ID: "?"
+                              Data: false
+                            IgnoreRaycasts:
+                              ID: "?"
+                              Data: false
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Mesh:Components:FrooxEngine.StaticMesh:1
+                            Sidedness:
+                              ID: "?"
+                              Data: Front
+                            ActualSpeculativeMargin:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.GizmoLink
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            _worker:
+                              ID: "?"
+                              Data: ID:TreasureBox_top:0
+                            _gizmo:
+                              ID: "?"
+                              Data: null
+                            _type:
+                              ID: "?"
+                              Data: FrooxEngine.SlotGizmo
+                    Children: []

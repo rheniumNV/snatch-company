@@ -55,7 +55,7 @@ export type StatusEffect<T> = {
       statusBuffs: StatusBuff[];
     },
     attacker: Readonly<Player>,
-    object: Readonly<Object>
+    object: Readonly<SnatchCompanyObject>
   ) => { state: T; statusUpper: StatusUpper; statusBuffs: StatusBuff[] };
   onCalcCritical?: (
     prev: {
@@ -66,7 +66,7 @@ export type StatusEffect<T> = {
     },
     gameState: GameState,
     attacker: Readonly<Player>,
-    object: Readonly<Object>,
+    object: Readonly<SnatchCompanyObject>,
     criticalCount: number
   ) => {
     state: T;
@@ -82,7 +82,7 @@ export type StatusEffect<T> = {
     },
     result: {
       attacker: Readonly<Player>;
-      object: Readonly<Object>;
+      object: Readonly<SnatchCompanyObject>;
       damage: number;
       overDamage: number;
       criticalCount: number;
@@ -118,14 +118,18 @@ export type Skill = {
   demerit: boolean;
 };
 
-export type Object = {
+export type SnatchCompanyObject = {
   id: string;
   type: "plant" | "mineral";
   position: Vector.Vector3;
   rotation: Vector.Vector4;
   health: number;
   maxHealth: number;
-  value: number;
+  reward: {
+    type: "exp" | "shield";
+    value: number;
+    damageReturn: boolean;
+  }[];
 };
 
 export type Player = {
@@ -167,8 +171,9 @@ export type BattleSection = {
   mode: "battle";
   level: number;
   targetPoint: Vector.Vector3;
-  objects: Object[];
+  objects: SnatchCompanyObject[];
   events: SnatchCompanyEvent[];
+  subEvents: SnatchCompanyEvent[];
   time: number;
 };
 
@@ -205,7 +210,7 @@ export type GameState =
 export type Callbacks = {
   onAttack2Object?: ((arg: {
     attacker: Readonly<Player>;
-    object: Readonly<Object>;
+    object: Readonly<SnatchCompanyObject>;
     damage: number;
     overDamage: number;
     criticalCount: number;

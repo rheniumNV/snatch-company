@@ -618,12 +618,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:13
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:10
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:1
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -666,7 +666,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:13
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:10
                                         Sidedness:
                                           ID: "?"
                                           Data: Front
@@ -759,12 +759,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:14
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:11
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:1
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                     MaterialPropertyBlocks:
                                       ID: "?"
                                       Data: []
@@ -807,7 +807,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:14
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:11
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -937,12 +937,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:15
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:12
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:1
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -985,7 +985,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:15
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:12
                                         Sidedness:
                                           ID: "?"
                                           Data: Front

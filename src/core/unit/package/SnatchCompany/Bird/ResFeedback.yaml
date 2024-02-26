@@ -760,7 +760,7 @@ Children:
                       Data:
                         Play: true
                         Loop: true
-                        RawPosition: 84422
+                        RawPosition: 253544.66666666666
                         Speed: 16.666666666666668
                         MaxError: 1666.6666666666667
                         MaxDeviation: 1666.6666666666667
@@ -1876,7 +1876,7 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:10
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:14
                             Materials:
                               ID: "?"
                               Data:
@@ -2042,7 +2042,7 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:11
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:15
                             Materials:
                               ID: "?"
                               Data:
@@ -2470,7 +2470,7 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:12
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:16
                             Materials:
                               ID: "?"
                               Data:

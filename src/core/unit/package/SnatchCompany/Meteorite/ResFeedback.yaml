@@ -327,4 +327,731 @@ Children:
         Components:
           ID: "?"
           Data: []
-        Children: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: Sphere
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.SphereMesh
+                  Data:
+                    ID: ID:Sphere:Components:FrooxEngine.SphereMesh:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    HighPriorityIntegration:
+                      ID: "?"
+                      Data: false
+                    OverrideBoundingBox:
+                      ID: "?"
+                      Data: false
+                    OverridenBoundingBox:
+                      ID: "?"
+                      Data:
+                        Min:
+                          - 0
+                          - 0
+                          - 0
+                        Max:
+                          - 0
+                          - 0
+                          - 0
+                    Profile:
+                      ID: "?"
+                      Data: Linear
+                    Radius:
+                      ID: ID:Sphere:Components:FrooxEngine.SphereMesh:Radius:0
+                      Data: 942
+                    Segments:
+                      ID: "?"
+                      Data: 10666.666666666666
+                    Rings:
+                      ID: "?"
+                      Data: 5333.333333333333
+                    Shading:
+                      ID: "?"
+                      Data: Smooth
+                    UVScale:
+                      ID: "?"
+                      Data:
+                        - -333.3333333333333
+                        - 333.3333333333333
+                    DualSided:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.MeshRenderer
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Mesh:
+                      ID: "?"
+                      Data: ID:Sphere:Components:FrooxEngine.SphereMesh:0
+                    Materials:
+                      ID: "?"
+                      Data:
+                        - ID: "?"
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:3
+                    MaterialPropertyBlocks:
+                      ID: "?"
+                      Data: []
+                    ShadowCastMode:
+                      ID: "?"
+                      Data: On
+                    MotionVectorMode:
+                      ID: "?"
+                      Data: Object
+                    SortingOrder:
+                      ID: "?"
+                      Data: 0
+                - Type: FrooxEngine.SphereCollider
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 333333333.3333333
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Offset:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Type:
+                      ID: "?"
+                      Data: Static
+                    Mass:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    CharacterCollider:
+                      ID: "?"
+                      Data: false
+                    IgnoreRaycasts:
+                      ID: "?"
+                      Data: false
+                    Radius:
+                      ID: ID:Sphere:Components:FrooxEngine.SphereCollider:Radius:0
+                      Data: 942
+                - Type: FrooxEngine.ValueCopy`1[System.Single]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Source:
+                      ID: "?"
+                      Data: ID:Sphere:Components:FrooxEngine.SphereMesh:Radius:0
+                    Target:
+                      ID: "?"
+                      Data: ID:Sphere:Components:FrooxEngine.SphereCollider:Radius:0
+                    WriteBack:
+                      ID: "?"
+                      Data: false
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: ParticleSystem
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 798444.3333333334
+                    - 798444.3333333334
+                    - 798444.3333333334
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.ParticleSystem
+                      Data:
+                        ID: ID:ParticleSystem:Components:FrooxEngine.ParticleSystem:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        MaxParticles:
+                          ID: "?"
+                          Data: 333333.3333333333
+                        Style:
+                          ID: "?"
+                          Data: ID:ParticleSystem:Components:FrooxEngine.ParticleStyle:0
+                        SimulationSpace:
+                          ID: "?"
+                          Data: {}
+                    - Type: FrooxEngine.ParticleStyle
+                      Data:
+                        ID: ID:ParticleSystem:Components:FrooxEngine.ParticleStyle:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        MotionVectorMode:
+                          ID: "?"
+                          Data: Object
+                        MinStartLifetime:
+                          ID: "?"
+                          Data: 666.6666666666666
+                        MaxStartLifetime:
+                          ID: "?"
+                          Data: 1000
+                        MinStartSize:
+                          ID: "?"
+                          Data: 66.66666666666667
+                        MaxStartSize:
+                          ID: "?"
+                          Data: 100
+                        MinStartSpeed:
+                          ID: "?"
+                          Data: 133.33333333333334
+                        MaxStartSpeed:
+                          ID: "?"
+                          Data: 166.66666666666666
+                        MinStartRotation:
+                          ID: "?"
+                          Data: -60000
+                        MaxStartRotation:
+                          ID: "?"
+                          Data: 60000
+                        MinStartAngularVelocity:
+                          ID: "?"
+                          Data: -6666.666666666667
+                        MaxStartAngularVelocity:
+                          ID: "?"
+                          Data: 6666.666666666667
+                        Use3DRotation:
+                          ID: "?"
+                          Data: false
+                        MinStartRotation3D:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        MaxStartRotation3D:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        MinStartAngularVelocity3D:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        MaxStartAngularVelocity3D:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        GravityStrength:
+                          ID: "?"
+                          Data: 0
+                        MinStartColor:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - sRGB
+                        MaxStartColor:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - sRGB
+                        UseColorOverLifetime:
+                          ID: "?"
+                          Data: true
+                        AlphaOverLifetime:
+                          ID: "?"
+                          Data:
+                            - Time: 0
+                              Value: 0
+                            - Time: 33.333333333333336
+                              Value: 333.3333333333333
+                            - Time: 300
+                              Value: 333.3333333333333
+                            - Time: 333.3333333333333
+                              Value: 0
+                        ColorOverLifetime:
+                          ID: "?"
+                          Data: []
+                        Collisions:
+                          ID: "?"
+                          Data: false
+                        Bounce:
+                          ID: "?"
+                          Data: 300
+                        LifetimeLoss:
+                          ID: "?"
+                          Data: 0
+                        Material:
+                          ID: "?"
+                          Data: ID:ParticleSystem:Components:FrooxEngine.UnlitMaterial:0
+                        TrailMaterial:
+                          ID: "?"
+                          Data: null
+                        Mesh:
+                          ID: "?"
+                          Data: null
+                        Alignment:
+                          ID: "?"
+                          Data: Facing
+                        LengthScale:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        VelocityScale:
+                          ID: "?"
+                          Data: 0
+                        MinParticleSize:
+                          ID: "?"
+                          Data: 0
+                        MaxParticleSize:
+                          ID: "?"
+                          Data: 300
+                        ParticleTrails:
+                          ID: "?"
+                          Data: None
+                        TrailRatio:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        RibbonCount:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        TrailMinimumVertexDistance:
+                          ID: "?"
+                          Data: 66.66666666666667
+                        TrailWorldSpace:
+                          ID: "?"
+                          Data: false
+                        TrailDiesWithParticle:
+                          ID: "?"
+                          Data: true
+                        ParticleSizeAffectsTrailWidth:
+                          ID: "?"
+                          Data: true
+                        ParticleSizeAffectsTrailLifetime:
+                          ID: "?"
+                          Data: false
+                        InheritTrailColorFromParticle:
+                          ID: "?"
+                          Data: true
+                        TrailTextureMode:
+                          ID: "?"
+                          Data: Stretch
+                        MinTrailLifetime:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxTrailLifetime:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MinTrailColor:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - sRGB
+                        MaxTrailColor:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - 333.3333333333333
+                            - sRGB
+                        MinTrailWidth:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxTrailWidth:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        GenerateLightingDataForTrails:
+                          ID: "?"
+                          Data: false
+                        Light:
+                          ID: "?"
+                          Data: null
+                        LightsRatio:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        LightRandomDistribution:
+                          ID: "?"
+                          Data: true
+                        LightsUseParticleColor:
+                          ID: "?"
+                          Data: true
+                        SizeAffectsLightRange:
+                          ID: "?"
+                          Data: true
+                        AlphaAffectsLightIntensity:
+                          ID: "?"
+                          Data: true
+                        LightRangeMultiplier:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        LightIntensityMultiplier:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaximumLights:
+                          ID: "?"
+                          Data: 6666.666666666667
+                        AnimationTiles:
+                          ID: "?"
+                          Data:
+                            - 2666.6666666666665
+                            - 1333.3333333333333
+                        AnimationCycles:
+                          ID: "?"
+                          Data: 666.6666666666666
+                        AnimationType:
+                          ID: "?"
+                          Data: WholeSheet
+                        UseRowIndex:
+                          ID: "?"
+                          Data: 0
+                        UseRandomRow:
+                          ID: "?"
+                          Data: true
+                    - Type: FrooxEngine.SphereEmitter
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        System:
+                          ID: "?"
+                          Data: ID:ParticleSystem:Components:FrooxEngine.ParticleSystem:0
+                        Rate:
+                          ID: "?"
+                          Data: 133333.33333333334
+                        BurstOnActivatedMin:
+                          ID: "?"
+                          Data: 0
+                        BurstOnActivatedMax:
+                          ID: "?"
+                          Data: 0
+                        BurstTimeStart:
+                          ID: "?"
+                          Data:
+                            CurrentTime: 2221953.6666666665
+                        BurstTimePeriod:
+                          ID: "?"
+                          Data: 0
+                        Bursts:
+                          ID: "?"
+                          Data: []
+                        Radius:
+                          ID: "?"
+                          Data: 33.333333333333336
+                        EmitFromShell:
+                          ID: "?"
+                          Data: false
+                        RandomDirection:
+                          ID: "?"
+                          Data: 133.33333333333334
+                        ForceDirection:
+                          ID: "?"
+                          Data: true
+                        ForcedDirection:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        DirectionReferencePoint:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                    - Type: FrooxEngine.UnlitMaterial
+                      Data:
+                        ID: ID:ParticleSystem:Components:FrooxEngine.UnlitMaterial:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        HighPriorityIntegration:
+                          ID: "?"
+                          Data: false
+                        TintColor:
+                          ID: "?"
+                          Data:
+                            - 2345.6666666666665
+                            - 992.6666666666666
+                            - 440
+                            - 246.33333333333334
+                            - Linear
+                        Texture:
+                          ID: "?"
+                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:11
+                        TextureScale:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                        TextureOffset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        MaskTexture:
+                          ID: "?"
+                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:11
+                        MaskScale:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                        MaskOffset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        MaskMode:
+                          ID: "?"
+                          Data: MultiplyAlpha
+                        BlendMode:
+                          ID: "?"
+                          Data: Alpha
+                        AlphaCutoff:
+                          ID: "?"
+                          Data: 166.66666666666666
+                        UseVertexColors:
+                          ID: "?"
+                          Data: true
+                        VertexColorInterpolationSpace:
+                          ID: "?"
+                          Data: Linear
+                        Sidedness:
+                          ID: "?"
+                          Data: Auto
+                        ZWrite:
+                          ID: "?"
+                          Data: Auto
+                        OffsetTexture:
+                          ID: "?"
+                          Data: null
+                        OffsetMagnitude:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        OffsetTextureScale:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                        OffsetTextureOffset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        PolarUVmapping:
+                          ID: "?"
+                          Data: false
+                        PolarPower:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        StereoTextureTransform:
+                          ID: "?"
+                          Data: false
+                        RightEyeTextureScale:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                        RightEyeTextureOffset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        DecodeAsNormalMap:
+                          ID: "?"
+                          Data: false
+                        UseBillboardGeometry:
+                          ID: "?"
+                          Data: false
+                        UsePerBillboardScale:
+                          ID: "?"
+                          Data: false
+                        UsePerBillboardRotation:
+                          ID: "?"
+                          Data: false
+                        UsePerBillboardUV:
+                          ID: "?"
+                          Data: false
+                        BillboardSize:
+                          ID: "?"
+                          Data:
+                            - 1.6666666666666667
+                            - 1.6666666666666667
+                        OffsetFactor:
+                          ID: "?"
+                          Data: 0
+                        OffsetUnits:
+                          ID: "?"
+                          Data: 0
+                        RenderQueue:
+                          ID: "?"
+                          Data: -333.3333333333333
+                        _unlit-ID: "?"
+                        _unlitBillboard-ID: "?"
+                    - Type: FrooxEngine.StaticTexture2D
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///3fd0bfad6dc8686ff65a0133244c5e33ac97865b3648da4cfcc86bf05abce3\
+                            d5.png"
+                        FilterMode:
+                          ID: "?"
+                          Data: Bilinear
+                        AnisotropicLevel:
+                          ID: "?"
+                          Data: 2666.6666666666665
+                        Uncompressed:
+                          ID: "?"
+                          Data: false
+                        DirectLoad:
+                          ID: "?"
+                          Data: false
+                        ForceExactVariant:
+                          ID: "?"
+                          Data: false
+                        PreferredFormat:
+                          ID: "?"
+                          Data: null
+                        PreferredProfile:
+                          ID: "?"
+                          Data: sRGB
+                        MipMapBias:
+                          ID: "?"
+                          Data: 0
+                        IsNormalMap:
+                          ID: "?"
+                          Data: false
+                        WrapModeU:
+                          ID: "?"
+                          Data: Repeat
+                        WrapModeV:
+                          ID: "?"
+                          Data: Repeat
+                        PowerOfTwoAlignThreshold:
+                          ID: "?"
+                          Data: 16.666666666666668
+                        CrunchCompressed:
+                          ID: "?"
+                          Data: true
+                        MaxSize:
+                          ID: "?"
+                          Data: null
+                        MipMaps:
+                          ID: "?"
+                          Data: true
+                        KeepOriginalMipMaps:
+                          ID: "?"
+                          Data: false
+                        MipMapFilter:
+                          ID: "?"
+                          Data: Box
+                        Readable:
+                          ID: "?"
+                          Data: false
+                Children: []

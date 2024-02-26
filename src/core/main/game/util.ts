@@ -65,3 +65,17 @@ export namespace Vector {
   export const lerp = (a: Vector3, b: Vector3, t: number): Vector3 =>
     add(mul(a, 1 - t), mul(b, t));
 }
+
+export const getRandom = <T>(list: T[]): T | undefined =>
+  list[Math.floor(Math.random() * list.length)];
+
+export const getDpsSample = (sectionLevel: number, triggerTime: number) => {
+  return (
+    60 *
+    (1 +
+      0.1 *
+        ((sectionLevel - 1) * (10 + 2.5 * 5) +
+          ((triggerTime + 30) % 30) * 2.5 +
+          (triggerTime / 240) * 10))
+  );
+};

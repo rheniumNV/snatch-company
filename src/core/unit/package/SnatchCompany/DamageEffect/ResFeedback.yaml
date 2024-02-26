@@ -800,7 +800,7 @@ Children:
                         StartTime:
                           ID: "?"
                           Data:
-                            CurrentTime: 8574858
+                            CurrentTime: 11957311.333333334
                 Children: []
               - Name:
                   ID: "?"
@@ -2246,7 +2246,7 @@ Children:
                                   Data: Linear
                                 Font:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.FontChain:ID:3
+                                  Data: ID:Assets:FrooxEngine.FontChain:ID:4
                                 Text:
                                   ID: ID:Outline:Components:FrooxEngine.TextRenderer:Text:0
                                   Data: "0"
@@ -2280,7 +2280,7 @@ Children:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:0
+                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:1
                                 LineHeight:
                                   ID: "?"
                                   Data: 266.6666666666667
@@ -2359,7 +2359,7 @@ Children:
                                   Data: true
                                 Progress:
                                   ID: ID:Outline:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:0
-                                  Data: 7688748
+                                  Data: 10770733.666666666
                                 Target:
                                   ID: "?"
                                   Data: ID:Outline:Components:FrooxEngine.TextRenderer:Color:0

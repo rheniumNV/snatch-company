@@ -230,7 +230,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:Main:0
+                  Data: ID:Slot:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -249,7 +249,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:Main:0
+                  Data: ID:Slot:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -260,7 +260,7 @@ Children:
         Active:
           ID: "?"
           Data: true
-        ID: ID:DV/Props:0
+        ID: "?"
         Persistent-Id: "?"
         Position:
           ID: "?"
@@ -324,7 +324,7 @@ Children:
                   Data: Props.tag
                 TargetField:
                   ID: "?"
-                  Data: ID:Main:Tag:0
+                  Data: ID:Slot:Tag:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -343,7 +343,7 @@ Children:
                   Data: Props.active
                 TargetField:
                   ID: "?"
-                  Data: ID:Main:Tag:1
+                  Data: ID:Slot:Tag:1
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -362,11 +362,11 @@ Children:
                   Data: Props.position
                 TargetField:
                   ID: "?"
-                  Data: ID:Main:Tag:2
+                  Data: ID:Slot:Tag:2
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: FrooxEngine.DynamicField`1[Elements.Core.float4]
+            - Type: FrooxEngine.DynamicField`1[Elements.Core.floatQ]
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -381,7 +381,7 @@ Children:
                   Data: Props.rotation
                 TargetField:
                   ID: "?"
-                  Data: null
+                  Data: ID:Slot:Tag:3
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -400,83 +400,45 @@ Children:
                   Data: Props.scale
                 TargetField:
                   ID: "?"
-                  Data: ID:Main:Tag:4
+                  Data: ID:Slot:Tag:4
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: FrooxEngine.GizmoLink
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                _worker:
-                  ID: "?"
-                  Data: ID:DV/Props:0
-                _gizmo:
-                  ID: "?"
-                  Data: null
-                _type:
-                  ID: "?"
-                  Data: FrooxEngine.SlotGizmo
         Children: []
       - Name:
           ID: "?"
-          Data: Main
+          Data: Slot
         Active:
-          ID: ID:Main:Tag:1
+          ID: ID:Slot:Tag:1
           Data: true
-        ID: ID:Main:0
+        ID: ID:Slot:0
         Persistent-Id: "?"
         Position:
-          ID: ID:Main:Tag:2
+          ID: ID:Slot:Tag:2
           Data:
             - 0
             - 0
             - 0
         Rotation:
-          ID: "?"
+          ID: ID:Slot:Tag:3
           Data:
             - 0
             - 0
             - 0
             - 111111
         Scale:
-          ID: ID:Main:Tag:4
+          ID: ID:Slot:Tag:4
           Data:
             - 111111
             - 111111
             - 111111
         Tag:
-          ID: ID:Main:Tag:0
+          ID: ID:Slot:Tag:0
           Data: ""
         OrderOffset:
           ID: "?"
           Data: 0
         Components:
           ID: "?"
-          Data:
-            - Type: FrooxEngine.GizmoLink
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                _worker:
-                  ID: "?"
-                  Data: ID:Main:0
-                _gizmo:
-                  ID: "?"
-                  Data: null
-                _type:
-                  ID: "?"
-                  Data: FrooxEngine.SlotGizmo
+          Data: []
         Children: []

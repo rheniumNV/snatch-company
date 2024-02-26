@@ -8,7 +8,7 @@ import {
 } from "../../../../../lib/mirage-x/unit/common";
 
 const detail = {
-  code: "SnathCompany/Bomb",
+  code: "SnatchCompany/Bomb",
   propsConfig: {},
   dynamicImpulseTriggers: {},
   children: "multi" as const,

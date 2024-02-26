@@ -3,9 +3,9 @@ import { SnatchCompanyEvent } from "./snatchCompanyEvent";
 import { BattleSection, GameStateInGame, SnatchCompanyObject } from "../type";
 import { ReactElement, useCallback } from "react";
 import {
-  Bird,
   MovedSlot,
   Resource,
+  Shark,
 } from "../../../unit/package/SnatchCompany/main";
 import { Vector, getDpsSample } from "../util";
 import { SnatchCompany } from "..";
@@ -13,14 +13,14 @@ import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import { HealthView } from "../../render/common/hpView";
 import { Slot } from "../../../unit/package/Primitive/main";
 
-type BirdObject = SnatchCompanyObject & {
+type SharkObject = SnatchCompanyObject & {
   targetPoint: Vector.Vector3;
   moveSpeed: number;
   startTime: number;
 };
 
-const BirdBiew = (props: {
-  object: BirdObject;
+const SharkView = (props: {
+  object: SharkObject;
   attack2Objet: SnatchCompany["attack2Object"];
 }) => {
   const onHit = useCallback(
@@ -42,13 +42,13 @@ const BirdBiew = (props: {
   return (
     <MovedSlot position={props.object.position} move={move} moveTime={moveTime}>
       <Resource onHit={onHit}>
-        <Slot scale={[2, 2, 2]}>
-          <Bird />
+        <Slot scale={[2, 2, 2]} rotation={[-0.5, 0.5, -0.5, 0.5]}>
+          <Shark />
         </Slot>
       </Resource>
       {props.object.health < props.object.maxHealth && (
         <HealthView
-          position={[0, 3, 0]}
+          position={[0, 4, 0]}
           scale={[3, 3, 3]}
           health={props.object.health}
           maxHealth={props.object.maxHealth}
@@ -58,16 +58,16 @@ const BirdBiew = (props: {
   );
 };
 
-export class BirdStrike extends SnatchCompanyEvent {
-  code = "BirdStrike";
+export class SharkAttack extends SnatchCompanyEvent {
+  code = "SharkAttack";
   title = {
-    ja: "バードストライク",
-    en: "Bird Strike",
+    ja: "サメ襲撃",
+    en: "Shark Attack",
   };
 
   description = {
-    ja: "鳥が船に向かって飛んできています\n船を守ってください",
-    en: "Birds are flying towards the ship\nPlease protect the ship",
+    ja: "サメから船を守ろう",
+    en: "Protect the ship from the sharks",
   };
 
   constructor(triggerTime: number) {
@@ -75,16 +75,16 @@ export class BirdStrike extends SnatchCompanyEvent {
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
-  override objects: BirdObject[] = [];
-  birdSpawnCount = 0;
-  birdSpawnTimer = 0.5;
+  override objects: SharkObject[] = [];
+  sharkSpawnCount = 0;
+  sharkSpawnTimer = 0.5;
 
   override start(gameState: GameStateInGame<BattleSection>): void {
     super.start(gameState);
     if (gameState.mode === "inGame") {
       const section = gameState.section;
       if (section.mode === "battle") {
-        this.birdSpawnCount = Math.floor(5);
+        this.sharkSpawnCount = Math.floor(5);
       }
     }
   }
@@ -100,43 +100,38 @@ export class BirdStrike extends SnatchCompanyEvent {
   ): void {
     super.update(game, deltaTime);
 
-    this.birdSpawnTimer -= deltaTime;
+    this.sharkSpawnTimer -= deltaTime;
     if (game.gameState.mode === "inGame") {
       const section = game.gameState.section;
       if (section.mode === "battle") {
-        if (this.birdSpawnTimer <= 0 && this.birdSpawnCount > 0) {
-          this.birdSpawnCount--;
-          this.birdSpawnTimer = 3;
+        if (this.sharkSpawnTimer <= 0 && this.sharkSpawnCount > 0) {
+          this.sharkSpawnCount--;
+          this.sharkSpawnTimer = 3;
           const dpsSample = getDpsSample(section.level, this.triggerTime);
           Array.from({
-            length:
-              1 +
-              Math.floor(
-                (1 + (game.gameState.players.length - 1) * 0.8) *
-                  Math.min(3, Math.max(5, dpsSample / 200))
-              ),
+            length: 2 + Math.floor((game.gameState.players.length - 1) * 0.8),
           }).forEach((_, i) => {
             const position: Vector.Vector3 = [
-              Math.random() * 100 - 50,
-              Math.random() * 15 + 5,
-              Math.random() * 10 + 70,
+              Math.random() * 50 - 25,
+              60,
+              Math.random() * 30 + 10,
             ];
             this.objects.push({
               id: uuidv4(),
               type: "plant",
               position,
               rotation: [0, 0, 0, 0],
-              health: 10,
-              maxHealth: 10,
+              health: 20 + dpsSample * 0.6,
+              maxHealth: 20 + dpsSample * 0.6,
               reward: [
                 {
                   type: "exp",
-                  value: dpsSample * 0.002,
+                  value: 0.25,
                   damageReturn: true,
                 },
               ],
               targetPoint: [Math.random() * 16 - 8, 2, Math.random() * 10 - 5],
-              moveSpeed: Math.random() * 5 + 15,
+              moveSpeed: 30,
               startTime: this.time,
             });
           });
@@ -144,7 +139,7 @@ export class BirdStrike extends SnatchCompanyEvent {
       }
     }
 
-    this.objects.forEach((object) => {
+    const sharkOnShip = this.objects.filter((object) => {
       const move = Vector.normalize(
         Vector.sub(object.targetPoint, object.position)
       );
@@ -158,17 +153,21 @@ export class BirdStrike extends SnatchCompanyEvent {
       );
       const distance = Vector.distance(currentPosition, object.targetPoint);
       if (distance < 0.1) {
-        object.health = 0;
-        game.damage2Ship(20);
+        object.health = Math.max(
+          0,
+          object.health - object.maxHealth * 0.05 * deltaTime
+        );
       }
+      return distance < 0.1;
     });
+    game.damage2Ship(Math.max(4, sharkOnShip.length) * deltaTime);
 
-    if (this.objects.length === 0 && this.birdSpawnCount === 0) {
+    if (this.objects.length === 0 && this.sharkSpawnCount === 0) {
       game.addSkill4Event();
       game.announcement({
         title: {
-          ja: "バードストライクをやり過ごした",
-          en: "Bird Strike has been overcome",
+          ja: "サメ襲撃撃退成功",
+          en: "Shark Attack Repelled",
         },
         description: {
           ja: "おめでとう。レアスキルを1つ獲得しました。",
@@ -188,7 +187,7 @@ export class BirdStrike extends SnatchCompanyEvent {
     return (
       <>
         {this.objects.map((object) => (
-          <BirdBiew
+          <SharkView
             key={object.id}
             object={object}
             attack2Objet={props.attack2Object}

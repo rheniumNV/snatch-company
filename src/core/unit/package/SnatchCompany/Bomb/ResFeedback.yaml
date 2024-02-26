@@ -1,0 +1,2462 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/Bomb
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Main
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:Main:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: 機雷(オリジナル)
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data: []
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: Root
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: Sphere
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.SphereMesh:ID:0
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                        - Type: FrooxEngine.ValueCopy`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Source:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.SphereMesh:Radius:0
+                            Target:
+                              ID: "?"
+                              Data: ID:コライダー:Components:FrooxEngine.SphereCollider:Radius:0
+                            WriteBack:
+                              ID: "?"
+                              Data: false
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: eni
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.CylinderMesh:ID:0
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: Cylinder2
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - -3889
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.CylinderMesh:ID:1
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: Cylinder1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 3889
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.CylinderMesh:ID:2
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: とげ
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data: []
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - -4222.333333333333
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 42555.666666666664
+                            - 102666.66666666667
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 88889
+                            - 100000
+                            - 88889
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 2555.6666666666665
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 66666.66666666667
+                                    - 111111
+                                    - 66666.66666666667
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - -222.33333333333334
+                            - -111
+                            - 111
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 55555.666666666664
+                            - 96222.33333333333
+                            - 0
+                            - 0
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - -4222.333333333333
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - -222.33333333333334
+                            - -111
+                            - 111
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 27777.666666666668
+                            - 48111
+                            - 48111
+                            - 83333.33333333333
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - -4222.333333333333
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 36777.666666666664
+                            - 88889
+                            - 21222.333333333332
+                            - 51333.333333333336
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 88889
+                            - 100000
+                            - 88889
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 2555.6666666666665
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 66666.66666666667
+                                    - 111111
+                                    - 66666.66666666667
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 36777.666666666664
+                            - 88889
+                            - -21222.333333333332
+                            - -51333.333333333336
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 88889
+                            - 100000
+                            - 88889
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 2555.6666666666665
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 66666.66666666667
+                                    - 111111
+                                    - 66666.66666666667
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: とげ - Child
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - -222.33333333333334
+                            - -111
+                            - 111
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - -27777.666666666668
+                            - -48111
+                            - 48111
+                            - 83333.33333333333
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data: []
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: eni
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - -4222.333333333333
+                                    - 0
+                                Rotation:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 111111
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.CylinderMesh:ID:3
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:2
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cone
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - -57555.666666666664
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 111111
+                                - 0
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.ConeMesh:ID:0
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                            Children: []
+              - Name:
+                  ID: "?"
+                  Data: コライダー
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.SphereCollider
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 333333333.3333333
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        Offset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Type:
+                          ID: "?"
+                          Data: Static
+                        Mass:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        CharacterCollider:
+                          ID: "?"
+                          Data: false
+                        IgnoreRaycasts:
+                          ID: "?"
+                          Data: false
+                        Radius:
+                          ID: ID:コライダー:Components:FrooxEngine.SphereCollider:Radius:0
+                          Data: 166.66666666666666
+                Children: []

@@ -1,9 +1,11 @@
-import { BattleSection, GameStateInGame, LocaleText, Object } from "../type";
+import {
+  BattleSection,
+  GameStateInGame,
+  LocaleText,
+  SnatchCompanyObject,
+} from "../type";
 import { SnatchCompany } from "..";
-import { JSXElementConstructor, ReactElement } from "react";
-import { Box } from "../../../unit/package/ProceduralMesh/main";
-import { MovedSlot, Resource } from "../../../unit/package/SnatchCompany/main";
-import { Vector } from "../util";
+import { ReactElement } from "react";
 
 export abstract class SnatchCompanyEvent {
   abstract code: string;
@@ -12,7 +14,7 @@ export abstract class SnatchCompanyEvent {
   state: "pending" | "processing" | "finished" = "pending";
   triggerTime: number;
   time = 0;
-  objects: Object[] = [];
+  objects: SnatchCompanyObject[] = [];
   constructor(triggerTime: number) {
     this.triggerTime = triggerTime;
   }
@@ -31,7 +33,6 @@ export abstract class SnatchCompanyEvent {
     deltaTime: number
   ): void {
     this.time += deltaTime;
-    this.objects = this.objects.filter((object) => object.health > 0);
   }
 
   drawOnShip(props: {

@@ -1,12 +1,12 @@
 import { createNoise2D } from "simplex-noise";
-import { Vector } from "./util";
+import { Vector, getDpsSample, getRandom } from "./util";
 import { v4 as uuidv4 } from "uuid";
 import {
   Announcement,
   Callbacks,
   EffectSource,
   GameState,
-  Object,
+  SnatchCompanyObject,
   Player,
   Skill,
   Status,
@@ -20,6 +20,9 @@ import { epicSkills } from "./skill/epicSkills";
 import { BirdStrike } from "./event/birdStrike";
 import { SnatchCompanyEvent } from "./event/snatchCompanyEvent";
 import { MeteoriteFall } from "./event/meteoriteFall";
+import { SharkAttack } from "./event/sharkAttack";
+import { BombTrap } from "./event/bombTrap";
+import { TreasureChest } from "./event/treasureChest";
 
 const newStatusUpper = (): StatusUpper => ({
   attack: { rate: 0, add: 0 },
@@ -181,9 +184,13 @@ const finalizeStatus = (
 const battleEvents: ((triggerTime: number) => SnatchCompanyEvent)[] = [
   (triggerTime: number) => new BirdStrike(triggerTime),
   (triggerTime: number) => new MeteoriteFall(triggerTime),
+  (triggerTime: number) => new SharkAttack(triggerTime),
+  (triggerTime: number) => new BombTrap(triggerTime),
 ];
 
-const happyEventCodes: string[] = ["treasure chest", "flying peach"];
+const subEvents: ((triggerTime: number) => SnatchCompanyEvent)[] = [
+  (triggerTime: number) => new TreasureChest(triggerTime),
+];
 
 export const newPlayer = (id: string): Player => ({
   id: id,
@@ -207,7 +214,7 @@ export class SnatchCompany {
       mode: "lobby",
       players: [],
     };
-    this.addPlayer("U-rhenium");
+    // this.addPlayer("U-rhenium");
     // this.startGame();
   }
 
@@ -267,24 +274,36 @@ export class SnatchCompany {
     }
   }
 
-  private static getRandomEvents(): SnatchCompanyEvent[] {
-    const event1 =
-      battleEvents[Math.floor(Math.random() * battleEvents.length)](30);
-    const event2 =
-      battleEvents[Math.floor(Math.random() * battleEvents.length)](90);
-    const event3 =
-      battleEvents[Math.floor(Math.random() * battleEvents.length)](150);
-    return [event1, event2, event3];
+  private static getRandomBattleEvents(): SnatchCompanyEvent[] {
+    const event1 = getRandom(battleEvents);
+    const event2 = getRandom(battleEvents.filter((event) => event !== event1));
+    const event3 = getRandom(
+      battleEvents.filter((event) => event !== event1 && event !== event2)
+    );
+    return [event1?.(30), event2?.(90), event3?.(150)].filter(
+      (e) => e
+    ) as SnatchCompanyEvent[];
+  }
+
+  private static getRandomSubEvents(): SnatchCompanyEvent[] {
+    const event1 = getRandom(subEvents);
+    const event2 = getRandom(subEvents.filter((event) => event !== event1));
+    const event3 = getRandom(
+      subEvents.filter((event) => event !== event1 && event !== event2)
+    );
+    return [event1?.(60), event2?.(120), event3?.(180)].filter(
+      (e) => e
+    ) as SnatchCompanyEvent[];
   }
 
   startGame() {
     if (this.gameState.mode === "lobby") {
       if (this.gameState.players.length > 0) {
-        const angle = (Math.random() * Math.PI) / 2 + Math.PI / 4;
+        const angle = Math.PI / 2; //(Math.random() * Math.PI) / 2 + Math.PI / 4;
         const targetPoint: Vector.Vector3 = [
-          Math.cos(angle) * 240 * 3,
+          Math.cos(angle) * 210 * 3,
           0,
-          Math.sin(angle) * 240 * 3,
+          Math.sin(angle) * 210 * 3,
         ];
 
         this.gameState = {
@@ -310,10 +329,17 @@ export class SnatchCompany {
                 rotation: [0, 0, 0, 0],
                 health: 200,
                 maxHealth: 200,
-                value: 0.2,
+                reward:
+                  type === "plant"
+                    ? [
+                        { type: "exp", value: 0.03, damageReturn: true },
+                        { type: "shield", value: 20, damageReturn: true },
+                      ]
+                    : [{ type: "exp", value: 0.2, damageReturn: true }],
               };
             }),
-            events: [...SnatchCompany.getRandomEvents()],
+            events: SnatchCompany.getRandomBattleEvents(),
+            subEvents: SnatchCompany.getRandomSubEvents(),
             time: 0,
           },
           ship: {
@@ -363,7 +389,7 @@ export class SnatchCompany {
       this.gameState.mode === "inGame" &&
       this.gameState.section.mode === "checkpoint"
     ) {
-      const angle = (Math.random() * Math.PI) / 2 + Math.PI / 4;
+      const angle = Math.PI / 2; //(Math.random() * Math.PI) / 2 + Math.PI / 4;
       const shipPosition = this.gameState.ship.position;
       const targetPoint: Vector.Vector3 = Vector.add(shipPosition, [
         Math.cos(angle) * 240 * 3,
@@ -393,12 +419,19 @@ export class SnatchCompany {
             type,
             position,
             rotation: [0, 0, 0, 0],
-            health: 300 + level ** 2 * 50,
-            maxHealth: 300 + level ** 2 * 50,
-            value: 0.2,
+            health: 300 + getDpsSample(level, 30) * 3,
+            maxHealth: 300 + getDpsSample(level, 30) * 3,
+            reward:
+              type === "plant"
+                ? [
+                    { type: "exp", value: 0.03, damageReturn: true },
+                    { type: "shield", value: 20, damageReturn: true },
+                  ]
+                : [{ type: "exp", value: 0.2, damageReturn: true }],
           };
         }),
-        events: SnatchCompany.getRandomEvents(),
+        events: SnatchCompany.getRandomBattleEvents(),
+        subEvents: SnatchCompany.getRandomSubEvents(),
         time: 0,
       };
     }
@@ -529,18 +562,18 @@ export class SnatchCompany {
     player: Readonly<Player>,
     option:
       | { type: "passive"; deltaTime: number }
-      | { type: "onHit"; object: Readonly<Object> }
+      | { type: "onHit"; object: Readonly<SnatchCompanyObject> }
       | {
           type: "onCalcCritical";
           attacker: Readonly<Player>;
-          object: Readonly<Object>;
+          object: Readonly<SnatchCompanyObject>;
           criticalCount: number;
         }
       | {
           type: "onAddDamage";
           result: {
             attacker: Readonly<Player>;
-            object: Readonly<Object>;
+            object: Readonly<SnatchCompanyObject>;
             damage: number;
             overDamage: number;
             criticalCount: number;
@@ -715,10 +748,11 @@ export class SnatchCompany {
       const object = [
         ...this.gameState.section.objects,
         ...this.gameState.section.events.flatMap((event) => event.objects),
+        ...this.gameState.section.subEvents.flatMap((event) => event.objects),
       ].find((o) => o.id === objectId);
       const player = this.gameState.players.find((p) => p.id === playerId);
 
-      if (object && player) {
+      if (object && player && object.health > 0) {
         const onHitResult = SnatchCompany.StatusCheck(
           this.gameState,
           player,
@@ -760,24 +794,38 @@ export class SnatchCompany {
         const overDamage = damage - resultDamage;
         object.health = Math.max(0, object.health - damage);
 
-        if (object.type === "plant") {
-          this.addShield(
-            ((object.value * resultDamage) / object.maxHealth / 2) * 200
-          );
-          this.addExp((object.value * resultDamage) / 16);
-        } else {
-          this.addExp((object.value * resultDamage) / 2);
-        }
+        object.reward.forEach((reward) => {
+          if (reward.damageReturn) {
+            switch (reward.type) {
+              case "exp":
+                this.addExp(((reward.value * resultDamage) / 3) * 2);
+                break;
+              case "shield":
+                this.addShield(
+                  ((reward.value * resultDamage) / object.maxHealth / 3) * 2
+                );
+                break;
+            }
+          }
+        });
+
         if (object.health === 0) {
           this.gameState.section.objects =
             this.gameState.section.objects.filter((o) => o.id !== objectId);
 
-          if (object.type === "plant") {
-            this.addShield((object.value / 2) * 200);
-            this.addExp((object.value * object.maxHealth) / 16);
-          } else {
-            this.addExp((object.value * object.maxHealth) / 2);
-          }
+          object.reward.forEach((reward) => {
+            switch (reward.type) {
+              case "exp":
+                this.addExp(
+                  (reward.value * object.maxHealth) /
+                    (reward.damageReturn ? 3 : 1)
+                );
+                break;
+              case "shield":
+                this.addShield(reward.value / (reward.damageReturn ? 3 : 1));
+                break;
+            }
+          });
         }
 
         const onAddDamageResult = SnatchCompany.StatusCheck(
@@ -898,19 +946,30 @@ export class SnatchCompany {
       });
 
       // イベント処理
-      this.gameState.section.events.forEach((event) => {
+      [
+        ...this.gameState.section.events.map((event) => ({
+          event,
+          type: "battle",
+        })),
+        ...this.gameState.section.subEvents.map((event) => ({
+          event,
+          type: "sub",
+        })),
+      ].forEach(({ event, type }) => {
         if (
           this.gameState.mode === "inGame" &&
           this.gameState.section.mode === "battle"
         ) {
           if (time >= event.triggerTime && event.state === "pending") {
-            this.callbacks.onAnnouncement?.forEach((callback) =>
-              callback({
-                title: event.title,
-                description: event.description,
-                duration: 3,
-              })
-            );
+            if (type === "battle") {
+              this.callbacks.onAnnouncement?.forEach((callback) =>
+                callback({
+                  title: event.title,
+                  description: event.description,
+                  duration: 3,
+                })
+              );
+            }
             event.start({ ...this.gameState, section: this.gameState.section });
           }
           if (event.state === "processing") {
