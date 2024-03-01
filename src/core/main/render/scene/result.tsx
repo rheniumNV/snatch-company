@@ -1,7 +1,9 @@
+import { Slot } from "../../../unit/package/Primitive/main";
 import {
   Canvas,
   VerticalLayout,
 } from "../../../unit/package/PrimitiveUix/main";
+import { GlobalScore } from "../../../unit/package/SnatchCompany/main";
 import {
   StyledButton,
   StyledImage,
@@ -14,23 +16,25 @@ export const ResultRenderer = (props: {
   resetGame: () => void;
 }) => {
   return (
-    <Canvas position={[0, 1, 3]}>
-      <StyledImage defaultColor={[0.5, 0.5, 0.5, 1]} />
-      <VerticalLayout>
-        <StyledText content="Result" />
+    <>
+      <Canvas position={[0, 1, 3]}>
+        <StyledImage defaultColor={[0.5, 0.5, 0.5, 1]} />
         <VerticalLayout>
-          {props.gameState.players.map((player) => (
-            <StyledText key={player.id} content={player.name} />
-          ))}
+          <StyledText content="Result" />
+          <VerticalLayout>
+            {props.gameState.players.map((player) => (
+              <StyledText key={player.id} content={player.name} />
+            ))}
+          </VerticalLayout>
+          <StyledButton onClick={props.resetGame}>
+            <StyledText
+              content="Reset"
+              verticalAlign="Middle"
+              horizontalAlign="Center"
+            />
+          </StyledButton>
         </VerticalLayout>
-        <StyledButton onClick={props.resetGame}>
-          <StyledText
-            content="Reset"
-            verticalAlign="Middle"
-            horizontalAlign="Center"
-          />
-        </StyledButton>
-      </VerticalLayout>
-    </Canvas>
+      </Canvas>
+    </>
   );
 };

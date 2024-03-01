@@ -12,6 +12,7 @@ import {
 import { Material } from "../style";
 import { GameStateLobby } from "../../game/type";
 import { ShipRenderer } from "../common/shipRenderer";
+import { GlobalScore } from "../../../unit/package/SnatchCompany/main";
 
 export const LobbyRenderer = (props: {
   gameState: GameStateLobby;
@@ -39,7 +40,7 @@ export const LobbyRenderer = (props: {
 
   return (
     <>
-      <Canvas position={[4, 1, 3]}>
+      {/* <Canvas position={[4, 1, 3]}>
         <StyledImage
           defaultColor={[0.5, 0.5, 0.5, 1]}
           styledMaterial={Material.background}
@@ -66,7 +67,7 @@ export const LobbyRenderer = (props: {
             />
           </StyledButton>
         </VerticalLayout>
-      </Canvas>
+      </Canvas> */}
     </>
   );
 };
