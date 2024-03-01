@@ -1,0 +1,1980 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/Boss
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Main
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:Main:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: Boss.fbx
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 111111
+                - 0
+                - 0
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ObjectRoot
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: spinner
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 277777.6666666667
+                    - -75222.33333333333
+                    - 87333.33333333333
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - -78555.66666666667
+                    - 0
+                    - 0
+                    - 78555.66666666667
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 55555.666666666664
+                    - 55555.666666666664
+                    - 55555.666666666664
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.Spinner
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        Range:
+                          ID: "?"
+                          Data:
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                        _target:
+                          ID: "?"
+                          Data: ID:立方体.008:Tag:3
+                        _offset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 333.3333333333333
+                        _speed:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 200000
+                            - 0
+                    - Type: FrooxEngine.Spinner
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        Range:
+                          ID: "?"
+                          Data:
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                        _target:
+                          ID: "?"
+                          Data: ID:立方体.001:Tag:3
+                        _offset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 333.3333333333333
+                        _speed:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 200000
+                            - 0
+                    - Type: FrooxEngine.Spinner
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        Range:
+                          ID: "?"
+                          Data:
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                        _target:
+                          ID: "?"
+                          Data: ID:立方体.012:Tag:3
+                        _offset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 333.3333333333333
+                        _speed:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 200000
+                            - 0
+                    - Type: FrooxEngine.Spinner
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        Range:
+                          ID: "?"
+                          Data:
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                            - 1.1342744887950962e+41
+                        _target:
+                          ID: "?"
+                          Data: ID:立方体.014:Tag:3
+                        _offset:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 333.3333333333333
+                        _speed:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 200000
+                            - 0
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: RootNode
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 55555.666666666664
+                    - 55555.666666666664
+                    - 55555.666666666664
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: 立方体
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -78555.66666666667
+                        - 0
+                        - 0
+                        - 78555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.MeshRenderer
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                            Materials:
+                              ID: "?"
+                              Data:
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                - ID: "?"
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                            MaterialPropertyBlocks:
+                              ID: "?"
+                              Data: []
+                            ShadowCastMode:
+                              ID: "?"
+                              Data: On
+                            MotionVectorMode:
+                              ID: "?"
+                              Data: Object
+                            SortingOrder:
+                              ID: "?"
+                              Data: 0
+                        - Type: FrooxEngine.MeshCollider
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 333333333.3333333
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Offset:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Type:
+                              ID: "?"
+                              Data: NoCollision
+                            Mass:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            CharacterCollider:
+                              ID: "?"
+                              Data: false
+                            IgnoreRaycasts:
+                              ID: "?"
+                              Data: false
+                            Mesh:
+                              ID: "?"
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                            Sidedness:
+                              ID: "?"
+                              Data: Front
+                            ActualSpeculativeMargin:
+                              ID: "?"
+                              Data: null
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: 立方体.002
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - -272000
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.MeshRenderer
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                MaterialPropertyBlocks:
+                                  ID: "?"
+                                  Data: []
+                                ShadowCastMode:
+                                  ID: "?"
+                                  Data: On
+                                MotionVectorMode:
+                                  ID: "?"
+                                  Data: Object
+                                SortingOrder:
+                                  ID: "?"
+                                  Data: 0
+                            - Type: FrooxEngine.MeshCollider
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 333333333.3333333
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Offset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                Type:
+                                  ID: "?"
+                                  Data: NoCollision
+                                Mass:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                CharacterCollider:
+                                  ID: "?"
+                                  Data: false
+                                IgnoreRaycasts:
+                                  ID: "?"
+                                  Data: false
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                                Sidedness:
+                                  ID: "?"
+                                  Data: Front
+                                ActualSpeculativeMargin:
+                                  ID: "?"
+                                  Data: null
+                        Children: []
+                      - Name:
+                          ID: "?"
+                          Data: 立方体.009
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.MeshRenderer
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                MaterialPropertyBlocks:
+                                  ID: "?"
+                                  Data: []
+                                ShadowCastMode:
+                                  ID: "?"
+                                  Data: On
+                                MotionVectorMode:
+                                  ID: "?"
+                                  Data: Object
+                                SortingOrder:
+                                  ID: "?"
+                                  Data: 0
+                            - Type: FrooxEngine.MeshCollider
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 333333333.3333333
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Offset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                Type:
+                                  ID: "?"
+                                  Data: NoCollision
+                                Mass:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                CharacterCollider:
+                                  ID: "?"
+                                  Data: false
+                                IgnoreRaycasts:
+                                  ID: "?"
+                                  Data: false
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                                Sidedness:
+                                  ID: "?"
+                                  Data: Front
+                                ActualSpeculativeMargin:
+                                  ID: "?"
+                                  Data: null
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: 立方体.006
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 449666.6666666667
+                                - 0
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                                - Type: FrooxEngine.MeshCollider
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 333333333.3333333
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Offset:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                    Type:
+                                      ID: "?"
+                                      Data: NoCollision
+                                    Mass:
+                                      ID: "?"
+                                      Data: 333.3333333333333
+                                    CharacterCollider:
+                                      ID: "?"
+                                      Data: false
+                                    IgnoreRaycasts:
+                                      ID: "?"
+                                      Data: false
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                                    Sidedness:
+                                      ID: "?"
+                                      Data: Front
+                                    ActualSpeculativeMargin:
+                                      ID: "?"
+                                      Data: null
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: 立方体.014
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 105889
+                                    - -174666.66666666666
+                                    - -150444.33333333334
+                                Rotation:
+                                  ID: ID:立方体.014:Tag:3
+                                  Data:
+                                    - 0
+                                    - -26333.333333333332
+                                    - 0
+                                    - 107889
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                    - Type: FrooxEngine.MeshCollider
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 333333333.3333333
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Offset:
+                                          ID: "?"
+                                          Data:
+                                            - 0
+                                            - 0
+                                            - 0
+                                        Type:
+                                          ID: "?"
+                                          Data: NoCollision
+                                        Mass:
+                                          ID: "?"
+                                          Data: 333.3333333333333
+                                        CharacterCollider:
+                                          ID: "?"
+                                          Data: false
+                                        IgnoreRaycasts:
+                                          ID: "?"
+                                          Data: false
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                                        Sidedness:
+                                          ID: "?"
+                                          Data: Front
+                                        ActualSpeculativeMargin:
+                                          ID: "?"
+                                          Data: null
+                                Children: []
+                      - Name:
+                          ID: "?"
+                          Data: 立方体.010
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.MeshRenderer
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                MaterialPropertyBlocks:
+                                  ID: "?"
+                                  Data: []
+                                ShadowCastMode:
+                                  ID: "?"
+                                  Data: On
+                                MotionVectorMode:
+                                  ID: "?"
+                                  Data: Object
+                                SortingOrder:
+                                  ID: "?"
+                                  Data: 0
+                            - Type: FrooxEngine.MeshCollider
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 333333333.3333333
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Offset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                Type:
+                                  ID: "?"
+                                  Data: NoCollision
+                                Mass:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                CharacterCollider:
+                                  ID: "?"
+                                  Data: false
+                                IgnoreRaycasts:
+                                  ID: "?"
+                                  Data: false
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                                Sidedness:
+                                  ID: "?"
+                                  Data: Front
+                                ActualSpeculativeMargin:
+                                  ID: "?"
+                                  Data: null
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: 立方体.005
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - -449666.6666666667
+                                - 0
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                                - Type: FrooxEngine.MeshCollider
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 333333333.3333333
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Offset:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                    Type:
+                                      ID: "?"
+                                      Data: NoCollision
+                                    Mass:
+                                      ID: "?"
+                                      Data: 333.3333333333333
+                                    CharacterCollider:
+                                      ID: "?"
+                                      Data: false
+                                    IgnoreRaycasts:
+                                      ID: "?"
+                                      Data: false
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                                    Sidedness:
+                                      ID: "?"
+                                      Data: Front
+                                    ActualSpeculativeMargin:
+                                      ID: "?"
+                                      Data: null
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: 立方体.012
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - -105889
+                                    - -174666.66666666666
+                                    - -150444.33333333334
+                                Rotation:
+                                  ID: ID:立方体.012:Tag:3
+                                  Data:
+                                    - 0
+                                    - -26333.333333333332
+                                    - 0
+                                    - 107889
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                    - Type: FrooxEngine.MeshCollider
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 333333333.3333333
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Offset:
+                                          ID: "?"
+                                          Data:
+                                            - 0
+                                            - 0
+                                            - 0
+                                        Type:
+                                          ID: "?"
+                                          Data: NoCollision
+                                        Mass:
+                                          ID: "?"
+                                          Data: 333.3333333333333
+                                        CharacterCollider:
+                                          ID: "?"
+                                          Data: false
+                                        IgnoreRaycasts:
+                                          ID: "?"
+                                          Data: false
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                        Sidedness:
+                                          ID: "?"
+                                          Data: Front
+                                        ActualSpeculativeMargin:
+                                          ID: "?"
+                                          Data: null
+                                Children: []
+                      - Name:
+                          ID: "?"
+                          Data: 立方体.003
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 270111
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.MeshRenderer
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                MaterialPropertyBlocks:
+                                  ID: "?"
+                                  Data: []
+                                ShadowCastMode:
+                                  ID: "?"
+                                  Data: On
+                                MotionVectorMode:
+                                  ID: "?"
+                                  Data: Object
+                                SortingOrder:
+                                  ID: "?"
+                                  Data: 0
+                            - Type: FrooxEngine.MeshCollider
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 333333333.3333333
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Offset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                Type:
+                                  ID: "?"
+                                  Data: NoCollision
+                                Mass:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                CharacterCollider:
+                                  ID: "?"
+                                  Data: false
+                                IgnoreRaycasts:
+                                  ID: "?"
+                                  Data: false
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                Sidedness:
+                                  ID: "?"
+                                  Data: Front
+                                ActualSpeculativeMargin:
+                                  ID: "?"
+                                  Data: null
+                        Children: []
+                      - Name:
+                          ID: "?"
+                          Data: 立方体.011
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 836000
+                            - 130666.66666666667
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.MeshRenderer
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                MaterialPropertyBlocks:
+                                  ID: "?"
+                                  Data: []
+                                ShadowCastMode:
+                                  ID: "?"
+                                  Data: On
+                                MotionVectorMode:
+                                  ID: "?"
+                                  Data: Object
+                                SortingOrder:
+                                  ID: "?"
+                                  Data: 0
+                            - Type: FrooxEngine.MeshCollider
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 333333333.3333333
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Offset:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                Type:
+                                  ID: "?"
+                                  Data: NoCollision
+                                Mass:
+                                  ID: "?"
+                                  Data: 333.3333333333333
+                                CharacterCollider:
+                                  ID: "?"
+                                  Data: false
+                                IgnoreRaycasts:
+                                  ID: "?"
+                                  Data: false
+                                Mesh:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                Sidedness:
+                                  ID: "?"
+                                  Data: Front
+                                ActualSpeculativeMargin:
+                                  ID: "?"
+                                  Data: null
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: 立方体.007
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 117777.66666666667
+                                - 80000
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.MeshRenderer
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                    MaterialPropertyBlocks:
+                                      ID: "?"
+                                      Data: []
+                                    ShadowCastMode:
+                                      ID: "?"
+                                      Data: On
+                                    MotionVectorMode:
+                                      ID: "?"
+                                      Data: Object
+                                    SortingOrder:
+                                      ID: "?"
+                                      Data: 0
+                                - Type: FrooxEngine.MeshCollider
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 333333333.3333333
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Offset:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                    Type:
+                                      ID: "?"
+                                      Data: NoCollision
+                                    Mass:
+                                      ID: "?"
+                                      Data: 333.3333333333333
+                                    CharacterCollider:
+                                      ID: "?"
+                                      Data: false
+                                    IgnoreRaycasts:
+                                      ID: "?"
+                                      Data: false
+                                    Mesh:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                    Sidedness:
+                                      ID: "?"
+                                      Data: Front
+                                    ActualSpeculativeMargin:
+                                      ID: "?"
+                                      Data: null
+                            Children:
+                              - Name:
+                                  ID: "?"
+                                  Data: 立方体.001
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - 188889
+                                    - 126777.66666666667
+                                    - -94444.33333333333
+                                Rotation:
+                                  ID: ID:立方体.001:Tag:3
+                                  Data:
+                                    - 0
+                                    - -26333.333333333332
+                                    - 0
+                                    - 107889
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                    - Type: FrooxEngine.MeshCollider
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 333333333.3333333
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Offset:
+                                          ID: "?"
+                                          Data:
+                                            - 0
+                                            - 0
+                                            - 0
+                                        Type:
+                                          ID: "?"
+                                          Data: NoCollision
+                                        Mass:
+                                          ID: "?"
+                                          Data: 333.3333333333333
+                                        CharacterCollider:
+                                          ID: "?"
+                                          Data: false
+                                        IgnoreRaycasts:
+                                          ID: "?"
+                                          Data: false
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                        Sidedness:
+                                          ID: "?"
+                                          Data: Front
+                                        ActualSpeculativeMargin:
+                                          ID: "?"
+                                          Data: null
+                                Children: []
+                              - Name:
+                                  ID: "?"
+                                  Data: 立方体.008
+                                Active:
+                                  ID: "?"
+                                  Data: true
+                                ID: "?"
+                                Persistent-Id: "?"
+                                Position:
+                                  ID: "?"
+                                  Data:
+                                    - -188889
+                                    - 126777.66666666667
+                                    - -94444.33333333333
+                                Rotation:
+                                  ID: ID:立方体.008:Tag:3
+                                  Data:
+                                    - 0
+                                    - -26333.333333333332
+                                    - 0
+                                    - 107889
+                                Scale:
+                                  ID: "?"
+                                  Data:
+                                    - 111111
+                                    - 111111
+                                    - 111111
+                                Tag:
+                                  ID: "?"
+                                  Data: null
+                                OrderOffset:
+                                  ID: "?"
+                                  Data: 0
+                                Components:
+                                  ID: "?"
+                                  Data:
+                                    - Type: FrooxEngine.MeshRenderer
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 0
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                        Materials:
+                                          ID: "?"
+                                          Data:
+                                            - ID: "?"
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                        MaterialPropertyBlocks:
+                                          ID: "?"
+                                          Data: []
+                                        ShadowCastMode:
+                                          ID: "?"
+                                          Data: On
+                                        MotionVectorMode:
+                                          ID: "?"
+                                          Data: Object
+                                        SortingOrder:
+                                          ID: "?"
+                                          Data: 0
+                                    - Type: FrooxEngine.MeshCollider
+                                      Data:
+                                        ID: "?"
+                                        persistent-ID: "?"
+                                        UpdateOrder:
+                                          ID: "?"
+                                          Data: 333333333.3333333
+                                        Enabled:
+                                          ID: "?"
+                                          Data: true
+                                        Offset:
+                                          ID: "?"
+                                          Data:
+                                            - 0
+                                            - 0
+                                            - 0
+                                        Type:
+                                          ID: "?"
+                                          Data: NoCollision
+                                        Mass:
+                                          ID: "?"
+                                          Data: 333.3333333333333
+                                        CharacterCollider:
+                                          ID: "?"
+                                          Data: false
+                                        IgnoreRaycasts:
+                                          ID: "?"
+                                          Data: false
+                                        Mesh:
+                                          ID: "?"
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                        Sidedness:
+                                          ID: "?"
+                                          Data: Front
+                                        ActualSpeculativeMargin:
+                                          ID: "?"
+                                          Data: null
+                                Children: []
+                  - Name:
+                      ID: "?"
+                      Data: 立方体.004
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -78555.66666666667
+                        - 0
+                        - 0
+                        - 78555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data: []
+                    Children: []

@@ -1,0 +1,4675 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/BgmManager
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:BGMManager:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:BGMManager:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicField`1[System.Int32]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.bgmNumber
+                TargetField:
+                  ID: "?"
+                  Data: ID:BGMManager:Components:FrooxEngine.DynamicValueVariable`1[System.Int32]:Value:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.Boolean]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.eventMode
+                TargetField:
+                  ID: "?"
+                  Data: ID:BGMManager:Components:FrooxEngine.DynamicValueVariable`1[System.Boolean]:Value:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: BGMManager
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:BGMManager:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicVariableSpace
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                SpaceName:
+                  ID: "?"
+                  Data: null
+                OnlyDirectBinding:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicValueVariable`1[System.Int32]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: BgmNumber
+                Value:
+                  ID: ID:BGMManager:Components:FrooxEngine.DynamicValueVariable`1[System.Int32]:Value:0
+                  Data: 333.3333333333333
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicValueVariable`1[System.Boolean]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: EventMode
+                Value:
+                  ID: ID:BGMManager:Components:FrooxEngine.DynamicValueVariable`1[System.Boolean]:Value:0
+                  Data: false
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicValueVariable`1[System.Single]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: BgmBaseVolume
+                Value:
+                  ID: "?"
+                  Data: 10
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children:
+          - Name:
+              ID: "?"
+              Data: BGM-0
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data: []
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: AudioOutput
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.AudioOutput
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:0
+                          Data: false
+                        Volume:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:0
+                          Data: 0
+                        Source:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:0
+                        SpatialBlend:
+                          ID: "?"
+                          Data: 0
+                        Spatialize:
+                          ID: "?"
+                          Data: false
+                        DopplerLevel:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        RolloffMode:
+                          ID: "?"
+                          Data: Logarithmic
+                        MinDistance:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxDistance:
+                          ID: "?"
+                          Data: 166666.66666666666
+                        Priority:
+                          ID: "?"
+                          Data: 42666.666666666664
+                        AudioTypeGroup:
+                          ID: "?"
+                          Data: Multimedia
+                        DistanceSpace:
+                          ID: "?"
+                          Data: Local
+                        MinScale:
+                          ID: "?"
+                          Data: 0
+                        MaxScale:
+                          ID: "?"
+                          Data: null
+                        IgnoreReverbZones:
+                          ID: "?"
+                          Data: false
+                        excludedUsers:
+                          ID: "?"
+                          Data: []
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: AudioClipPlayer
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.MultiAudioClipPlayer
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        playback:
+                          ID: "?"
+                          Data:
+                            Play: true
+                            Loop: true
+                            RawPosition: 32507842.333333332
+                            Speed: 333.3333333333333
+                            MaxError: 1666.6666666666667
+                            MaxDeviation: 1666.6666666666667
+                        Tracks:
+                          ID: "?"
+                          Data:
+                            - ID: "?"
+                              Clip:
+                                ID: "?"
+                                Data: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:0
+                              Volume:
+                                ID: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:Tracks.0.Volume.ID:0
+                                Data: 333.3333333333333
+                              RelativeSpeed:
+                                ID: "?"
+                                Data: 333.3333333333333
+                            - ID: "?"
+                              Clip:
+                                ID: "?"
+                                Data: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:1
+                              Volume:
+                                ID: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:Tracks.1.Volume.ID:0
+                                Data: 0
+                              RelativeSpeed:
+                                ID: "?"
+                                Data: 333.3333333333333
+                    - Type: FrooxEngine.StaticAudioClip
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///7320578e15c616b49193715ce4498c03c31b5a235b5cb298e0f4e50e242b36\
+                            2b"
+                        LoadMode:
+                          ID: "?"
+                          Data: Automatic
+                        SampleRateMode:
+                          ID: "?"
+                          Data: Conform
+                    - Type: FrooxEngine.StaticAudioClip
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:1
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///3461fd44b957e4220407ba4584dd5331e23c496befad510bedf4c8e5f1dcce\
+                            5e"
+                        LoadMode:
+                          ID: "?"
+                          Data: Automatic
+                        SampleRateMode:
+                          ID: "?"
+                          Data: Conform
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: Flux
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 163333.33333333334
+                        - 497889
+                        - -646555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 14000
+                        - 0
+                        - 110222.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:0
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:0
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmNumber
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Int32]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:0
+                            Path:
+                              ID: "?"
+                              Data: []
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueEquals`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 195333.33333333334
+                        - 498111
+                        - -658555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18000
+                        - 0
+                        - 109666.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]
+                          Data:
+                            ID: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:0
+                            B:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Int32]:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueConditional`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 213222.33333333334
+                        - 510666.6666666667
+                        - -663222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]
+                          Data:
+                            ID: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            OnTrue:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:0
+                            OnFalse:
+                              ID: "?"
+                              Data: null
+                            Condition:
+                              ID: "?"
+                              Data: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSmoothLerp`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 234666.66666666666
+                        - 512000
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19555.666666666668
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]
+                          Data:
+                            ID: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Input:
+                              ID: "?"
+                              Data: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:0
+                            Speed:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 219555.66666666666
+                        - 498777.6666666667
+                        - -664555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 17111
+                        - 0
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 1000
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueGreaterThan`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 254000
+                        - 504666.6666666667
+                        - -678000
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19111
+                        - 0
+                        - 109444.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]
+                          Data:
+                            ID: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:0
+                            B:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 238222.33333333334
+                        - 500444.3333333333
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -444.3333333333333
+                        - 16777.666666666668
+                        - 111
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 0.3333333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 279111
+                        - 506111
+                        - -686777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19889
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:0
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:0
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 178666.66666666666
+                        - 491555.6666666667
+                        - -651000
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 16666.666666666668
+                        - 0
+                        - 109889
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Int32]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Int32]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 280555.6666666667
+                        - 516889
+                        - -686111
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 15555.666666666666
+                        - 0
+                        - 110000
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:0
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:0
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 163777.66666666666
+                        - 546111
+                        - -647777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 24555.666666666668
+                        - 0
+                        - 108333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Boolean]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Boolean]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:1
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Boolean]:Value:0
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: EventMode
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Boolean]:0
+                            Path:
+                              ID: "?"
+                              Data: []
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ZeroOneFloat
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 183000
+                        - 549666.6666666666
+                        - -659333.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 33777.666666666664
+                        - 0
+                        - 105889
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ZeroOneFloat
+                          Data:
+                            ID: ID:ZeroOneFloat:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ZeroOneFloat:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Boolean:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Boolean]:Value:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSmoothLerp`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 200444.33333333334
+                        - 545889
+                        - -670666.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 29000
+                        - 0
+                        - 107222.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]
+                          Data:
+                            ID: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Input:
+                              ID: "?"
+                              Data: ID:ZeroOneFloat:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ZeroOneFloat:0
+                            Speed:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:2
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 183666.66666666666
+                        - 541111
+                        - -659889
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -444.3333333333333
+                        - 26000
+                        - 111
+                        - 108000
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 2666.6666666666665
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueOneMinus`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 216555.66666666666
+                        - 537666.6666666666
+                        - -681222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 28777.666666666668
+                        - 0
+                        - 107333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueOneMinus`1[System.Single]
+                          Data:
+                            ID: ID:ValueOneMinus`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueOneMinus`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            X:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 237111
+                        - 537889
+                        - -693333.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 31777.666666666668
+                        - 0
+                        - 106444.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueOneMinus`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueOneMinus`1[System.Single]:0
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:1
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:Tracks.0.Volume.ID:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 236666.66666666666
+                        - 551333.3333333334
+                        - -691777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 25889
+                        - 0
+                        - 108111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:1
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:2
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioClipPlayer:Components:FrooxEngine.MultiAudioClipPlayer:Tracks.1.Volume.ID:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 178111
+                        - 514777.6666666667
+                        - -650889
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:2
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:0
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:0
+                            Path:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmBaseVolume
+                    Children: []
+          - Name:
+              ID: "?"
+              Data: BGM-1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - -163111
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ValueField`1[System.Int32]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: ID:BGM-1:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                      Data: 333.3333333333333
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: AudioOutput
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.AudioOutput
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:1
+                          Data: true
+                        Volume:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:1
+                          Data: 10
+                        Source:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:0
+                        SpatialBlend:
+                          ID: "?"
+                          Data: 0
+                        Spatialize:
+                          ID: "?"
+                          Data: false
+                        DopplerLevel:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        RolloffMode:
+                          ID: "?"
+                          Data: Logarithmic
+                        MinDistance:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxDistance:
+                          ID: "?"
+                          Data: 166666.66666666666
+                        Priority:
+                          ID: "?"
+                          Data: 42666.666666666664
+                        AudioTypeGroup:
+                          ID: "?"
+                          Data: Multimedia
+                        DistanceSpace:
+                          ID: "?"
+                          Data: Local
+                        MinScale:
+                          ID: "?"
+                          Data: 0
+                        MaxScale:
+                          ID: "?"
+                          Data: null
+                        IgnoreReverbZones:
+                          ID: "?"
+                          Data: false
+                        excludedUsers:
+                          ID: "?"
+                          Data: []
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: AudioClipPlayer
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.StaticAudioClip
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:2
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///ff75fc4188cc7bfeb10c4f691d864e866973003f6c8ba24100ada81e328306\
+                            9f.ogg"
+                        LoadMode:
+                          ID: "?"
+                          Data: Automatic
+                        SampleRateMode:
+                          ID: "?"
+                          Data: Conform
+                    - Type: FrooxEngine.AudioClipPlayer
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:0
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        playback:
+                          ID: "?"
+                          Data:
+                            Play: true
+                            Loop: true
+                            RawPosition: 26916763
+                            Speed: 333.3333333333333
+                            MaxError: 1666.6666666666667
+                            MaxDeviation: 1666.6666666666667
+                        Clip:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:2
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: Flux
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 163333.33333333334
+                        - 497889
+                        - -646555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 14000
+                        - 0
+                        - 110222.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:3
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:1
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmNumber
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Int32]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:1
+                            Path:
+                              ID: "?"
+                              Data: []
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueEquals`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 195333.33333333334
+                        - 498111
+                        - -658555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18000
+                        - 0
+                        - 109666.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]
+                          Data:
+                            ID: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:1
+                            B:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueConditional`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 213222.33333333334
+                        - 510666.6666666667
+                        - -663222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]
+                          Data:
+                            ID: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            OnTrue:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:1
+                            OnFalse:
+                              ID: "?"
+                              Data: null
+                            Condition:
+                              ID: "?"
+                              Data: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSmoothLerp`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 234666.66666666666
+                        - 512000
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19555.666666666668
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]
+                          Data:
+                            ID: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Input:
+                              ID: "?"
+                              Data: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:1
+                            Speed:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:3
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 219555.66666666666
+                        - 498777.6666666667
+                        - -664555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 17111
+                        - 0
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 1333.3333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueGreaterThan`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 254000
+                        - 504666.6666666667
+                        - -678000
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19111
+                        - 0
+                        - 109444.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]
+                          Data:
+                            ID: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:2
+                            B:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:4
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 238222.33333333334
+                        - 500444.3333333333
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -444.3333333333333
+                        - 16777.666666666668
+                        - 111
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:4
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 0.3333333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 279111
+                        - 506111
+                        - -686777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19889
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:1
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:1
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 280555.6666666667
+                        - 516889
+                        - -686111
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 15555.666666666666
+                        - 0
+                        - 110000
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:2
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:3
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSource`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 169444.33333333334
+                        - 480333.3333333333
+                        - -652222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -111
+                        - 7000
+                        - 0
+                        - 110889
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 113777.66666666667
+                        - 112444.33333333333
+                        - 115444.33333333333
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Source:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                                FrooxEngine, Version=2024.2.12.1430,
+                                Culture=neutral, PublicKeyToken=null]]:0
+                        - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                            FrooxEngine, Version=2024.2.12.1430,
+                            Culture=neutral, PublicKeyToken=null]]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                              FrooxEngine, Version=2024.2.12.1430,
+                              Culture=neutral, PublicKeyToken=null]]:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Reference:
+                              ID: "?"
+                              Data: ID:BGM-1:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 171666.66666666666
+                        - 543000
+                        - -648666.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:4
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:1
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:1
+                            Path:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:4
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmBaseVolume
+                    Children: []
+          - Name:
+              ID: "?"
+              Data: BGM-2
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ValueField`1[System.Int32]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: ID:BGM-2:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                      Data: 666.6666666666666
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: AudioOutput
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.AudioOutput
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:2
+                          Data: false
+                        Volume:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:2
+                          Data: 0
+                        Source:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:1
+                        SpatialBlend:
+                          ID: "?"
+                          Data: 0
+                        Spatialize:
+                          ID: "?"
+                          Data: false
+                        DopplerLevel:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        RolloffMode:
+                          ID: "?"
+                          Data: Logarithmic
+                        MinDistance:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxDistance:
+                          ID: "?"
+                          Data: 166666.66666666666
+                        Priority:
+                          ID: "?"
+                          Data: 42666.666666666664
+                        AudioTypeGroup:
+                          ID: "?"
+                          Data: Multimedia
+                        DistanceSpace:
+                          ID: "?"
+                          Data: Local
+                        MinScale:
+                          ID: "?"
+                          Data: 0
+                        MaxScale:
+                          ID: "?"
+                          Data: null
+                        IgnoreReverbZones:
+                          ID: "?"
+                          Data: false
+                        excludedUsers:
+                          ID: "?"
+                          Data: []
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: AudioClipPlayer
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.StaticAudioClip
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:3
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///ff75fc4188cc7bfeb10c4f691d864e866973003f6c8ba24100ada81e328306\
+                            9f.ogg"
+                        LoadMode:
+                          ID: "?"
+                          Data: Automatic
+                        SampleRateMode:
+                          ID: "?"
+                          Data: Conform
+                    - Type: FrooxEngine.AudioClipPlayer
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:1
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        playback:
+                          ID: "?"
+                          Data:
+                            Play: true
+                            Loop: true
+                            RawPosition: 26916763
+                            Speed: 333.3333333333333
+                            MaxError: 1666.6666666666667
+                            MaxDeviation: 1666.6666666666667
+                        Clip:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:3
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: Flux
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 163333.33333333334
+                        - 497889
+                        - -646555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 14000
+                        - 0
+                        - 110222.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:5
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:2
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:5
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmNumber
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Int32]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:2
+                            Path:
+                              ID: "?"
+                              Data: []
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueEquals`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 195333.33333333334
+                        - 498111
+                        - -658555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18000
+                        - 0
+                        - 109666.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]
+                          Data:
+                            ID: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:2
+                            B:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:1
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueConditional`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 213222.33333333334
+                        - 510666.6666666667
+                        - -663222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]
+                          Data:
+                            ID: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            OnTrue:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:2
+                            OnFalse:
+                              ID: "?"
+                              Data: null
+                            Condition:
+                              ID: "?"
+                              Data: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:2
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSmoothLerp`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 234666.66666666666
+                        - 512000
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19555.666666666668
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]
+                          Data:
+                            ID: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Input:
+                              ID: "?"
+                              Data: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:2
+                            Speed:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:5
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 219555.66666666666
+                        - 498777.6666666667
+                        - -664555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 17111
+                        - 0
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:5
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 1333.3333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueGreaterThan`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 254000
+                        - 504666.6666666667
+                        - -678000
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19111
+                        - 0
+                        - 109444.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]
+                          Data:
+                            ID: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:3
+                            B:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:6
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 238222.33333333334
+                        - 500444.3333333333
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -444.3333333333333
+                        - 16777.666666666668
+                        - 111
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:6
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 0.3333333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 279111
+                        - 506111
+                        - -686777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19889
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:2
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:2
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:2
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 280555.6666666667
+                        - 516889
+                        - -686111
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 15555.666666666666
+                        - 0
+                        - 110000
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:4
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:3
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:4
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:2
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSource`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 169444.33333333334
+                        - 480333.3333333333
+                        - -652222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -111
+                        - 7000
+                        - 0
+                        - 110889
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 113777.66666666667
+                        - 112444.33333333333
+                        - 115444.33333333333
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Source:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                                FrooxEngine, Version=2024.2.12.1430,
+                                Culture=neutral, PublicKeyToken=null]]:1
+                        - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                            FrooxEngine, Version=2024.2.12.1430,
+                            Culture=neutral, PublicKeyToken=null]]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                              FrooxEngine, Version=2024.2.12.1430,
+                              Culture=neutral, PublicKeyToken=null]]:1
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Reference:
+                              ID: "?"
+                              Data: ID:BGM-2:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 182666.66666666666
+                        - 509111
+                        - -652555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:6
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:2
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:2
+                            Path:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:6
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmBaseVolume
+                    Children: []
+          - Name:
+              ID: "?"
+              Data: BGM-3
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ValueField`1[System.Int32]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: ID:BGM-3:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                      Data: 1000
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: AudioOutput
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.AudioOutput
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:3
+                          Data: false
+                        Volume:
+                          ID: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:3
+                          Data: 0
+                        Source:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:2
+                        SpatialBlend:
+                          ID: "?"
+                          Data: 0
+                        Spatialize:
+                          ID: "?"
+                          Data: false
+                        DopplerLevel:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        RolloffMode:
+                          ID: "?"
+                          Data: Logarithmic
+                        MinDistance:
+                          ID: "?"
+                          Data: 333.3333333333333
+                        MaxDistance:
+                          ID: "?"
+                          Data: 166666.66666666666
+                        Priority:
+                          ID: "?"
+                          Data: 42666.666666666664
+                        AudioTypeGroup:
+                          ID: "?"
+                          Data: Multimedia
+                        DistanceSpace:
+                          ID: "?"
+                          Data: Local
+                        MinScale:
+                          ID: "?"
+                          Data: 0
+                        MaxScale:
+                          ID: "?"
+                          Data: null
+                        IgnoreReverbZones:
+                          ID: "?"
+                          Data: false
+                        excludedUsers:
+                          ID: "?"
+                          Data: []
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: AudioClipPlayer
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.StaticAudioClip
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:4
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: "@resdb:///edcbe241cd2a74690aa7ddec32c3f4ddea84969b84e4fb47d82ef84f41c83d\
+                            ab"
+                        LoadMode:
+                          ID: "?"
+                          Data: Automatic
+                        SampleRateMode:
+                          ID: "?"
+                          Data: Conform
+                    - Type: FrooxEngine.AudioClipPlayer
+                      Data:
+                        ID: ID:AudioClipPlayer:Components:FrooxEngine.AudioClipPlayer:2
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        playback:
+                          ID: "?"
+                          Data:
+                            Play: true
+                            Loop: true
+                            RawPosition: 26916763
+                            Speed: 333.3333333333333
+                            MaxError: 1666.6666666666667
+                            MaxDeviation: 1666.6666666666667
+                        Clip:
+                          ID: "?"
+                          Data: ID:AudioClipPlayer:Components:FrooxEngine.StaticAudioClip:4
+                Children: []
+              - Name:
+                  ID: "?"
+                  Data: Flux
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 163333.33333333334
+                        - 497889
+                        - -646555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 14000
+                        - 0
+                        - 110222.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:7
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:3
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:7
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmNumber
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Int32]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:3
+                            Path:
+                              ID: "?"
+                              Data: []
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueEquals`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 195333.33333333334
+                        - 498111
+                        - -658555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18000
+                        - 0
+                        - 109666.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]
+                          Data:
+                            ID: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Int32]:Value:3
+                            B:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:2
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueConditional`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 213222.33333333334
+                        - 510666.6666666667
+                        - -663222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]
+                          Data:
+                            ID: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            OnTrue:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:3
+                            OnFalse:
+                              ID: "?"
+                              Data: null
+                            Condition:
+                              ID: "?"
+                              Data: ID:ValueEquals`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueEquals`1[System.Int32]:3
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSmoothLerp`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 234666.66666666666
+                        - 512000
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19555.666666666668
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]
+                          Data:
+                            ID: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:4
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Input:
+                              ID: "?"
+                              Data: ID:ValueConditional`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueConditional`1[System.Single]:3
+                            Speed:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:7
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 219555.66666666666
+                        - 498777.6666666667
+                        - -664555.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 17111
+                        - 0
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:7
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 1333.3333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueGreaterThan`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 254000
+                        - 504666.6666666667
+                        - -678000
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19111
+                        - 0
+                        - 109444.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]
+                          Data:
+                            ID: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            A:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:4
+                            B:
+                              ID: "?"
+                              Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:8
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 238222.33333333334
+                        - 500444.3333333333
+                        - -671444.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -444.3333333333333
+                        - 16777.666666666668
+                        - 111
+                        - 109777.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                          Data:
+                            ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:8
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: 0.3333333333333333
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 279111
+                        - 506111
+                        - -686777.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 19889
+                        - 0
+                        - 109333.33333333333
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueGreaterThan`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueGreaterThan`1[System.Single]:3
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Boolean]:3
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Enabled:3
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueFieldDrive`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 280555.6666666667
+                        - 516889
+                        - -686111
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 15555.666666666666
+                        - 0
+                        - 110000
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]
+                          Data:
+                            ID: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:5
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: ID:ValueSmoothLerp`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueSmoothLerp`1[System.Single]:4
+                        - Type: FrooxEngine.ProtoFlux.CoreNodes.FieldDriveBase`1+Proxy[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:ValueFieldDrive`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueFieldDrive`1[System.Single]:5
+                            Path:
+                              ID: "?"
+                              Data: []
+                            Drive:
+                              ID: "?"
+                              Data: ID:AudioOutput:Components:FrooxEngine.AudioOutput:Volume:3
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ValueSource`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 169444.33333333334
+                        - 480333.3333333333
+                        - -652222.3333333334
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - -111
+                        - 7000
+                        - 0
+                        - 110889
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 113777.66666666667
+                        - 112444.33333333333
+                        - 115444.33333333333
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ValueSource`1[System.Int32]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Source:
+                              ID: "?"
+                              Data: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                                FrooxEngine, Version=2024.2.12.1430,
+                                Culture=neutral, PublicKeyToken=null]]:2
+                        - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                            FrooxEngine, Version=2024.2.12.1430,
+                            Culture=neutral, PublicKeyToken=null]]
+                          Data:
+                            ID: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
+                              FrooxEngine, Version=2024.2.12.1430,
+                              Culture=neutral, PublicKeyToken=null]]:2
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Reference:
+                              ID: "?"
+                              Data: ID:BGM-3:Components:FrooxEngine.ValueField`1[System.Int32]:Value:0
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: DynamicVariableValueInput`1
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 177444.33333333334
+                        - 514000
+                        - -650666.6666666666
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 18666.666666666668
+                        - 0
+                        - 109555.66666666667
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:3
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:8
+                            Value:
+                              ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:Value:3
+                              Data: null
+                            HasValue:
+                              ID: "?"
+                              Data: null
+                        - Type: ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputProxy`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Node:
+                              ID: "?"
+                              Data: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableValueInput`1[System.Single]:3
+                            Path:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                          Data:
+                            ID: ID:DynamicVariableValueInput`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:8
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: "?"
+                              Data: BgmBaseVolume
+                    Children: []

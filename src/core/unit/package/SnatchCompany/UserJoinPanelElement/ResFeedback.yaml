@@ -1,0 +1,2152 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/UserJoinPanelElement
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:UserE:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:UserE:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.playerId
+                TargetField:
+                  ID: "?"
+                  Data: ID:UserE:Components:FrooxEngine.CloudUserInfo:UserId:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.remove
+                TargetField:
+                  ID: "?"
+                  Data: "?"
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: UserE
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:UserE:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 350222.3333333333
+            - 434000
+            - -32444.333333333332
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 16444.333333333332
+            - 0
+            - 109889
+        Scale:
+          ID: "?"
+          Data:
+            - 111
+            - 111
+            - 111
+        Tag:
+          ID: "?"
+          Data: null
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.UIX.RectTransform
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                AnchorMin:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                AnchorMax:
+                  ID: "?"
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                OffsetMin:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                OffsetMax:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                Pivot:
+                  ID: "?"
+                  Data:
+                    - 166.66666666666666
+                    - 166.66666666666666
+            - Type: FrooxEngine.UIX.LayoutElement
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                MinWidth:
+                  ID: "?"
+                  Data: -333.3333333333333
+                PreferredWidth:
+                  ID: "?"
+                  Data: -333.3333333333333
+                FlexibleWidth:
+                  ID: "?"
+                  Data: 333.3333333333333
+                MinHeight:
+                  ID: "?"
+                  Data: 40000
+                PreferredHeight:
+                  ID: "?"
+                  Data: -333.3333333333333
+                FlexibleHeight:
+                  ID: "?"
+                  Data: -333.3333333333333
+                Area:
+                  ID: "?"
+                  Data: -333.3333333333333
+                Priority:
+                  ID: "?"
+                  Data: 333.3333333333333
+                UseZeroMetrics:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.CloudUserInfo
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                UserId:
+                  ID: ID:UserE:Components:FrooxEngine.CloudUserInfo:UserId:0
+                  Data: ""
+                IsLoaded:
+                  ID: "?"
+                  Data: null
+                Username-ID: ID:UserE:Components:FrooxEngine.CloudUserInfo:Username-ID:0
+                RegistrationDate-ID: "?"
+                OriginalRegistrationDate-ID: "?"
+                IconURL-ID: ID:UserE:Components:FrooxEngine.CloudUserInfo:IconURL-ID:0
+                IsContact-ID: "?"
+                _loadedUserId-ID: "?"
+        Children:
+          - Name:
+              ID: "?"
+              Data: BG
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - -111
+                - 111
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.UIX.RectTransform
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    AnchorMin:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                    AnchorMax:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                    OffsetMin:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                    OffsetMax:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                    Pivot:
+                      ID: "?"
+                      Data:
+                        - 166.66666666666666
+                        - 166.66666666666666
+                - Type: FrooxEngine.UIX.Image
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Sprite:
+                      ID: "?"
+                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:2
+                    Material:
+                      ID: "?"
+                      Data: null
+                    PreserveAspect:
+                      ID: "?"
+                      Data: true
+                    NineSliceSizing:
+                      ID: "?"
+                      Data: FixedSize
+                    FlipHorizontally:
+                      ID: "?"
+                      Data: false
+                    FlipVertically:
+                      ID: "?"
+                      Data: false
+                    InteractionTarget:
+                      ID: "?"
+                      Data: true
+                    FillRect:
+                      ID: "?"
+                      Data:
+                        X: 0
+                        Y: 0
+                        Width: 333.3333333333333
+                        Height: 333.3333333333333
+                    __legacyZWrite-ID: "?"
+                    Tint:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - sRGB
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: Vert
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.UIX.RectTransform
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        AnchorMin:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        AnchorMax:
+                          ID: "?"
+                          Data:
+                            - 333.3333333333333
+                            - 333.3333333333333
+                        OffsetMin:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        OffsetMax:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                        Pivot:
+                          ID: "?"
+                          Data:
+                            - 166.66666666666666
+                            - 166.66666666666666
+                    - Type: FrooxEngine.UIX.HorizontalLayout
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        PaddingTop:
+                          ID: "?"
+                          Data: 6666.666666666667
+                        PaddingRight:
+                          ID: "?"
+                          Data: 11666.666666666666
+                        PaddingBottom:
+                          ID: "?"
+                          Data: 6666.666666666667
+                        PaddingLeft:
+                          ID: "?"
+                          Data: 11666.666666666666
+                        Spacing:
+                          ID: "?"
+                          Data: 6666.666666666667
+                        HorizontalAlign:
+                          ID: "?"
+                          Data: Center
+                        VerticalAlign:
+                          ID: "?"
+                          Data: Middle
+                        ForceExpandWidth:
+                          ID: "?"
+                          Data: false
+                        ForceExpandHeight:
+                          ID: "?"
+                          Data: false
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: IconE
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.UIX.RectTransform
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            AnchorMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            AnchorMax:
+                              ID: "?"
+                              Data:
+                                - 333.3333333333333
+                                - 333.3333333333333
+                            OffsetMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            OffsetMax:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            Pivot:
+                              ID: "?"
+                              Data:
+                                - 166.66666666666666
+                                - 166.66666666666666
+                        - Type: FrooxEngine.UIX.LayoutElement
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            MinWidth:
+                              ID: "?"
+                              Data: 26666.666666666668
+                            PreferredWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            MinHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            PreferredHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleHeight:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            Area:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            Priority:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            UseZeroMetrics:
+                              ID: "?"
+                              Data: false
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: Text
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.UIX.RectTransform
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                AnchorMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                AnchorMax:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                OffsetMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                OffsetMax:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                Pivot:
+                                  ID: "?"
+                                  Data:
+                                    - 166.66666666666666
+                                    - 166.66666666666666
+                            - Type: FrooxEngine.StaticTexture2D
+                              Data:
+                                ID: ID:Text:Components:FrooxEngine.StaticTexture2D:0
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                URL:
+                                  ID: ID:Text:Components:FrooxEngine.StaticTexture2D:URL:0
+                                  Data: null
+                                FilterMode:
+                                  ID: "?"
+                                  Data: Bilinear
+                                AnisotropicLevel:
+                                  ID: "?"
+                                  Data: 2666.6666666666665
+                                Uncompressed:
+                                  ID: "?"
+                                  Data: false
+                                DirectLoad:
+                                  ID: "?"
+                                  Data: false
+                                ForceExactVariant:
+                                  ID: "?"
+                                  Data: false
+                                PreferredFormat:
+                                  ID: "?"
+                                  Data: null
+                                PreferredProfile:
+                                  ID: "?"
+                                  Data: sRGB
+                                MipMapBias:
+                                  ID: "?"
+                                  Data: 0
+                                IsNormalMap:
+                                  ID: "?"
+                                  Data: false
+                                WrapModeU:
+                                  ID: "?"
+                                  Data: Repeat
+                                WrapModeV:
+                                  ID: "?"
+                                  Data: Repeat
+                                PowerOfTwoAlignThreshold:
+                                  ID: "?"
+                                  Data: 16.666666666666668
+                                CrunchCompressed:
+                                  ID: "?"
+                                  Data: true
+                                MaxSize:
+                                  ID: "?"
+                                  Data: null
+                                MipMaps:
+                                  ID: "?"
+                                  Data: true
+                                KeepOriginalMipMaps:
+                                  ID: "?"
+                                  Data: false
+                                MipMapFilter:
+                                  ID: "?"
+                                  Data: Box
+                                Readable:
+                                  ID: "?"
+                                  Data: false
+                            - Type: FrooxEngine.UIX.RawImage
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Texture:
+                                  ID: "?"
+                                  Data: ID:Text:Components:FrooxEngine.StaticTexture2D:0
+                                Material:
+                                  ID: "?"
+                                  Data: null
+                                Tint:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - sRGB
+                                UVRect:
+                                  ID: "?"
+                                  Data:
+                                    X: 0
+                                    Y: 0
+                                    Width: 333.3333333333333
+                                    Height: 333.3333333333333
+                                Orientation:
+                                  ID: "?"
+                                  Data: Default
+                                PreserveAspect:
+                                  ID: "?"
+                                  Data: true
+                                InteractionTarget:
+                                  ID: "?"
+                                  Data: true
+                            - Type: FrooxEngine.ValueCopy`1[System.Uri]
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Source:
+                                  ID: "?"
+                                  Data: ID:UserE:Components:FrooxEngine.CloudUserInfo:IconURL-ID:0
+                                Target:
+                                  ID: "?"
+                                  Data: ID:Text:Components:FrooxEngine.StaticTexture2D:URL:0
+                                WriteBack:
+                                  ID: "?"
+                                  Data: false
+                        Children: []
+                  - Name:
+                      ID: "?"
+                      Data: TitleE
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 3333.3333333333335
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.UIX.RectTransform
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            AnchorMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            AnchorMax:
+                              ID: "?"
+                              Data:
+                                - 333.3333333333333
+                                - 333.3333333333333
+                            OffsetMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            OffsetMax:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            Pivot:
+                              ID: "?"
+                              Data:
+                                - 166.66666666666666
+                                - 166.66666666666666
+                        - Type: FrooxEngine.UIX.LayoutElement
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            MinWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            PreferredWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleWidth:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            MinHeight:
+                              ID: "?"
+                              Data: 16666.666666666668
+                            PreferredHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            Area:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            Priority:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            UseZeroMetrics:
+                              ID: "?"
+                              Data: false
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: Text
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.UIX.RectTransform
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                AnchorMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                AnchorMax:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                OffsetMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                OffsetMax:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                Pivot:
+                                  ID: "?"
+                                  Data:
+                                    - 166.66666666666666
+                                    - 166.66666666666666
+                            - Type: FrooxEngine.UIX.Text
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Font:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.FontChain:ID:0
+                                Content:
+                                  ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
+                                  Data: null
+                                ParseRichText:
+                                  ID: "?"
+                                  Data: true
+                                NullContent:
+                                  ID: "?"
+                                  Data: null
+                                Size:
+                                  ID: "?"
+                                  Data: 12368.333333333334
+                                HorizontalAlign:
+                                  ID: "?"
+                                  Data: Left
+                                VerticalAlign:
+                                  ID: "?"
+                                  Data: Middle
+                                AlignmentMode:
+                                  ID: "?"
+                                  Data: Geometric
+                                Color:
+                                  ID: ID:Text:Components:FrooxEngine.UIX.Text:Color:0
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - Linear
+                                Materials:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:0
+                                LineHeight:
+                                  ID: "?"
+                                  Data: 266.6666666666667
+                                MaskPattern:
+                                  ID: "?"
+                                  Data: null
+                                HorizontalAutoSize:
+                                  ID: "?"
+                                  Data: true
+                                VerticalAutoSize:
+                                  ID: "?"
+                                  Data: true
+                                AutoSizeMin:
+                                  ID: "?"
+                                  Data: 2666.6666666666665
+                                AutoSizeMax:
+                                  ID: "?"
+                                  Data: 21333.333333333332
+                                CaretPosition:
+                                  ID: "?"
+                                  Data: -333.3333333333333
+                                SelectionStart:
+                                  ID: "?"
+                                  Data: -333.3333333333333
+                                CaretColor:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - Linear
+                                SelectionColor:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - Linear
+                                InteractionTarget:
+                                  ID: "?"
+                                  Data: true
+                                _legacyFontMaterial-ID: "?"
+                                _legacyAlign-ID: "?"
+                            - Type: FrooxEngine.DynamicValueVariableDriver`1[Elements.Core.colorX]
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                VariableName:
+                                  ID: "?"
+                                  Data: Style/Color.Main.Rev
+                                Target:
+                                  ID: "?"
+                                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Color:0
+                                DefaultValue:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - 0
+                                    - Linear
+                            - Type: FrooxEngine.ValueCopy`1[System.String]
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Source:
+                                  ID: "?"
+                                  Data: ID:UserE:Components:FrooxEngine.CloudUserInfo:Username-ID:0
+                                Target:
+                                  ID: "?"
+                                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
+                                WriteBack:
+                                  ID: "?"
+                                  Data: false
+                        Children: []
+                  - Name:
+                      ID: "?"
+                      Data: ButtonE
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 6666.666666666667
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.UIX.RectTransform
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            AnchorMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            AnchorMax:
+                              ID: "?"
+                              Data:
+                                - 333.3333333333333
+                                - 333.3333333333333
+                            OffsetMin:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            OffsetMax:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                            Pivot:
+                              ID: "?"
+                              Data:
+                                - 166.66666666666666
+                                - 166.66666666666666
+                        - Type: FrooxEngine.UIX.LayoutElement
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            MinWidth:
+                              ID: "?"
+                              Data: 40000
+                            PreferredWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleWidth:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            MinHeight:
+                              ID: "?"
+                              Data: 23333.333333333332
+                            PreferredHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            FlexibleHeight:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            Area:
+                              ID: "?"
+                              Data: -333.3333333333333
+                            Priority:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            UseZeroMetrics:
+                              ID: "?"
+                              Data: false
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: Button
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: "?"
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - -111
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.UIX.RectTransform
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                AnchorMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                AnchorMax:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                OffsetMin:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                OffsetMax:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                Pivot:
+                                  ID: "?"
+                                  Data:
+                                    - 166.66666666666666
+                                    - 166.66666666666666
+                            - Type: FrooxEngine.UIX.Image
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Sprite:
+                                  ID: "?"
+                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:1
+                                Material:
+                                  ID: "?"
+                                  Data: null
+                                PreserveAspect:
+                                  ID: "?"
+                                  Data: true
+                                NineSliceSizing:
+                                  ID: "?"
+                                  Data: FixedSize
+                                FlipHorizontally:
+                                  ID: "?"
+                                  Data: false
+                                FlipVertically:
+                                  ID: "?"
+                                  Data: false
+                                InteractionTarget:
+                                  ID: "?"
+                                  Data: true
+                                FillRect:
+                                  ID: "?"
+                                  Data:
+                                    X: 0
+                                    Y: 0
+                                    Width: 333.3333333333333
+                                    Height: 333.3333333333333
+                                __legacyZWrite-ID: "?"
+                                Tint:
+                                  ID: ID:Button:Components:FrooxEngine.UIX.Image:Tint:0
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - sRGB
+                            - Type: FrooxEngine.UIX.Button
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                BaseColor:
+                                  ID: "?"
+                                  Data:
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - 333.3333333333333
+                                    - sRGB
+                                ColorDrivers:
+                                  ID: "?"
+                                  Data:
+                                    - ID: "?"
+                                      ColorDrive:
+                                        ID: "?"
+                                        Data: ID:Button:Components:FrooxEngine.UIX.Image:Tint:0
+                                      TintColorMode:
+                                        ID: "?"
+                                        Data: Explicit
+                                      NormalColor:
+                                        ID: "?"
+                                        Data:
+                                          - 333.3333333333333
+                                          - 333.3333333333333
+                                          - 333.3333333333333
+                                          - 333.3333333333333
+                                          - sRGB
+                                      HighlightColor:
+                                        ID: "?"
+                                        Data:
+                                          - 400
+                                          - 400
+                                          - 400
+                                          - 333.3333333333333
+                                          - sRGB
+                                      PressColor:
+                                        ID: "?"
+                                        Data:
+                                          - 166.66666666666666
+                                          - 166.66666666666666
+                                          - 166.66666666666666
+                                          - 333.3333333333333
+                                          - sRGB
+                                      DisabledColor:
+                                        ID: "?"
+                                        Data:
+                                          - 216.66666666666666
+                                          - 216.66666666666666
+                                          - 216.66666666666666
+                                          - 333.3333333333333
+                                          - sRGB
+                                __legacy_NormalColor-ID: "?"
+                                __legacy_HighlightColor-ID: "?"
+                                __legacy_PressColor-ID: "?"
+                                __legacy_DisabledColor-ID: "?"
+                                __legacy_TintColorMode-ID: "?"
+                                __legacy_ColorDrive-ID: "?"
+                                IsPressed:
+                                  ID: "?"
+                                  Data: false
+                                IsHovering:
+                                  ID: "?"
+                                  Data: false
+                                HoverVibrate:
+                                  ID: "?"
+                                  Data: Short
+                                PressVibrate:
+                                  ID: "?"
+                                  Data: Medium
+                                ClearFocusOnPress:
+                                  ID: "?"
+                                  Data: true
+                                PassThroughHorizontalMovement:
+                                  ID: "?"
+                                  Data: true
+                                PassThroughVerticalMovement:
+                                  ID: "?"
+                                  Data: true
+                                RequireLockInToPress:
+                                  ID: "?"
+                                  Data: false
+                                RequireInitialPress:
+                                  ID: "?"
+                                  Data: true
+                                PressPoint:
+                                  ID: "?"
+                                  Data:
+                                    - 93659.66666666667
+                                    - -1669.3333333333333
+                                SendSlotEvents:
+                                  ID: "?"
+                                  Data: true
+                                Pressed:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                                Pressing:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                                Released:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                                HoverEnter:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                                HoverStay:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                                HoverLeave:
+                                  ID: "?"
+                                  Data:
+                                    Target: null
+                            - Type: FrooxEngine.ButtonPressEventRelay
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                Target:
+                                  ID: "?"
+                                  Data: ID:Confirm:0
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: Text
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.UIX.RectTransform
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    AnchorMin:
+                                      ID: "?"
+                                      Data:
+                                        - 33.333333333333336
+                                        - 33.333333333333336
+                                    AnchorMax:
+                                      ID: "?"
+                                      Data:
+                                        - 300
+                                        - 300
+                                    OffsetMin:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                    OffsetMax:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                    Pivot:
+                                      ID: "?"
+                                      Data:
+                                        - 166.66666666666666
+                                        - 166.66666666666666
+                                - Type: FrooxEngine.UIX.Text
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Font:
+                                      ID: "?"
+                                      Data: ID:Assets:FrooxEngine.FontChain:ID:0
+                                    Content:
+                                      ID: "?"
+                                      Data: x
+                                    ParseRichText:
+                                      ID: "?"
+                                      Data: true
+                                    NullContent:
+                                      ID: "?"
+                                      Data: null
+                                    Size:
+                                      ID: "?"
+                                      Data: 18160.333333333332
+                                    HorizontalAlign:
+                                      ID: "?"
+                                      Data: Center
+                                    VerticalAlign:
+                                      ID: "?"
+                                      Data: Middle
+                                    AlignmentMode:
+                                      ID: "?"
+                                      Data: Geometric
+                                    Color:
+                                      ID: ID:Text:Components:FrooxEngine.UIX.Text:Color:1
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - Linear
+                                    Materials:
+                                      ID: "?"
+                                      Data:
+                                        - ID: "?"
+                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:0
+                                    LineHeight:
+                                      ID: "?"
+                                      Data: 266.6666666666667
+                                    MaskPattern:
+                                      ID: "?"
+                                      Data: null
+                                    HorizontalAutoSize:
+                                      ID: "?"
+                                      Data: true
+                                    VerticalAutoSize:
+                                      ID: "?"
+                                      Data: true
+                                    AutoSizeMin:
+                                      ID: "?"
+                                      Data: 2666.6666666666665
+                                    AutoSizeMax:
+                                      ID: "?"
+                                      Data: 21333.333333333332
+                                    CaretPosition:
+                                      ID: "?"
+                                      Data: -333.3333333333333
+                                    SelectionStart:
+                                      ID: "?"
+                                      Data: -333.3333333333333
+                                    CaretColor:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - Linear
+                                    SelectionColor:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - Linear
+                                    InteractionTarget:
+                                      ID: "?"
+                                      Data: true
+                                    _legacyFontMaterial-ID: "?"
+                                    _legacyAlign-ID: "?"
+                                - Type: FrooxEngine.DynamicValueVariableDriver`1[Elements.Core.colorX]
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    VariableName:
+                                      ID: "?"
+                                      Data: Style/Color.Main.Rev
+                                    Target:
+                                      ID: "?"
+                                      Data: ID:Text:Components:FrooxEngine.UIX.Text:Color:1
+                                    DefaultValue:
+                                      ID: "?"
+                                      Data:
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - 0
+                                        - Linear
+                            Children: []
+                      - Name:
+                          ID: "?"
+                          Data: Confirm
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: ID:Confirm:0
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: null
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.ContextMenuSubmenu
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                ItemsRoot:
+                                  ID: "?"
+                                  Data: ID:Confirm:0
+                                SearchWholeHierarchy:
+                                  ID: "?"
+                                  Data: false
+                                DisableFlick:
+                                  ID: "?"
+                                  Data: false
+                                SpeedOverride:
+                                  ID: "?"
+                                  Data: null
+                                CounterClockwise:
+                                  ID: "?"
+                                  Data: false
+                                KeepPosition:
+                                  ID: "?"
+                                  Data: false
+                                Hidden:
+                                  ID: "?"
+                                  Data: false
+                        Children:
+                          - Name:
+                              ID: "?"
+                              Data: OK
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.ContextMenuItemSource
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Label:
+                                      ID: "?"
+                                      Data: Delete
+                                    Color:
+                                      ID: "?"
+                                      Data:
+                                        - 333.3333333333333
+                                        - 0
+                                        - 0
+                                        - 333.3333333333333
+                                        - sRGB
+                                    Sprite:
+                                      ID: "?"
+                                      Data: null
+                                    ButtonEnabled:
+                                      ID: "?"
+                                      Data: true
+                                    AllowDrag:
+                                      ID: "?"
+                                      Data: false
+                                    CloseMenuOnPress:
+                                      ID: "?"
+                                      Data: true
+                                    Pressed:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                                    Pressing:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                                    Released:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                                - Type: FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Target:
+                                      ID: ID:OK:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:0
+                                      Data: "?"
+                                    ExcludeDisabled:
+                                      ID: "?"
+                                      Data: false
+                                    PressedData:
+                                      ID: "?"
+                                      Data: {}
+                                    PressingData:
+                                      ID: "?"
+                                      Data: {}
+                                    ReleasedData:
+                                      ID: "?"
+                                      Data: {}
+                                    HoverEnterData:
+                                      ID: "?"
+                                      Data: {}
+                                    HoverStayData:
+                                      ID: "?"
+                                      Data: {}
+                                    HoverLeaveData:
+                                      ID: "?"
+                                      Data: {}
+                                - Type: FrooxEngine.DynamicReferenceVariableDriver`1[FrooxEngine.Slot]
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    VariableName:
+                                      ID: "?"
+                                      Data: AppRoot/Static.System.Func.EmitInteractionEvent
+                                    Target:
+                                      ID: "?"
+                                      Data: ID:OK:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:0
+                                    DefaultTarget:
+                                      ID: "?"
+                                      Data: null
+                            Children: []
+                          - Name:
+                              ID: "?"
+                              Data: Cancel
+                            Active:
+                              ID: "?"
+                              Data: true
+                            ID: "?"
+                            Persistent-Id: "?"
+                            Position:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                            Rotation:
+                              ID: "?"
+                              Data:
+                                - 0
+                                - 0
+                                - 0
+                                - 111111
+                            Scale:
+                              ID: "?"
+                              Data:
+                                - 111111
+                                - 111111
+                                - 111111
+                            Tag:
+                              ID: "?"
+                              Data: null
+                            OrderOffset:
+                              ID: "?"
+                              Data: 0
+                            Components:
+                              ID: "?"
+                              Data:
+                                - Type: FrooxEngine.ContextMenuItemSource
+                                  Data:
+                                    ID: "?"
+                                    persistent-ID: "?"
+                                    UpdateOrder:
+                                      ID: "?"
+                                      Data: 0
+                                    Enabled:
+                                      ID: "?"
+                                      Data: true
+                                    Label:
+                                      ID: "?"
+                                      Data: Cancel
+                                    Color:
+                                      ID: "?"
+                                      Data:
+                                        - 333.3333333333333
+                                        - 333.3333333333333
+                                        - 333.3333333333333
+                                        - 333.3333333333333
+                                        - sRGB
+                                    Sprite:
+                                      ID: "?"
+                                      Data: null
+                                    ButtonEnabled:
+                                      ID: "?"
+                                      Data: true
+                                    AllowDrag:
+                                      ID: "?"
+                                      Data: false
+                                    CloseMenuOnPress:
+                                      ID: "?"
+                                      Data: true
+                                    Pressed:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                                    Pressing:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                                    Released:
+                                      ID: "?"
+                                      Data:
+                                        Target: null
+                            Children: []

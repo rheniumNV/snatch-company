@@ -21,7 +21,6 @@ export const AnnouncementManager = (props: {
       SnatchCompany["callbacks"]["onAnnouncement"],
       undefined
     >[number] = (arg) => {
-      console.log("onAnnouncement", arg);
       setAnnouncement((prev) => [...prev, arg]);
     };
     props.setCallback({

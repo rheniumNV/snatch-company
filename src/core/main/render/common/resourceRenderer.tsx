@@ -1,5 +1,13 @@
 import { useCallback } from "react";
-import { Resource, Rock, Tree } from "../../../unit/package/SnatchCompany/main";
+import {
+  Resource,
+  Rock1,
+  Rock2,
+  Rock3,
+  Tree1,
+  Tree2,
+  Tree3,
+} from "../../../unit/package/SnatchCompany/main";
 import { HealthView } from "./hpView";
 import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import { Slot } from "../../../unit/package/Primitive/main";
@@ -25,6 +33,9 @@ export const ResourceRenderer = (props: {
   if (Vector.distance(props.object.position, props.shipPosition) > 100) {
     return <></>;
   }
+
+  props.object.resourceObjectLevel;
+
   return (
     <Resource
       position={props.object.position}
@@ -33,25 +44,64 @@ export const ResourceRenderer = (props: {
     >
       {props.object.type === "mineral" ? (
         <Slot scale={[4, 4, 4]}>
-          <Rock
-            rock1Active={props.object.health / props.object.maxHealth > 0.7}
-            rock3Active={props.object.health / props.object.maxHealth > 0.3}
-          />
+          {props.object.resourceObjectLevel === 1 ? (
+            <Rock1
+              rock1Active={props.object.health / props.object.maxHealth > 0.7}
+              rock3Active={props.object.health / props.object.maxHealth > 0.3}
+            />
+          ) : props.object.resourceObjectLevel === 2 ? (
+            <Rock2 />
+          ) : (
+            <Rock3 />
+          )}
         </Slot>
       ) : (
         <Slot scale={[2, 2, 2]}>
-          <Tree
-            branch1Active={props.object.health / props.object.maxHealth > 0.7}
-            branch2Active={props.object.health / props.object.maxHealth > 0.3}
-          />
+          {props.object.resourceObjectLevel === 1 ? (
+            <Tree1 />
+          ) : props.object.resourceObjectLevel === 2 ? (
+            <Tree2
+              branch1Active={props.object.health / props.object.maxHealth > 0.7}
+              branch2Active={props.object.health / props.object.maxHealth > 0.3}
+            />
+          ) : (
+            <Tree3 />
+          )}
         </Slot>
       )}
       {props.object.health < props.object.maxHealth && (
         <HealthView
-          position={props.object.type === "mineral" ? [0, 4, 0] : [0, 7, 0]}
+          position={
+            props.object.type === "mineral"
+              ? [
+                  0,
+                  props.object.resourceObjectLevel === 1
+                    ? 4
+                    : props.object.resourceObjectLevel === 2
+                    ? 7
+                    : props.object.resourceObjectLevel === 3
+                    ? 10
+                    : 4,
+                  0,
+                ]
+              : [
+                  0,
+                  props.object.resourceObjectLevel === 1
+                    ? 7
+                    : props.object.resourceObjectLevel === 2
+                    ? 7
+                    : props.object.resourceObjectLevel === 3
+                    ? 10
+                    : 7,
+                  0,
+                ]
+          }
           scale={[3, 3, 3]}
           health={props.object.health}
           maxHealth={props.object.maxHealth}
+          smoothView={true}
+          smoothViewColor={[1, 0, 0, 1]}
+          smoothViewTime={2}
         />
       )}
     </Resource>

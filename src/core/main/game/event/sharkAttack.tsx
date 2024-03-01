@@ -95,6 +95,7 @@ export class SharkAttack extends SnatchCompanyEvent {
       damage2Ship: SnatchCompany["damage2Ship"];
       addSkill4Event: SnatchCompany["addSkill4Event"];
       announcement: SnatchCompany["announcement"];
+      addEvent: (event: SnatchCompanyEvent) => void;
     },
     deltaTime: number
   ): void {
@@ -114,7 +115,7 @@ export class SharkAttack extends SnatchCompanyEvent {
             const position: Vector.Vector3 = [
               Math.random() * 50 - 25,
               60,
-              Math.random() * 30 + 10,
+              Math.random() * 30 + 70,
             ];
             this.objects.push({
               id: uuidv4(),

@@ -101,6 +101,7 @@ export class MeteoriteFall extends SnatchCompanyEvent {
       damage2Ship: SnatchCompany["damage2Ship"];
       addSkill4Event: SnatchCompany["addSkill4Event"];
       announcement: SnatchCompany["announcement"];
+      addEvent: (event: SnatchCompanyEvent) => void;
     },
     deltaTime: number
   ): void {
@@ -121,8 +122,8 @@ export class MeteoriteFall extends SnatchCompanyEvent {
       game.addSkill4Event();
       game.announcement({
         title: {
-          ja: "隕石撃退成功",
-          en: "Meteorite Repelled",
+          ja: "隕石撃をやり過ごした",
+          en: "You have survived the meteorite strike",
         },
         description: {
           ja: "おめでとう。レアスキルを1つ獲得しました。",

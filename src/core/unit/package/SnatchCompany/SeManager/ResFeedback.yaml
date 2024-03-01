@@ -1,0 +1,1832 @@
+Name:
+  ID: "?"
+  Data: SnatchCompany/SeManager
+Active:
+  ID: "?"
+  Data: true
+ID: "?"
+Persistent-Id: "?"
+Position:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+Rotation:
+  ID: "?"
+  Data:
+    - 0
+    - 0
+    - 0
+    - 1
+Scale:
+  ID: "?"
+  Data:
+    - 1
+    - 1
+    - 1
+Tag:
+  ID: "?"
+  Data: ""
+OrderOffset:
+  ID: "?"
+  Data: 0
+Components:
+  ID: "?"
+  Data:
+    - Type: FrooxEngine.DynamicVariableSpace
+      Data:
+        ID: "?"
+        persistent-ID: "?"
+        UpdateOrder:
+          ID: "?"
+          Data: 0
+        Enabled:
+          ID: "?"
+          Data: true
+        SpaceName:
+          ID: "?"
+          Data: ""
+        OnlyDirectBinding:
+          ID: "?"
+          Data: false
+Children:
+  - Name:
+      ID: "?"
+      Data: DV
+    Active:
+      ID: "?"
+      Data: true
+    ID: "?"
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            VariableName:
+              ID: "?"
+              Data: Static.Ref
+            Reference:
+              ID: "?"
+              Data: ID:Ref:0
+            OverrideOnLink:
+              ID: "?"
+              Data: false
+    Children: []
+  - Name:
+      ID: "?"
+      Data: Ref
+    Active:
+      ID: "?"
+      Data: true
+    ID: ID:Ref:0
+    Persistent-Id: "?"
+    Position:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+    Rotation:
+      ID: "?"
+      Data:
+        - 0
+        - 0
+        - 0
+        - 111111
+    Scale:
+      ID: "?"
+      Data:
+        - 111111
+        - 111111
+        - 111111
+    Tag:
+      ID: "?"
+      Data: ""
+    OrderOffset:
+      ID: "?"
+      Data: 0
+    Components:
+      ID: "?"
+      Data:
+        - Type: FrooxEngine.DynamicVariableSpace
+          Data:
+            ID: "?"
+            persistent-ID: "?"
+            UpdateOrder:
+              ID: "?"
+              Data: 0
+            Enabled:
+              ID: "?"
+              Data: true
+            SpaceName:
+              ID: "?"
+              Data: ""
+            OnlyDirectBinding:
+              ID: "?"
+              Data: false
+    Children:
+      - Name:
+          ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Main
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:Main:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Func.PlayOnShotSe
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: DynamicImpulseReceiverWithObject`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -911111
+                - 501889
+                - -440222.3333333333
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1[System.String]
+                  Data:
+                    ID: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1[System.String]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Tag:
+                      ID: "?"
+                      Data: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:0
+                    OnTriggered:
+                      ID: "?"
+                      Data: ID:PlayOneShot:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShot:0
+                    Value:
+                      ID: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1[System.String]:Value:0
+                      Data: null
+                - Type: FrooxEngine.ProtoFlux.GlobalValue`1[System.String]
+                  Data:
+                    ID: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.GlobalValue`1[System.String]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: "?"
+                      Data: Func.PlayOnShotSe
+                - Type: ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1+Proxy[System.String]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Node:
+                      ID: "?"
+                      Data: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1[System.String]:0
+                    Path:
+                      ID: "?"
+                      Data: []
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ElementSource`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -907666.6666666666
+                - 482889
+                - -440666.6666666667
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ElementSource`1[FrooxEngine.Slot]
+                  Data:
+                    ID: ID:ElementSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ElementSource`1[FrooxEngine.Slot]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Source:
+                      ID: "?"
+                      Data: ID:ElementSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.Slot]:0
+                - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.Slot]
+                  Data:
+                    ID: ID:ElementSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.Slot]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Reference:
+                      ID: "?"
+                      Data: ID:SE:0
+            Children: []
+          - Name:
+              ID: "?"
+              Data: FindChildByName
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -883555.6666666666
+                - 472555.6666666667
+                - -443666.6666666667
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.FindChildByName
+                  Data:
+                    ID: ID:FindChildByName:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.FindChildByName:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Instance:
+                      ID: "?"
+                      Data: ID:ElementSource`1:Components:FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ElementSource`1[FrooxEngine.Slot]:0
+                    Name:
+                      ID: "?"
+                      Data: ID:DynamicImpulseReceiverWithObject`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.DynamicImpulseReceiverWithObject`1[System.String]:Value:0
+                    MatchSubstring:
+                      ID: "?"
+                      Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]:0
+                    IgnoreCase:
+                      ID: "?"
+                      Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]:0
+                    SearchDepth:
+                      ID: "?"
+                      Data: null
+            Children: []
+          - Name:
+              ID: "?"
+              Data: PlayOneShot
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -843222.3333333334
+                - 472777.6666666667
+                - -448666.6666666667
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShot
+                  Data:
+                    ID: ID:PlayOneShot:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShot:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Clip:
+                      ID: "?"
+                      Data: ID:ReadDynamicObjectVariable`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
+                        FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                        PublicKeyToken=null]]:Value:0
+                    Volume:
+                      ID: "?"
+                      Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:0
+                    Speed:
+                      ID: "?"
+                      Data: null
+                    Spatialize:
+                      ID: "?"
+                      Data: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]:1
+                    SpatialBlend:
+                      ID: "?"
+                      Data: null
+                    Point:
+                      ID: "?"
+                      Data: null
+                    Root:
+                      ID: "?"
+                      Data: null
+                    ParentUnderRoot:
+                      ID: "?"
+                      Data: null
+                    Priority:
+                      ID: "?"
+                      Data: null
+                    Doppler:
+                      ID: "?"
+                      Data: null
+                    MinDistance:
+                      ID: "?"
+                      Data: null
+                    MaxDistance:
+                      ID: "?"
+                      Data: null
+                    Rolloff:
+                      ID: "?"
+                      Data: null
+                    DistanceSpace:
+                      ID: "?"
+                      Data: null
+                    MinScale:
+                      ID: "?"
+                      Data: null
+                    MaxScale:
+                      ID: "?"
+                      Data: null
+                    Group:
+                      ID: "?"
+                      Data: null
+                    LocalOnly:
+                      ID: "?"
+                      Data: null
+                    Audio:
+                      ID: "?"
+                      Data: null
+                    OnStartedPlaying:
+                      ID: "?"
+                      Data: null
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ReadDynamicObjectVariable`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -866777.6666666666
+                - 477555.6666666667
+                - -445777.6666666667
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Source:
+                      ID: "?"
+                      Data: ID:FindChildByName:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.FindChildByName:0
+                    Path:
+                      ID: "?"
+                      Data: ID:ValueObjectInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueObjectInput`1[System.String]:0
+                    FoundValue:
+                      ID: "?"
+                      Data: null
+                    Value:
+                      ID: ID:ReadDynamicObjectVariable`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
+                        FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                        PublicKeyToken=null]]:Value:0
+                      Data: null
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ValueObjectInput`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -892333.3333333334
+                - 452555.6666666667
+                - -442555.6666666667
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueObjectInput`1[System.String]
+                  Data:
+                    ID: ID:ValueObjectInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueObjectInput`1[System.String]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: "?"
+                      Data: AudioClip
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ValueInput`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -904444.3333333334
+                - 470333.3333333333
+                - -441111
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]
+                  Data:
+                    ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: "?"
+                      Data: false
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ValueInput`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -863444.3333333334
+                - 488889
+                - -446111
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]
+                  Data:
+                    ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Boolean]:1
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: "?"
+                      Data: false
+            Children: []
+          - Name:
+              ID: "?"
+              Data: ValueInput`1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -864111
+                - 495777.6666666667
+                - -446111
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 6889
+                - 0
+                - 110889
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]
+                  Data:
+                    ID: ID:ValueInput`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput`1[System.Single]:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    Value:
+                      ID: "?"
+                      Data: 333.3333333333333
+            Children: []
+      - Name:
+          ID: "?"
+          Data: SE
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:SE:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: checkpointNear
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:checkpointNear:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:checkpointNear:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///626e11d90192cc14fd6e23ec99607369bd9e54f790bfa9c6425877498b7efb\
+                        94.wav"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: shieldAlert
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:shieldAlert:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:shieldAlert:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///81fd2f0a32c1a59c7f2265c558ce34b57c5cc8ce9048cd7b125beb4de72f44\
+                        27.wav"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: battleStart1
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:battleStart1:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:battleStart1:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///9fea0b22468d0c8aa2a1a23f6e376d46aa611bd4f71ae1bfcaa45c628a0523\
+                        a4"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: battleStart2
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:battleStart2:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:battleStart2:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///900fa231cddd30fe8cc6e59c8b2f60650001bf22328765eef5a449c933b93f\
+                        da.wav"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: battleStart3
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:battleStart3:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:battleStart3:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///a94637a844bc18e73103a66f5a433694309e715caab5a8e741ba826c9a40c0\
+                        b1"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: startCheckpoint
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:startCheckpoint:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:startCheckpoint:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///306dc8d7f9e1dae23aa054bf4dcd7e59ff77609ee21c65e3e70b793e6b9149\
+                        8a"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: startGame
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:startGame:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:startGame:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///9e5d32af480fbd483fe6188ce636c49a64375e17e0d20c9cfca93482917c96\
+                        c7"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: startBoss
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:startBoss:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:startBoss:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///8965528852ccfa9bdbf61e68ec74fd4ce0739d9e33c01bb6cec4e9cd5c1b35\
+                        1e"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []
+          - Name:
+              ID: "?"
+              Data: gameClear
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:gameClear:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:gameClear:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///035b0b32e3a6c49add8139dc95e7ec7e06ed4db05bb49646a5477fecae0f7e\
+                        f3"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []

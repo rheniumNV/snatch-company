@@ -29,6 +29,7 @@ export abstract class SnatchCompanyEvent {
       damage2Ship: SnatchCompany["damage2Ship"];
       addSkill4Event: SnatchCompany["addSkill4Event"];
       announcement: SnatchCompany["announcement"];
+      addEvent: (event: SnatchCompanyEvent) => void;
     },
     deltaTime: number
   ): void {

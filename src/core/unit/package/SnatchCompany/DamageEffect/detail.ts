@@ -11,6 +11,7 @@ const detail = {
   propsConfig: {
     attackedUserId: UnitProp.String(""),
     damage: UnitProp.Float(0),
+    extraDamage: UnitProp.Float(0),
     criticalCount: UnitProp.Int(0),
     position: UnitProp.Float3([0, 0, 0]),
   },

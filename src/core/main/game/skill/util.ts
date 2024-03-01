@@ -37,6 +37,10 @@ const statusNameMap = {
     ja: "無機物特攻",
     en: "InorganicSpecialAttack",
   },
+  extraDamage: {
+    ja: "追加ダメージ",
+    en: "ExtraDamage",
+  },
 };
 
 export const generatePassiveStatusUpEffect = (

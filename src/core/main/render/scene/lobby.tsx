@@ -1,4 +1,5 @@
-import { useCallback } from "react";
+import fs from "fs";
+import { useCallback, useEffect } from "react";
 import {
   Canvas,
   VerticalLayout,
@@ -16,6 +17,7 @@ export const LobbyRenderer = (props: {
   gameState: GameStateLobby;
   startGame: () => void;
   addPlayer: (playerId: string) => void;
+  loadGameState: (data: GameStateLobby) => void;
 }) => {
   const joinButtonOnClick = useCallback(
     (env: { userId: string }) => {
@@ -24,9 +26,20 @@ export const LobbyRenderer = (props: {
     [props.addPlayer]
   );
 
+  const loadFromBackup = useCallback(() => {
+    const data = fs.readFileSync("./backup/3.json", "utf-8");
+    if (data) {
+      props.loadGameState(JSON.parse(data));
+    }
+  }, [props.loadGameState]);
+
+  useEffect(() => {
+    // loadFromBackup();
+  }, [loadFromBackup]);
+
   return (
     <>
-      <Canvas position={[0, 1, 3]}>
+      <Canvas position={[4, 1, 3]}>
         <StyledImage
           defaultColor={[0.5, 0.5, 0.5, 1]}
           styledMaterial={Material.background}
@@ -38,16 +51,16 @@ export const LobbyRenderer = (props: {
               <StyledText key={player.id} content={player.name} />
             ))}
           </VerticalLayout>
-          <StyledButton onClick={joinButtonOnClick}>
+          <StyledButton onClick={props.startGame}>
             <StyledText
-              content="Join"
+              content="StartGame"
               verticalAlign="Middle"
               horizontalAlign="Center"
             />
           </StyledButton>
-          <StyledButton onClick={props.startGame}>
+          <StyledButton onClick={loadFromBackup}>
             <StyledText
-              content="Start"
+              content="LoadFromBackup"
               verticalAlign="Middle"
               horizontalAlign="Center"
             />

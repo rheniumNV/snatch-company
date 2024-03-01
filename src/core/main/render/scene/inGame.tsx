@@ -30,20 +30,47 @@ import { Vector } from "../../game/util";
 import { GunRenderer } from "../common/gunRenderer";
 import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import {
+  Checkpoint,
+  CheckpointMarker,
   LocalView,
   MovedSlot,
+  SeManager,
+  ShieldAlert,
   ShipDisplay,
+  Triangle,
 } from "../../../unit/package/SnatchCompany/main";
 import { CheckpointSection, GameStateInGame, Section } from "../../game/type";
 import { AnnouncementManager } from "../common/announcementManager";
+import { PlayerSkillSelect } from "../common/playerSkilSelect";
 
 const noise2D = createNoise2D();
-const solvePoint = (x: number, z: number) => (noise2D(x / 5, z / 5) + 1) / 2;
+const solvePoint = (x: number, z: number) =>
+  (noise2D(x / 4, z / 4) + 1) * 3 +
+  Math.abs(noise2D(x / 40, z / 40) * 10 * x * x * 0.001);
 
 const terrainSize = 300;
 const terrainResolution = 15;
 const terrainHalfSize = terrainSize / 2 - 0.5;
 const terrainOneSize = terrainSize / terrainResolution;
+
+const solveGridPoint = (x: number, z: number) => {
+  const x1 = Math.round(x / terrainOneSize) * terrainOneSize;
+  const z1 = Math.round(z / terrainOneSize) * terrainOneSize;
+  const x2 = x1 + terrainOneSize;
+  const z2 = z1;
+  const x3 = x1;
+  const z3 = z1 + terrainOneSize;
+  const x4 = x1 + terrainOneSize;
+  const z4 = z1 + terrainOneSize;
+  const isUpSide = (x - x1) * (z - z1) > (x2 - x1) * (z4 - z1);
+  const point1Height = solvePoint(x1 - terrainHalfSize, z1 - terrainHalfSize);
+};
+
+const roundTrianglePosition = (position: [number, number, number]) => [
+  Math.round(position[0] / 5) * 5,
+  position[1],
+  Math.round(position[2] / 5) * 5,
+];
 
 const Ground = (props: { shipPosition: [number, number, number] }) => {
   const gridShipPosition: [number, number, number] = useMemo(
@@ -65,24 +92,85 @@ const Ground = (props: { shipPosition: [number, number, number] }) => {
         (_, i) => {
           const x = i % terrainResolution;
           const z = Math.floor(i / terrainResolution);
-          const height = solvePoint(
+          const point1Height = solvePoint(
             gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
             gridShipPosition[2] + z * terrainOneSize - terrainHalfSize
           );
+          const point2Height = solvePoint(
+            gridShipPosition[0] + (x + 1) * terrainOneSize - terrainHalfSize,
+            gridShipPosition[2] + z * terrainOneSize - terrainHalfSize
+          );
+          const point3Height = solvePoint(
+            gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
+            gridShipPosition[2] + (z + 1) * terrainOneSize - terrainHalfSize
+          );
+          const point4Height = solvePoint(
+            gridShipPosition[0] + (x + 1) * terrainOneSize - terrainHalfSize,
+            gridShipPosition[2] + (z + 1) * terrainOneSize - terrainHalfSize
+          );
+          const point1Color: Vector.Vector4 = [
+            Math.min(0.9, (point1Height * 0.5) ** 1.5 * 0.02),
+            0.7,
+            Math.min(0.9, (point1Height * 0.5) ** 1.5 * 0.02),
+            0,
+          ];
+          const point2Color: Vector.Vector4 = [
+            Math.min(0.9, (point2Height * 0.5) ** 1.5 * 0.02),
+            0.7,
+            Math.min(0.9, (point2Height * 0.5) ** 1.5 * 0.02),
+            0,
+          ];
+          const point3Color: Vector.Vector4 = [
+            Math.min(0.9, (point3Height * 0.5) ** 1.5 * 0.02),
+            0.7,
+            Math.min(0.9, (point3Height * 0.5) ** 1.5 * 0.02),
+            0,
+          ];
+          const point4Color: Vector.Vector4 = [
+            Math.min(0.9, (point4Height * 0.5) ** 1.5 * 0.02),
+            0.7,
+            Math.min(0.9, (point4Height * 0.5) ** 1.5 * 0.02),
+            0,
+          ];
           const key = `${
             gridShipPosition[0] + x * terrainOneSize - terrainHalfSize
           },${gridShipPosition[2] + z * terrainOneSize - terrainHalfSize}`;
           return (
+            // <Slot
+            //   name={key}
+            //   key={key}
+            //   position={[
+            //     gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
+            //     -8 + height / 2,
+            //     gridShipPosition[2] + z * terrainOneSize - terrainHalfSize,
+            //   ]}
+            // >
+            //   <Box scale={[terrainOneSize, height, terrainOneSize]} />
+            // </Slot>
             <Slot
-              name={key}
               key={key}
               position={[
                 gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
-                -8 + height / 2,
+                -9,
                 gridShipPosition[2] + z * terrainOneSize - terrainHalfSize,
               ]}
             >
-              <Box scale={[terrainOneSize, height, terrainOneSize]} />
+              <Triangle
+                point1={[terrainOneSize, point2Height, 0]}
+                point1Color={point2Color}
+                point2={[0, point1Height, 0]}
+                point2Color={point1Color}
+                point3={[0, point3Height, terrainOneSize]}
+                point3Color={point3Color}
+              />
+              <Triangle
+                point1={[terrainOneSize, point2Height, 0]}
+                point1Color={point2Color}
+                point2={[0, point3Height, terrainOneSize]}
+                point2Color={point3Color}
+                point3={[terrainOneSize, point4Height, terrainOneSize]}
+                point3Color={point4Color}
+              />
             </Slot>
           );
         }
@@ -95,12 +183,14 @@ const GlobalAnchor = (props: {
   position: [number, number, number];
   targetPosition: [number, number, number];
   moveSpeed: number;
+  sectionLevel: number;
   children: React.ReactElement | React.ReactElement[];
 }) => {
   const [position, setPosition] = useState(props.position);
   const [move, setMove] = useState<Vector.Vector3>([0, 0, 0]);
   const [moveTime, setMoveTime] = useState(0);
   const timeLimitSentRef = useRef(false);
+  const prevSectionLevelRef = useRef(0);
 
   useEffect(() => {
     const timeLimit =
@@ -125,12 +215,18 @@ const GlobalAnchor = (props: {
     timeLimitSentRef.current = false;
     const moveSub = Vector.distance(newMove, move);
 
-    if (moveSub > 0.001) {
+    if (moveSub > 0.001 || props.sectionLevel !== prevSectionLevelRef.current) {
       setPosition(newPosition);
       setMove(newMove);
       setMoveTime(timeLimit);
+      prevSectionLevelRef.current = props.sectionLevel;
     }
-  }, [props.position, props.targetPosition, props.moveSpeed]);
+  }, [
+    props.position,
+    props.targetPosition,
+    props.moveSpeed,
+    props.sectionLevel,
+  ]);
 
   return (
     <MovedSlot position={position} move={move} moveTime={moveTime}>
@@ -144,64 +240,113 @@ const SkillSelection = (props: {
   selectSkillInCheckpoint: SnatchCompany["selectSkillInCheckpoint"];
 }) => {
   return (
-    <LayoutElement>
+    <>
       {props.gameState.players.map((player) => (
-        <LocalView key={player.id} userId={player.id}>
-          <VerticalLayout>
-            <>
-              {props.gameState.section.mode === "checkpoint" &&
-                props.gameState.section.skillSelection[player.id].map(
-                  ({ skills }, index1) => {
-                    return (
-                      <LayoutElement key={index1}>
-                        <HorizontalLayout spacing={10}>
-                          {skills.map((skill, index2) => (
-                            <LayoutElement key={index2}>
-                              <VerticalLayout>
-                                <StyledText
-                                  content={skill.name.ja}
-                                  verticalAutoSize={true}
-                                  horizontalAutoSize={true}
-                                />
-                                <StyledText
-                                  content={skill.effect
-                                    .map((e) => e.description.ja)
-                                    .join("\n")}
-                                  verticalAutoSize={true}
-                                  horizontalAutoSize={true}
-                                />
-                                <LayoutElement minHeight={100}>
-                                  <StyledButton
-                                    onClick={() =>
-                                      props.selectSkillInCheckpoint(
-                                        player.id,
-                                        index1,
-                                        index2
-                                      )
-                                    }
-                                    styledColor={Color.button}
-                                  >
-                                    <StyledText
-                                      content="Select"
-                                      horizontalAlign="Center"
-                                      verticalAlign="Middle"
-                                      styledColor={Color.buttonText}
-                                    />
-                                  </StyledButton>
-                                </LayoutElement>
-                              </VerticalLayout>
-                            </LayoutElement>
-                          ))}
-                        </HorizontalLayout>
-                      </LayoutElement>
-                    );
-                  }
-                )}
-            </>
-          </VerticalLayout>
-        </LocalView>
+        <PlayerSkillSelect
+          key={player.id}
+          player={player}
+          selection={props.gameState.section.skillSelection[player.id]}
+          selectSkill={props.selectSkillInCheckpoint}
+        />
       ))}
-    </LayoutElement>
+    </>
+  );
+};
+
+const Se = (props: {
+  gameState: GameStateInGame<Section>;
+  setCallback: SnatchCompany["setCallback"];
+  clearCallback: SnatchCompany["clearCallback"];
+}) => {
+  const playOnShotSeRef = useRef((code: string) => {});
+
+  const arrivedCheckpointNear =
+    props.gameState.section.mode === "battle"
+      ? Vector.distance(
+          props.gameState.section.targetPoint,
+          props.gameState.ship.position
+        ) < 90
+      : false;
+
+  // CheckpointNear
+  useEffect(() => {
+    if (arrivedCheckpointNear) {
+      playOnShotSeRef.current("checkpointNear");
+    }
+  }, [arrivedCheckpointNear]);
+
+  // StartGame
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (props.gameState.section.mode === "battle") {
+        playOnShotSeRef.current("startGame");
+      }
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  //callbacks
+  useEffect(() => {
+    //onStartEvent
+    const onStartEventCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartEvent"],
+      undefined
+    >[number] = (_event) => {
+      playOnShotSeRef.current(
+        "battleStart" + Math.floor(Math.random() * 3 + 1)
+      );
+    };
+
+    //onStartBossEvent
+    const onStartBossEventCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartBossEvent"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("startBoss");
+    };
+
+    //onStartCheckpoint
+    const onStartCheckpointCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartCheckpoint"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("startCheckpoint");
+    };
+
+    //gameClear
+    const onGameClearCallback: Exclude<
+      SnatchCompany["callbacks"]["onGameClear"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("gameClear");
+    };
+
+    props.setCallback({ onStartEvent: [onStartEventCallback] });
+    props.setCallback({ onStartBossEvent: [onStartBossEventCallback] });
+    props.setCallback({ onStartCheckpoint: [onStartCheckpointCallback] });
+
+    return () => {
+      props.clearCallback(onStartEventCallback);
+      props.clearCallback(onStartBossEventCallback);
+      props.clearCallback(onStartCheckpointCallback);
+    };
+  }, [props.setCallback, props.clearCallback]);
+
+  const [doneShieldAlert, setDoneShieldAlert] = useState(false);
+
+  useEffect(() => {
+    if (props.gameState.ship.shield === 0 && !doneShieldAlert) {
+      playOnShotSeRef.current("shieldAlert");
+      setDoneShieldAlert(true);
+    }
+  }, [props.gameState.ship.shield, doneShieldAlert]);
+
+  return (
+    <SeManager
+      dynamicImpulseTriggerRefs={{
+        playOnShotSe: playOnShotSeRef,
+      }}
+    />
   );
 };
 
@@ -222,6 +367,25 @@ export const InGameRenderer = (props: {
     [props.addPlayer]
   );
 
+  const setupPlayerCount =
+    props.gameState.section.mode === "checkpoint"
+      ? Object.entries(props.gameState.section.skillSelection).filter(
+          ([, select]) => select.length > 0
+        ).length
+      : 0;
+
+  const clearedSectionNumber =
+    props.gameState.section.mode === "checkpoint"
+      ? props.gameState.section.nextSectionLevel
+      : props.gameState.section.level;
+  const arrivedCheckpointNear =
+    props.gameState.section.mode === "battle"
+      ? Vector.distance(
+          props.gameState.section.targetPoint,
+          props.gameState.ship.position
+        ) < 90
+      : false;
+
   return (
     <Slot>
       <GlobalAnchor
@@ -232,6 +396,11 @@ export const InGameRenderer = (props: {
             : props.gameState.ship.position
         }
         moveSpeed={props.gameState.ship.speed}
+        sectionLevel={
+          props.gameState.section.mode === "battle"
+            ? props.gameState.section.level
+            : -1
+        }
       >
         <>
           {props.children}
@@ -245,167 +414,65 @@ export const InGameRenderer = (props: {
                 shipPosition={props.gameState.ship.position}
                 attack2Object={props.attack2Object}
               />
-            ))}
-          {props.gameState.section.mode === "battle" ? (
-            <Box
-              position={props.gameState.section.targetPoint}
-              scale={[1, 500, 1]}
-            />
-          ) : (
-            <></>
-          )}
+            ))}{" "}
+          {Array.from({ length: 5 }).map((_, i) => (
+            <Slot key={i} position={[0, -8, 210 * 3 * i]}>
+              {i < clearedSectionNumber + (arrivedCheckpointNear ? 1 : 0) ? (
+                <Checkpoint />
+              ) : (
+                <CheckpointMarker />
+              )}
+            </Slot>
+          ))}
         </>
       </GlobalAnchor>
       {props.gameState.section.mode === "checkpoint" ? (
-        <Canvas position={[0, 1, 0]} size={[3000, 1000]}>
+        <Canvas position={[0, 3, 5]} size={[3000, 1000]}>
           <StyledImage />
           <VerticalLayout>
             <StyledText content="Checkpoint"></StyledText>
-
-            <StyledButton onClick={props.startNextSection}>
+            {setupPlayerCount > 0 && (
               <StyledText
-                content="Go Next"
-                verticalAlign="Middle"
-                horizontalAlign="Center"
-              />
-            </StyledButton>
+                content={`スキル選択中...${setupPlayerCount}人\n${props.gameState.players
+                  .filter((player) => {
+                    if (props.gameState.section.mode === "checkpoint") {
+                      const section = props.gameState.section;
+                      return (
+                        props.gameState.section.skillSelection[player.id]
+                          .length > 0
+                      );
+                    }
+                    return false;
+                  })
+                  .map((player) => player.id)
+                  .join("\n")}`}
+              ></StyledText>
+            )}
+            {setupPlayerCount === 0 && (
+              <StyledButton onClick={props.startNextSection}>
+                <StyledText
+                  content="Go Next"
+                  verticalAlign="Middle"
+                  horizontalAlign="Center"
+                />
+              </StyledButton>
+            )}
           </VerticalLayout>
         </Canvas>
       ) : (
         <></>
       )}
-
       {props.gameState.section.mode === "checkpoint" ? (
-        <Canvas size={[3000, 1000]} position={[0, 4, 3]}>
-          <StyledImage styledMaterial={Material.background} />
-          <VerticalLayout
-            paddingBottom={50}
-            paddingLeft={50}
-            paddingRight={50}
-            paddingTop={50}
-          >
-            <LayoutElement flexibleHeight={1}>
-              <SkillSelection
-                gameState={{
-                  ...props.gameState,
-                  section: props.gameState.section,
-                }}
-                selectSkillInCheckpoint={props.selectSkillInCheckpoint}
-              />
-            </LayoutElement>
-            <LayoutElement minHeight={100}></LayoutElement>
-          </VerticalLayout>
-        </Canvas>
+        <SkillSelection
+          gameState={{
+            ...props.gameState,
+            section: props.gameState.section,
+          }}
+          selectSkillInCheckpoint={props.selectSkillInCheckpoint}
+        />
       ) : (
         <></>
       )}
-      <Canvas size={[2000, 2000]} position={[0, 4, 0]}>
-        <StyledImage styledMaterial={Material.background} />
-        <VerticalLayout>
-          <LayoutElement flexibleHeight={1}>
-            <StyledScrollArea verticalFit="MinSize">
-              <VerticalLayout forceExpandChildHeight={false}>
-                {props.gameState.players.map((player) => (
-                  <VerticalLayout
-                    key={player.id}
-                    forceExpandChildHeight={false}
-                  >
-                    <StyledText content={player.name} />
-                    <StyledText
-                      content={`攻撃力: ${Math.round(
-                        player.finalStatus.attack
-                      )} (${
-                        Math.round(player.baseStatus.attack * 100) / 100
-                      } + ${
-                        Math.round(player.passiveStatusUpper.attack.add * 100) /
-                        100
-                      } +${Math.round(
-                        player.passiveStatusUpper.attack.rate * 100
-                      )}%)
-クリティカル: ${Math.round(
-                        player.finalStatus.critical * 100
-                      )}% クリティカルダメージ${Math.round(
-                        150 + player.finalStatus.criticalDamage * 100
-                      )}%
-攻撃速度: ${Math.round(player.finalStatus.attackSpeed * 100) / 100} (${
-                        Math.round(player.baseStatus.attackSpeed * 100) / 100
-                      }+${
-                        Math.round(
-                          player.passiveStatusUpper.attackSpeed.add * 100
-                        ) / 100
-                      } +${Math.round(
-                        player.passiveStatusUpper.attackSpeed.rate * 100
-                      )}%)
-エネルギー回復: ${Math.round(player.finalStatus.chargeEnergy)} (${
-                        Math.round(player.baseStatus.chargeEnergy * 100) / 100
-                      } +${Math.round(
-                        player.passiveStatusUpper.chargeEnergy.add
-                      )} +${Math.round(
-                        player.passiveStatusUpper.chargeEnergy.rate * 100
-                      )}%)
-最大エネルギー: ${Math.round(player.finalStatus.maxEnergy)} (${
-                        Math.round(player.baseStatus.maxEnergy * 100) / 100
-                      } +${
-                        Math.round(
-                          player.passiveStatusUpper.maxEnergy.add * 100
-                        ) / 100
-                      } +${Math.round(
-                        player.passiveStatusUpper.maxEnergy.rate * 100
-                      )}%)`}
-                    />
-                    <VerticalLayout paddingLeft={100}>
-                      {player.skills.map((skill, index) => (
-                        <LayoutElement key={index} minHeight={50}>
-                          <HorizontalLayout>
-                            <StyledText
-                              content={skill.name.ja}
-                              verticalAutoSize={true}
-                              horizontalAutoSize={true}
-                            />
-                            <StyledText
-                              content={skill.effect
-                                .map((e) => e.description.ja)
-                                .join("\n")}
-                              verticalAutoSize={true}
-                              horizontalAutoSize={true}
-                            />
-                            <StyledText
-                              content={skill.effect
-                                .map((e) => JSON.stringify(e.state))
-                                .join("\n")}
-                              verticalAutoSize={true}
-                              horizontalAutoSize={true}
-                            />
-                          </HorizontalLayout>
-                        </LayoutElement>
-                      ))}
-                    </VerticalLayout>
-                  </VerticalLayout>
-                ))}
-              </VerticalLayout>
-            </StyledScrollArea>
-          </LayoutElement>
-          <LayoutElement minHeight={100}>
-            <StyledButton onClick={addPlayerButtonOnClick}>
-              <StyledText
-                content="Join"
-                verticalAlign="Middle"
-                horizontalAlign="Center"
-              />
-            </StyledButton>
-          </LayoutElement>
-        </VerticalLayout>
-      </Canvas>
-      <Slot position={[0, 2, 0]}>
-        {props.gameState.players.map((player) => (
-          <GunRenderer
-            key={player.id}
-            player={player}
-            setCallback={props.setCallback}
-            clearCallback={props.clearCallback}
-          />
-        ))}
-      </Slot>
       <Slot position={[0, 3.5, 0]}>
         <ShipDisplay
           activeCollider={props.gameState.section.mode === "checkpoint"}
@@ -487,7 +554,8 @@ export const InGameRenderer = (props: {
         </ShipDisplay>
       </Slot>
       <Slot>
-        {props.gameState.section.mode === "battle" ? (
+        {props.gameState.section.mode === "battle" && [
+          ,
           [
             ...props.gameState.section.events,
             ...props.gameState.section.subEvents,
@@ -505,11 +573,31 @@ export const InGameRenderer = (props: {
                     attack2Object={props.attack2Object}
                   />
                 )
-            )
-        ) : (
-          <></>
-        )}
+            ),
+          props.gameState.section.bossEvent &&
+            props.gameState.section.bossEvent.state === "processing" && (
+              <props.gameState.section.bossEvent.drawOnShip
+                key={2}
+                gameState={{
+                  ...props.gameState,
+                  section: props.gameState.section,
+                }}
+                attack2Object={props.attack2Object}
+              />
+            ),
+        ]}
       </Slot>
+      <ShieldAlert
+        active={
+          props.gameState.section.mode === "battle" &&
+          props.gameState.ship.shield / props.gameState.ship.maxShield < 0.001
+        }
+      />
+      <Se
+        gameState={props.gameState}
+        setCallback={props.setCallback}
+        clearCallback={props.clearCallback}
+      />
     </Slot>
   );
 };

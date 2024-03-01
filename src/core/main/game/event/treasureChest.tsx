@@ -91,6 +91,7 @@ export class TreasureChest extends SnatchCompanyEvent {
       damage2Ship: SnatchCompany["damage2Ship"];
       addSkill4Event: SnatchCompany["addSkill4Event"];
       announcement: SnatchCompany["announcement"];
+      addEvent: (event: SnatchCompanyEvent) => void;
     },
     deltaTime: number
   ): void {
@@ -123,8 +124,8 @@ export class TreasureChest extends SnatchCompanyEvent {
               type: "mineral",
               position,
               rotation: [0, 0, 0, 0],
-              health: 20 + dpsSample * 5,
-              maxHealth: 20 + dpsSample * 5,
+              health: 20 + dpsSample * 15,
+              maxHealth: 20 + dpsSample * 15,
               reward: [
                 {
                   type: "shield",

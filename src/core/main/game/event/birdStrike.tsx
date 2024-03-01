@@ -19,7 +19,7 @@ type BirdObject = SnatchCompanyObject & {
   startTime: number;
 };
 
-const BirdBiew = (props: {
+const BirdView = (props: {
   object: BirdObject;
   attack2Objet: SnatchCompany["attack2Object"];
 }) => {
@@ -42,7 +42,7 @@ const BirdBiew = (props: {
   return (
     <MovedSlot position={props.object.position} move={move} moveTime={moveTime}>
       <Resource onHit={onHit}>
-        <Slot scale={[2, 2, 2]}>
+        <Slot scale={[3, 3, 3]}>
           <Bird />
         </Slot>
       </Resource>
@@ -84,7 +84,7 @@ export class BirdStrike extends SnatchCompanyEvent {
     if (gameState.mode === "inGame") {
       const section = gameState.section;
       if (section.mode === "battle") {
-        this.birdSpawnCount = Math.floor(5);
+        this.birdSpawnCount = section.level < 3 ? 10 : 15;
       }
     }
   }
@@ -95,6 +95,7 @@ export class BirdStrike extends SnatchCompanyEvent {
       damage2Ship: SnatchCompany["damage2Ship"];
       addSkill4Event: SnatchCompany["addSkill4Event"];
       announcement: SnatchCompany["announcement"];
+      addEvent: (event: SnatchCompanyEvent) => void;
     },
     deltaTime: number
   ): void {
@@ -106,14 +107,14 @@ export class BirdStrike extends SnatchCompanyEvent {
       if (section.mode === "battle") {
         if (this.birdSpawnTimer <= 0 && this.birdSpawnCount > 0) {
           this.birdSpawnCount--;
-          this.birdSpawnTimer = 3;
+          this.birdSpawnTimer = section.level < 3 ? 2 : 1.3;
           const dpsSample = getDpsSample(section.level, this.triggerTime);
           Array.from({
             length:
               1 +
-              Math.floor(
-                (1 + (game.gameState.players.length - 1) * 0.8) *
-                  Math.min(3, Math.max(5, dpsSample / 200))
+              Math.min(
+                6,
+                Math.floor(1 + (game.gameState.players.length - 1) * 0.8)
               ),
           }).forEach((_, i) => {
             const position: Vector.Vector3 = [
@@ -131,12 +132,12 @@ export class BirdStrike extends SnatchCompanyEvent {
               reward: [
                 {
                   type: "exp",
-                  value: dpsSample * 0.002,
+                  value: dpsSample * 0.008,
                   damageReturn: true,
                 },
               ],
-              targetPoint: [Math.random() * 16 - 8, 2, Math.random() * 10 - 5],
-              moveSpeed: Math.random() * 5 + 15,
+              targetPoint: [Math.random() * 14 - 7, 2, Math.random() * 10 - 5],
+              moveSpeed: Math.random() * 5 + 5,
               startTime: this.time,
             });
           });
@@ -159,7 +160,7 @@ export class BirdStrike extends SnatchCompanyEvent {
       const distance = Vector.distance(currentPosition, object.targetPoint);
       if (distance < 0.1) {
         object.health = 0;
-        game.damage2Ship(20);
+        game.damage2Ship(game.gameState.section.level === 1 ? 5 : 10);
       }
     });
 
@@ -188,7 +189,7 @@ export class BirdStrike extends SnatchCompanyEvent {
     return (
       <>
         {this.objects.map((object) => (
-          <BirdBiew
+          <BirdView
             key={object.id}
             object={object}
             attack2Objet={props.attack2Object}

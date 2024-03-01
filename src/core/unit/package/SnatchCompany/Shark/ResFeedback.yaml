@@ -482,7 +482,7 @@ Children:
                       Data:
                         Play: true
                         Loop: true
-                        RawPosition: 104258
+                        RawPosition: 773595
                         Speed: 6.666666666666667
                         MaxError: 1666.6666666666667
                         MaxDeviation: 1666.6666666666667
@@ -1219,9 +1219,9 @@ Children:
                             Rotation:
                               ID: ID:spine.002:Tag:3
                               Data:
-                                - 110555.66666666667
-                                - -11222.333333333334
-                                - 666.6666666666666
+                                - 111000
+                                - -2666.6666666666665
+                                - 111
                                 - -2333.3333333333335
                             Scale:
                               ID: ID:spine.002:Tag:4
@@ -1294,9 +1294,9 @@ Children:
                                       ID: ID:spine:Tag:3
                                       Data:
                                         - -2666.6666666666665
-                                        - -222.33333333333334
-                                        - 7111
-                                        - 110889
+                                        - 0
+                                        - -1555.6666666666667
+                                        - 111111
                                     Scale:
                                       ID: ID:spine:Tag:4
                                       Data:
@@ -1776,7 +1776,7 @@ Children:
                                   Data:
                                     - -555.6666666666666
                                     - 0
-                                    - -777.6666666666666
+                                    - -1889
                                     - 111111
                                 Scale:
                                   ID: ID:spine.004:Tag:4
@@ -2070,8 +2070,8 @@ Children:
                                                 Rotation:
                                                   ID: ID:jaw.master:Tag:3
                                                   Data:
-                                                    - -5666.666666666667
-                                                    - 1666.6666666666667
+                                                    - -4777.666666666667
+                                                    - 1333.3333333333333
                                                     - 111
                                                     - 111000
                                                 Scale:
@@ -2990,15 +2990,15 @@ Children:
               ID: "?"
               Data:
                 - 0
-                - 0
-                - 0
+                - 51889
+                - 2555.6666666666665
             Rotation:
               ID: "?"
               Data:
-                - 0
-                - 0
-                - 0
-                - 111111
+                - 55555.666666666664
+                - 55555.666666666664
+                - -55555.666666666664
+                - 55555.666666666664
             Scale:
               ID: "?"
               Data:
@@ -3014,7 +3014,7 @@ Children:
             Components:
               ID: "?"
               Data:
-                - Type: FrooxEngine.SphereCollider
+                - Type: FrooxEngine.CapsuleCollider
                   Data:
                     ID: "?"
                     persistent-ID: "?"
@@ -3042,6 +3042,9 @@ Children:
                     IgnoreRaycasts:
                       ID: "?"
                       Data: false
+                    Height:
+                      ID: "?"
+                      Data: 1000
                     Radius:
                       ID: "?"
                       Data: 166.66666666666666

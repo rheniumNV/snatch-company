@@ -11,6 +11,7 @@ export type Status = {
   moveSpeed: number;
   antiPlant: number;
   antiMineral: number;
+  extraDamage: number;
 };
 
 export type Upper = {
@@ -28,6 +29,7 @@ export type StatusUpper = {
   moveSpeed: Upper;
   antiPlant: Upper;
   antiMineral: Upper;
+  extraDamage: Upper;
 };
 
 export type EffectSource =
@@ -85,6 +87,8 @@ export type StatusEffect<T> = {
       object: Readonly<SnatchCompanyObject>;
       damage: number;
       overDamage: number;
+      extraDamage: number;
+      resultDamage: number;
       criticalCount: number;
       hitPoint: Vector.Vector3;
       destroyed: boolean;
@@ -116,6 +120,7 @@ export type Skill = {
   rarity: "normal" | "rare" | "epic";
   effect: StatusEffect<object>[];
   demerit: boolean;
+  icon: string;
 };
 
 export type SnatchCompanyObject = {
@@ -125,11 +130,19 @@ export type SnatchCompanyObject = {
   rotation: Vector.Vector4;
   health: number;
   maxHealth: number;
+  resourceObjectLevel?: number;
   reward: {
     type: "exp" | "shield";
     value: number;
     damageReturn: boolean;
   }[];
+};
+
+export type PlayerScore = {
+  totalDamage: { mineral: number; plant: number; event: number };
+  lastHit: { mineral: number; plant: number; event: number };
+  hitCount: number;
+  criticalCount: number;
 };
 
 export type Player = {
@@ -140,6 +153,7 @@ export type Player = {
   passiveStatusUpper: StatusUpper;
   finalStatus: Status;
   statusBuffs: StatusBuff[];
+  playerScore: PlayerScore;
 };
 
 export type GameStateLobby = {
@@ -172,14 +186,18 @@ export type BattleSection = {
   level: number;
   targetPoint: Vector.Vector3;
   objects: SnatchCompanyObject[];
+  resourceObjectGeneratedState: number;
   events: SnatchCompanyEvent[];
   subEvents: SnatchCompanyEvent[];
+  bossEvent?: SnatchCompanyEvent;
   time: number;
 };
 
 export type CheckpointSection = {
   mode: "checkpoint";
   nextSectionLevel: number;
+  objects: SnatchCompanyObject[];
+  resourceObjectGeneratedState: number;
   skillSelection: { [playerId: string]: { skills: Skill[] }[] };
 };
 
@@ -199,6 +217,8 @@ export type GameStateInGame<S extends Section> = {
 
 export type GameStateResult = {
   mode: "result";
+  isClear: boolean;
+  bossClearTime?: number;
   players: Player[];
 };
 
@@ -212,11 +232,18 @@ export type Callbacks = {
     attacker: Readonly<Player>;
     object: Readonly<SnatchCompanyObject>;
     damage: number;
+    extraDamage: number;
     overDamage: number;
+    resultDamage: number;
     criticalCount: number;
     hitPoint: Vector.Vector3;
     destroyed: boolean;
   }) => void)[];
   levelup?: ((arg: { level: number }) => void)[];
   onAnnouncement?: ((arg: Announcement) => void)[];
+  onStartBossEvent?: (() => void)[];
+  onStartCheckpoint?: (() => void)[];
+  onStartGame?: (() => void)[];
+  onStartEvent?: ((arg: SnatchCompanyEvent) => void)[];
+  onGameClear?: (() => void)[];
 };

@@ -402,9 +402,9 @@ Children:
                   ID: ID:Offset:Tag:3
                   Data:
                     - 0
-                    - 110889
+                    - 103666.66666666667
                     - 0
-                    - -6666.666666666667
+                    - -40111
                 Scale:
                   ID: "?"
                   Data:
@@ -439,9 +439,9 @@ Children:
                       ID: ID:Smooth:Tag:3
                       Data:
                         - 0
-                        - 1000
                         - 0
-                        - -111111
+                        - 0
+                        - 111111
                     Scale:
                       ID: "?"
                       Data:

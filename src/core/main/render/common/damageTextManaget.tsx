@@ -55,7 +55,8 @@ export const DamageTextManager = (props: {
       {damageTexts.map((text, index) => (
         <DamageEffect
           key={index}
-          damage={text.option.damage + text.option.overDamage}
+          damage={Math.floor(text.option.damage + text.option.extraDamage)}
+          extraDamage={text.option.extraDamage}
           criticalCount={text.option.criticalCount}
           position={text.option.hitPoint}
         />

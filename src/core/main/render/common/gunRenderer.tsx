@@ -12,25 +12,29 @@ export const GunRenderer = (props: {
   const levelupRef = useRef(() => {});
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      equipRef.current();
-    }, 1000);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  useEffect(() => {
-    const callback: Exclude<
+    const levelUpCallback: Exclude<
       SnatchCompany["callbacks"]["levelup"],
       undefined
     >[number] = (arg) => {
-      console.log("levelup", arg);
       levelupRef.current();
     };
     props.setCallback({
-      levelup: [callback],
+      levelup: [levelUpCallback],
     });
+
+    const startGameCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartGame"],
+      undefined
+    >[number] = () => {
+      equipRef.current();
+    };
+    props.setCallback({
+      onStartGame: [startGameCallback],
+    });
+
     return () => {
-      props.clearCallback(callback);
+      props.clearCallback(levelUpCallback);
+      props.clearCallback(startGameCallback);
     };
   }, [props.player.id, props.setCallback, props.clearCallback]);
 

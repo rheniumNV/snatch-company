@@ -9,8 +9,12 @@ export const rareSkills: Skill[] = [
       ja: "最大エネルギーアップ",
     },
     rarity: "rare",
-    effect: [generatePassiveStatusUpEffect("maxEnergy", "rate", 0.5)],
+    effect: [
+      generatePassiveStatusUpEffect("maxEnergy", "rate", 0.5),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.2),
+    ],
     demerit: false,
+    icon: "recharge",
   },
   {
     code: "rare_AntiPlant",
@@ -19,8 +23,9 @@ export const rareSkills: Skill[] = [
       en: "Biological special attack",
     },
     rarity: "rare",
-    effect: [generatePassiveStatusUpEffect("antiPlant", "rate", 0.5)],
+    effect: [generatePassiveStatusUpEffect("antiPlant", "rate", 0.4)],
     demerit: false,
+    icon: "sword_anti",
   },
   {
     code: "rare_AntiMineral",
@@ -29,8 +34,9 @@ export const rareSkills: Skill[] = [
       en: "Inorganic special attack",
     },
     rarity: "rare",
-    effect: [generatePassiveStatusUpEffect("antiMineral", "rate", 0.5)],
+    effect: [generatePassiveStatusUpEffect("antiMineral", "rate", 0.4)],
     demerit: false,
+    icon: "sword_anti",
   },
   {
     code: "rare_Cunning",
@@ -44,25 +50,34 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "クリティカル率アップの上限が100%になる",
-          en: "Critical chance upper limit becomes 100%",
+          ja: "クリティカル率アップの上限が100%になり、それ以上の上昇効果は半分の攻撃力に変換される",
+          en: "The upper limit of the critical rate increase becomes 100%, and the increase effect beyond that is converted to attack power",
         },
-        passive: (prev) => ({
-          state: {},
-          statusBuffs: [],
-          statusUpper: {
-            ...prev.statusUpper,
-            critical: {
-              ...prev.statusUpper.critical,
-              add: Math.min(1, prev.statusUpper.critical.add),
+        passive: (prev) => {
+          return {
+            state: {},
+            statusBuffs: [],
+            statusUpper: {
+              ...prev.statusUpper,
+              critical: {
+                ...prev.statusUpper.critical,
+                add: Math.min(1, prev.statusUpper.critical.add),
+              },
+              attack: {
+                ...prev.statusUpper.attack,
+                rate:
+                  prev.statusUpper.attack.rate +
+                  Math.max(0, prev.statusUpper.critical.add - 1) * 0.5,
+              },
             },
-          },
-        }),
+          };
+        },
         state: {},
         order: 100,
       },
     ],
     demerit: true,
+    icon: "sword_crit",
   },
   {
     code: "rare_ComboAttack",
@@ -75,25 +90,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "前回と同じターゲットを攻撃するたび、攻撃力 10% up（最大50%）",
-          en: "If you attack the same target as the previous time, the attack power increases by 10% (up to 50% maximum).",
-        },
-        passive: (prev) => {
-          const count =
-            "count" in prev.state && typeof prev.state["count"] === "number"
-              ? prev.state["count"]
-              : 0;
-          return {
-            state: prev.state,
-            statusBuffs: [],
-            statusUpper: {
-              ...prev.statusUpper,
-              attack: {
-                ...prev.statusUpper.attack,
-                rate: prev.statusUpper.attack.rate + Math.min(5, count) * 0.1,
-              },
-            },
-          };
+          ja: "前回と同じターゲットを攻撃すると追加ダメージ 15",
+          en: "Attacking the same target as the previous time deals an additional 15 damage",
         },
         onHit: (prev, attacker, target) => {
           if (
@@ -110,7 +108,13 @@ export const rareSkills: Skill[] = [
                 count,
               },
               statusBuffs: [],
-              statusUpper: prev.statusUpper,
+              statusUpper: {
+                ...prev.statusUpper,
+                extraDamage: {
+                  ...prev.statusUpper.extraDamage,
+                  add: prev.statusUpper.extraDamage.add + 15,
+                },
+              },
             };
           }
           return { ...prev, state: { lastTargetId: target.id, count: 0 } };
@@ -123,6 +127,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_enchantment",
   },
   {
     code: "rare_Composure",
@@ -135,8 +140,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "シールドが75%以上のとき、攻撃力 5 up",
-          en: "When the shield is 75% or more, the attack power increases by 5.",
+          ja: "シールドが75%以上のとき、攻撃力 40% up",
+          en: "When the shield is 75% or more, the attack power increases by 35%",
         },
         passive: (prev, gameState) => ({
           state: {},
@@ -145,11 +150,11 @@ export const rareSkills: Skill[] = [
             ...prev.statusUpper,
             attack: {
               ...prev.statusUpper.attack,
-              add:
+              rate:
                 gameState.mode === "inGame" &&
                 gameState.ship.shield / gameState.ship.maxShield > 0.75
-                  ? prev.statusUpper.attack.add + 5
-                  : prev.statusUpper.attack.add,
+                  ? prev.statusUpper.attack.rate + 0.4
+                  : prev.statusUpper.attack.rate,
             },
           },
         }),
@@ -158,6 +163,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_BattleReady",
@@ -170,8 +176,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "10秒ごとに次の攻撃まで攻撃力 200% up",
-          en: "Attack power increases by 200% until the next attack every 10 seconds",
+          ja: "5秒ごとに次の攻撃まで攻撃力 100% up",
+          en: "Attack power increases by 100% until the next attack every 5 seconds",
         },
         passive: (prev, gameState, deltaTime) => {
           if (
@@ -182,10 +188,10 @@ export const rareSkills: Skill[] = [
             return {
               state: {
                 time:
-                  prev.state.active || prev.state.time > 10
+                  prev.state.active || prev.state.time > 5
                     ? 0
                     : prev.state.time + deltaTime,
-                active: prev.state.active || prev.state.time > 10,
+                active: prev.state.active || prev.state.time > 5,
               },
               statusBuffs: [],
               statusUpper: {
@@ -193,7 +199,7 @@ export const rareSkills: Skill[] = [
                 attack: {
                   ...prev.statusUpper.attack,
                   rate:
-                    prev.statusUpper.attack.rate + (prev.state.active ? 2 : 0),
+                    prev.statusUpper.attack.rate + (prev.state.active ? 1 : 0),
                 },
               },
             };
@@ -240,6 +246,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_enchantment",
   },
   {
     code: "rare_Quick Strike",
@@ -252,22 +259,22 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "攻撃5回ごとに、次の攻撃力 10 up",
-          en: "Every 5 attacks, the next attack power increases by 10.",
+          ja: "攻撃5回ごとに、次の攻撃に追加ダメージ 70",
+          en: "Every 5 attacks, the next attack deals an additional 50 damage",
         },
         passive: (prev, gameState) => ({
           state: prev.state,
           statusBuffs: [],
           statusUpper: {
             ...prev.statusUpper,
-            attack: {
-              ...prev.statusUpper.attack,
+            extraDamage: {
+              ...prev.statusUpper.extraDamage,
               add:
                 "count" in prev.state &&
                 typeof prev.state.count === "number" &&
                 prev.state.count >= 5
-                  ? prev.statusUpper.attack.add + 10
-                  : prev.statusUpper.attack.add,
+                  ? prev.statusUpper.extraDamage.add + 70
+                  : prev.statusUpper.extraDamage.add,
             },
           },
         }),
@@ -290,6 +297,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_enchantment",
   },
   {
     code: "rare_AttakUp-Ex",
@@ -298,8 +306,9 @@ export const rareSkills: Skill[] = [
       en: "AttackUp-Ex",
     },
     rarity: "rare",
-    effect: [generatePassiveStatusUpEffect("attack", "rate", 0.2)],
+    effect: [generatePassiveStatusUpEffect("attack", "rate", 0.25)],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_CriticalUp-Ex",
@@ -308,8 +317,9 @@ export const rareSkills: Skill[] = [
       en: "CritChanceUp-Ex",
     },
     rarity: "rare",
-    effect: [generatePassiveStatusUpEffect("critical", "add", 0.2)],
+    effect: [generatePassiveStatusUpEffect("critical", "add", 0.25)],
     demerit: false,
+    icon: "sword_crit",
   },
   {
     code: "rare_AttackSpeedUp-Ex",
@@ -320,6 +330,7 @@ export const rareSkills: Skill[] = [
     rarity: "rare",
     effect: [generatePassiveStatusUpEffect("attackSpeed", "rate", 0.3)],
     demerit: false,
+    icon: "sword_speed",
   },
   {
     code: "rare_ChargeEnergyUp-Ex",
@@ -330,6 +341,7 @@ export const rareSkills: Skill[] = [
     rarity: "rare",
     effect: [generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.3)],
     demerit: false,
+    icon: "recharge",
   },
   {
     code: "rare_Confident",
@@ -339,26 +351,7 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      {
-        type: "custom",
-        description: {
-          ja: "クリティカルダメージ 50% up",
-          en: "Critical damage 50% up",
-        },
-        passive: (prev) => ({
-          state: {},
-          statusBuffs: [],
-          statusUpper: {
-            ...prev.statusUpper,
-            criticalDamage: {
-              ...prev.statusUpper.criticalDamage,
-              add: prev.statusUpper.criticalDamage.add + 0.5,
-            },
-          },
-        }),
-        state: {},
-        order: 0,
-      },
+      generatePassiveStatusUpEffect("criticalDamage", "rate", 0.3),
       {
         type: "custom",
         description: {
@@ -384,6 +377,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: true,
+    icon: "sword_crit",
   },
   {
     code: "rare_Brutal",
@@ -393,48 +387,11 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      {
-        type: "custom",
-        description: {
-          ja: "攻撃力 100% up",
-          en: "Attack power 100% up",
-        },
-        passive: (prev) => ({
-          state: {},
-          statusBuffs: [],
-          statusUpper: {
-            ...prev.statusUpper,
-            attack: {
-              ...prev.statusUpper.attack,
-              rate: prev.statusUpper.attack.rate + 1,
-            },
-          },
-        }),
-        state: {},
-        order: 0,
-      },
-      {
-        type: "custom",
-        description: {
-          ja: "クリティカル率が0になる",
-          en: "Critical chance becomes 0",
-        },
-        passive: (prev) => ({
-          state: {},
-          statusBuffs: [],
-          statusUpper: {
-            ...prev.statusUpper,
-            critical: {
-              rate: 0,
-              add: 0,
-            },
-          },
-        }),
-        state: {},
-        order: 100,
-      },
+      generatePassiveStatusUpEffect("attack", "rate", 0.5),
+      generatePassiveStatusUpEffect("critical", "add", -0.5),
     ],
     demerit: true,
+    icon: "sword_normal",
   },
   {
     code: "rare_Lumberjack",
@@ -444,10 +401,25 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      generatePassiveStatusUpEffect("antiPlant", "rate", 1),
-      generatePassiveStatusUpEffect("antiMineral", "rate", -0.5),
+      generatePassiveStatusUpEffect("antiPlant", "rate", 0.6),
+      generatePassiveStatusUpEffect("antiMineral", "rate", -0.3),
     ],
     demerit: true,
+    icon: "sword_anti",
+  },
+  {
+    code: "rare_Miner",
+    name: {
+      ja: "採掘者",
+      en: "Miner",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("antiMineral", "rate", 0.6),
+      generatePassiveStatusUpEffect("antiPlant", "rate", -0.3),
+    ],
+    demerit: true,
+    icon: "sword_anti",
   },
   {
     code: "rare_Pinch",
@@ -460,8 +432,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "攻撃対象の体力が100%のとき、攻撃力 200% up",
-          en: "When the target's health is 100%, the attack power increases by 200%",
+          ja: "攻撃対象の体力が100%のとき、攻撃力 80% up",
+          en: "When the target's health is 100%, the attack power increases by 80%",
         },
         onHit: (prev, attacker, object) => ({
           state: {},
@@ -472,7 +444,7 @@ export const rareSkills: Skill[] = [
               ...prev.statusUpper.attack,
               rate:
                 prev.statusUpper.attack.rate +
-                (object.health === object.maxHealth ? 2 : 0),
+                (object.health === object.maxHealth ? 0.8 : 0),
             },
           },
         }),
@@ -481,6 +453,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Scramble",
@@ -493,8 +466,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "イベント発生中、基礎攻撃力 7 up",
-          en: "During the event, basic attack power increases by 7",
+          ja: "イベント発生中、攻撃力 50% up",
+          en: "During an event, the attack power increases by 50%",
         },
         passive: (prev, gameState) => ({
           state: {},
@@ -503,13 +476,13 @@ export const rareSkills: Skill[] = [
             ...prev.statusUpper,
             attack: {
               ...prev.statusUpper.attack,
-              add:
+              rate:
                 gameState.mode === "inGame" &&
                 gameState.section.mode === "battle" &&
                 gameState.section.events.filter((e) => e.state === "processing")
                   .length > 0
-                  ? prev.statusUpper.attack.add + 7
-                  : prev.statusUpper.attack.add,
+                  ? prev.statusUpper.attack.rate + 0.5
+                  : prev.statusUpper.attack.rate,
             },
           },
         }),
@@ -518,6 +491,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Coup de Grâce",
@@ -530,8 +504,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "攻撃対象の体力が30%以下のとき、攻撃力 50% up",
-          en: "When the target's health is 30% or less, the attack power increases by 50%",
+          ja: "攻撃対象の体力が50%以下のとき、攻撃力 50% up",
+          en: "When the target's health is 50% or less, the attack power increases by 50%",
         },
         onHit: (prev, attacker, object) => ({
           state: {},
@@ -542,7 +516,7 @@ export const rareSkills: Skill[] = [
               ...prev.statusUpper.attack,
               rate:
                 prev.statusUpper.attack.rate +
-                (object.health / object.maxHealth <= 0.3 ? 3 : 0),
+                (object.health / object.maxHealth <= 0.5 ? 0.5 : 0),
             },
           },
         }),
@@ -551,6 +525,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Rough",
@@ -585,6 +560,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Moon",
@@ -594,23 +570,23 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      generatePassiveStatusUpEffect("critical", "add", 0.15),
+      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.2),
       {
         type: "custom",
         description: {
-          ja: "スキル「太陽」があるとき、クリティカルダメージ 30% up",
-          en: "When the skill 'Sun' is present, critical damage 30% up",
+          ja: "スキル「太陽」があるとき、さらに攻撃速度 20% up",
+          en: "When the skill 'Sun' is present, attack speed increases by 20%",
         },
         passive: (prev, gameState) => ({
           state: {},
           statusBuffs: [],
           statusUpper: {
             ...prev.statusUpper,
-            criticalDamage: {
-              ...prev.statusUpper.criticalDamage,
-              add: prev.player.skills.some((s) => s.code === "rare_Sun")
-                ? prev.statusUpper.criticalDamage.add + 0.3
-                : prev.statusUpper.criticalDamage.add,
+            attackSpeed: {
+              ...prev.statusUpper.attackSpeed,
+              rate: prev.player.skills.some((s) => s.code === "rare_Sun")
+                ? prev.statusUpper.attackSpeed.rate + 0.2
+                : prev.statusUpper.attackSpeed.rate,
             },
           },
         }),
@@ -619,6 +595,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_speed",
   },
   {
     code: "rare_Sun",
@@ -628,23 +605,23 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      generatePassiveStatusUpEffect("attack", "rate", 0.15),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.2),
       {
         type: "custom",
         description: {
-          ja: "スキル「月」があるとき、基礎攻撃力 10 up",
-          en: "When the skill 'Moon' is present, basic attack power increases by 10",
+          ja: "スキル「月」があるとき、さらにエネルギー回復 20% up",
+          en: "When the skill 'Moon' is present, energy recovery increases by 20%",
         },
         passive: (prev, gameState) => ({
           state: {},
           statusBuffs: [],
           statusUpper: {
             ...prev.statusUpper,
-            attack: {
-              ...prev.statusUpper.attack,
-              add: prev.player.skills.some((s) => s.code === "rare_Moon")
-                ? prev.statusUpper.attack.add + 10
-                : prev.statusUpper.attack.add,
+            chargeEnergy: {
+              ...prev.statusUpper.chargeEnergy,
+              rate: prev.player.skills.some((s) => s.code === "rare_Moon")
+                ? prev.statusUpper.chargeEnergy.rate + 0.2
+                : prev.statusUpper.chargeEnergy.rate,
             },
           },
         }),
@@ -653,6 +630,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "recharge",
   },
   {
     code: "rare_Mundane",
@@ -664,10 +642,11 @@ export const rareSkills: Skill[] = [
     effect: [
       generatePassiveStatusUpEffect("attack", "rate", 0.1),
       generatePassiveStatusUpEffect("critical", "add", 0.1),
-      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.1),
-      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.1),
+      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.15),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.15),
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Small Flask",
@@ -677,10 +656,11 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      generatePassiveStatusUpEffect("maxEnergy", "rate", 0.2),
-      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.6),
+      generatePassiveStatusUpEffect("maxEnergy", "rate", 0.3),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.3),
     ],
     demerit: false,
+    icon: "recharge",
   },
   {
     code: "rare_Deep Breath",
@@ -690,12 +670,12 @@ export const rareSkills: Skill[] = [
     },
     rarity: "rare",
     effect: [
-      generatePassiveStatusUpEffect("attack", "add", 20),
+      generatePassiveStatusUpEffect("attack", "rate", 0.5),
       {
         type: "custom",
         description: {
-          ja: "攻撃するたび、基礎攻撃力 1 up(最大20)30秒ごとにリセットされる",
-          en: "Every time you attack, the basic attack power increases by 1 (up to 20) and resets every 30 seconds",
+          ja: "攻撃するたび、攻撃力 5% down(最大100%)30秒ごとにリセットされる",
+          en: "Every time you attack, the attack power increases by 10% (up to 200%) and resets every 30 seconds",
         },
         passive: (prev, gameState, deltaTime) => {
           if (
@@ -714,9 +694,9 @@ export const rareSkills: Skill[] = [
                 ...prev.statusUpper,
                 attack: {
                   ...prev.statusUpper.attack,
-                  add:
-                    prev.statusUpper.attack.add +
-                    Math.min(20, prev.state.count),
+                  rate:
+                    prev.statusUpper.attack.rate +
+                    0.05 * Math.min(10, prev.state.count),
                 },
               },
             };
@@ -740,7 +720,7 @@ export const rareSkills: Skill[] = [
             return {
               state: {
                 time: prev.state.time,
-                count: prev.state.count < 20 ? prev.state.count + 1 : 20,
+                count: prev.state.count < 10 ? prev.state.count + 1 : 20,
               },
               statusBuffs: [],
               statusUpper: prev.statusUpper,
@@ -760,6 +740,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_normal",
   },
   {
     code: "rare_Lucky Hit",
@@ -772,20 +753,20 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "攻撃時、5%の確率で基礎攻撃力 200 up",
-          en: "When attacking, there is a 5% chance that the basic attack power will increase by 200",
+          ja: "攻撃時、10%の確率で追加ダメージ 100",
+          en: "When attacking, there is a 10% chance of additional damage 100",
         },
         onHit: (prev) => ({
           state: {},
           statusBuffs: [],
           statusUpper: {
             ...prev.statusUpper,
-            attack: {
-              ...prev.statusUpper.attack,
+            extraDamage: {
+              ...prev.statusUpper.extraDamage,
               add:
-                Math.random() < 0.05
-                  ? prev.statusUpper.attack.add + 200
-                  : prev.statusUpper.attack.add,
+                Math.random() < 0.1
+                  ? prev.statusUpper.extraDamage.add + 100
+                  : prev.statusUpper.extraDamage.add,
             },
           },
         }),
@@ -794,6 +775,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_enchantment",
   },
   {
     code: "rare_Unstable",
@@ -806,8 +788,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "攻撃時、ランダムで基礎攻撃力 12 upするか、5 downする",
-          en: "When attacking, the basic attack power increases by 12 or decreases by 5 at random",
+          ja: "攻撃時、ランダムで攻撃力が -20% から +50% 変化する",
+          en: "When attacking, the attack power changes randomly from -20% to +50%",
         },
         onHit: (prev) => {
           return {
@@ -817,10 +799,7 @@ export const rareSkills: Skill[] = [
               ...prev.statusUpper,
               attack: {
                 ...prev.statusUpper.attack,
-                add:
-                  Math.random() < 0.5
-                    ? prev.statusUpper.attack.add + 12
-                    : prev.statusUpper.attack.add - 5,
+                rate: prev.statusUpper.attack.rate + Math.random(),
               },
             },
           };
@@ -830,6 +809,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: true,
+    icon: "sword_normal",
   },
   {
     code: "rare_Lost Chapter",
@@ -843,8 +823,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "レベルアップ後、10秒間 エネルギー回復 50% up",
-          en: "After leveling up, energy recovery increases by 50% for 10 seconds",
+          ja: "レベルアップ後、10秒間 エネルギー回復 200% up",
+          en: "After leveling up, energy recovery increases by 200% for 10 seconds",
         },
         onLevelup: (prev) => ({
           state: {
@@ -853,7 +833,7 @@ export const rareSkills: Skill[] = [
           statusBuffs: [
             {
               statusEffects: [
-                generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.5),
+                generatePassiveStatusUpEffect("chargeEnergy", "rate", 2),
               ],
               duration: 10,
               source: prev.source,
@@ -866,6 +846,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "recharge",
   },
   {
     code: "rare_Advance ",
@@ -878,8 +859,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "レベルが低いほど基礎攻撃力が上がる",
-          en: "The lower the level, the higher the basic attack power",
+          ja: "レベルによって攻撃力が変化する。(Lv1～10: 100% up, Lv11～20: 50% up, Lv21～30: 20% up, Lv31～: 30% down)",
+          en: "The attack power changes depending on the level. (Lv1-10: 100% up, Lv11-20: 50% up, Lv21-30: 20% up, Lv31-: 30% down)",
         },
         passive: (prev, gameState) => ({
           state: {},
@@ -888,11 +869,19 @@ export const rareSkills: Skill[] = [
             ...prev.statusUpper,
             attack: {
               ...prev.statusUpper.attack,
-              add:
+              rate:
                 gameState.mode === "inGame"
-                  ? prev.statusUpper.attack.add +
-                    Math.max(0, 100 - gameState.playerSkillLevel * 3)
-                  : prev.statusUpper.attack.add,
+                  ? prev.statusUpper.attack.rate + gameState.playerSkillLevel >
+                    15
+                    ? gameState.playerSkillLevel > 30
+                      ? prev.statusUpper.attack.rate - 0.3
+                      : gameState.playerSkillLevel > 20
+                      ? prev.statusUpper.attack.rate + 0.2
+                      : gameState.playerSkillLevel > 10
+                      ? prev.statusUpper.attack.rate + 0.5
+                      : prev.statusUpper.attack.rate + 1
+                    : 1
+                  : prev.statusUpper.attack.rate,
             },
           },
         }),
@@ -900,7 +889,8 @@ export const rareSkills: Skill[] = [
         order: 0,
       },
     ],
-    demerit: false,
+    demerit: true,
+    icon: "unique",
   },
   {
     code: "rare_Late Bloomer",
@@ -913,7 +903,7 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "レベルが高いほどクリティカル率が上がる",
+          ja: "レベルが高いほどクリティカル率が上がる。(最大Lv40: 100% up)",
           en: "The higher the level, the higher the critical rate",
         },
         passive: (prev, gameState) => ({
@@ -926,7 +916,7 @@ export const rareSkills: Skill[] = [
               add:
                 gameState.mode === "inGame"
                   ? prev.statusUpper.critical.add +
-                    (gameState.playerSkillLevel * 2) / 100
+                    (gameState.playerSkillLevel * 2.5) / 100
                   : prev.statusUpper.critical.add,
             },
           },
@@ -936,6 +926,7 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "unique",
   },
   {
     code: "rare_Gem Scope",
@@ -948,8 +939,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "船の体力が95%以上のとき、クリティカルダメージ 30% up",
-          en: "When the ship's health is 95% or more, critical damage increases by 30%",
+          ja: "船の体力が50%以上のとき、クリティカルダメージ 35% up",
+          en: "When the ship's health is 50% or more, critical damage increases by 35%",
         },
         passive: (prev, gameState) => ({
           state: {},
@@ -960,8 +951,8 @@ export const rareSkills: Skill[] = [
               ...prev.statusUpper.criticalDamage,
               add:
                 gameState.mode === "inGame" &&
-                gameState.ship.health / gameState.ship.maxHealth >= 0.95
-                  ? prev.statusUpper.criticalDamage.add + 0.3
+                gameState.ship.health / gameState.ship.maxHealth >= 0.5
+                  ? prev.statusUpper.criticalDamage.add + 0.35
                   : prev.statusUpper.criticalDamage.add,
             },
           },
@@ -972,8 +963,8 @@ export const rareSkills: Skill[] = [
       {
         type: "custom",
         description: {
-          ja: "船の体力が95%未満のとき、クリティカルダメージ 5% up",
-          en: "When the ship's health is less than 95%, critical damage increases by 5%",
+          ja: "船の体力が50%未満のとき、クリティカルダメージ 5% up",
+          en: "When the ship's health is less than 50%, critical damage increases by 5%",
         },
         passive: (prev, gameState) => ({
           state: {},
@@ -984,7 +975,7 @@ export const rareSkills: Skill[] = [
               ...prev.statusUpper.criticalDamage,
               add:
                 gameState.mode === "inGame" &&
-                gameState.ship.health / gameState.ship.maxHealth < 0.95
+                gameState.ship.health / gameState.ship.maxHealth < 0.5
                   ? prev.statusUpper.criticalDamage.add + 0.05
                   : prev.statusUpper.criticalDamage.add,
             },
@@ -995,5 +986,388 @@ export const rareSkills: Skill[] = [
       },
     ],
     demerit: false,
+    icon: "sword_crit",
+  },
+  {
+    code: "rare_CarryOver",
+    name: {
+      ja: "持ち越し",
+      en: "CarryOver",
+    },
+    rarity: "rare",
+    effect: [
+      {
+        type: "custom",
+        description: {
+          ja: "超過ダメージを与えたとき、次の攻撃にその75%の追加ダメージ",
+          en: "When you deal excess damage, the next attack deals half that additional damage",
+        },
+        onHit: (prev, attacker, object) => ({
+          state: {
+            extraDamage: 0,
+          },
+          statusBuffs: [],
+          statusUpper: {
+            ...prev.statusUpper,
+            extraDamage: {
+              ...prev.statusUpper.extraDamage,
+              add:
+                "extraDamage" in prev.state &&
+                typeof prev.state.extraDamage === "number"
+                  ? prev.state.extraDamage
+                  : 0,
+            },
+          },
+        }),
+        onAddDamage: (prev, result) => ({
+          state: {
+            extraDamage:
+              Math.max(0, result.overDamage - result.extraDamage) * 0.75,
+          },
+          statusBuffs: [],
+          statusUpper: prev.statusUpper,
+        }),
+        state: { extraDamage: 0 },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_enchantment",
+  },
+  {
+    code: "rare_criticalDrive",
+    name: {
+      ja: "クリティカルドライブ",
+      en: "Critical Drive",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("critical", "add", 0.4),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", -0.15),
+      generatePassiveStatusUpEffect("maxEnergy", "rate", -0.15),
+    ],
+    demerit: true,
+    icon: "sword_crit",
+  },
+  {
+    code: "rare_Overdrive",
+    name: {
+      ja: "オーバードライブ",
+      en: "Overdrive",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attack", "rate", 0.4),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", -0.15),
+      generatePassiveStatusUpEffect("maxEnergy", "rate", -0.15),
+    ],
+    demerit: true,
+    icon: "sword_normal",
+  },
+  {
+    code: "rare_Overclock",
+    name: {
+      ja: "オーバークロック",
+      en: "Overclock",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.45),
+      generatePassiveStatusUpEffect("chargeEnergy", "rate", 0.45),
+      generatePassiveStatusUpEffect("attack", "rate", -0.1),
+      generatePassiveStatusUpEffect("critical", "rate", -0.1),
+    ],
+    demerit: true,
+    icon: "sword_speed",
+  },
+  {
+    code: "rare_BurstDrive",
+    name: {
+      ja: "バーストドライブ",
+      en: "Burst Drive",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.6),
+      generatePassiveStatusUpEffect("attack", "rate", -0.1),
+    ],
+    demerit: true,
+    icon: "sword_speed",
+  },
+  {
+    code: "rate_Pointed",
+    name: {
+      ja: "尖った",
+      en: "Pointed",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attack", "rate", 0.3),
+      generatePassiveStatusUpEffect("critical", "add", 0.3),
+      generatePassiveStatusUpEffect("attackSpeed", "rate", -0.3),
+      generatePassiveStatusUpEffect("maxEnergy", "rate", -0.3),
+    ],
+    demerit: true,
+    icon: "sword_crit",
+  },
+  {
+    code: "rare_CriticalCollector",
+    name: {
+      ja: "クリティカルコレクター",
+      en: "Critical Collector",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("critical", "add", 0.1),
+      {
+        type: "custom",
+        description: {
+          ja: "クリティカルでとどめをさすたび、クリティカル率が 2% up (最大40%)",
+          en: "Every time you make a critical hit, the critical rate increases by 2% (maximum 40%)",
+        },
+        passive: (prev) => ({
+          state: prev.state,
+          statusBuffs: [],
+          statusUpper: {
+            ...prev.statusUpper,
+            critical: {
+              ...prev.statusUpper.critical,
+              add:
+                "count" in prev.state && typeof prev.state.count === "number"
+                  ? prev.statusUpper.critical.add +
+                    Math.min(0.4, prev.state.count * 0.02)
+                  : 0,
+            },
+          },
+        }),
+        onAddDamage: (prev, result) => ({
+          state: {
+            count:
+              "count" in prev.state && typeof prev.state.count === "number"
+                ? prev.state.count + result.criticalCount
+                : 0,
+          },
+          statusBuffs: [],
+          statusUpper: prev.statusUpper,
+        }),
+        state: { count: 0 },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_crit",
+  },
+  {
+    code: "rare_DamageCharge",
+    name: {
+      ja: "ダメージチャージ",
+      en: "Damage Charge",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attackSpeed", "rate", 0.15),
+      {
+        type: "custom",
+        description: {
+          ja: "攻撃対象の体力が50%以上のとき、スタックを1つ獲得。攻撃対象の体力が50%未満のとき、スタックを全て消費してスタック数×25の追加ダメージを与える",
+          en: "When the target's health is 50% or more, gain a stack. When the target's health is less than 50%, consume all stacks and deal additional damage equal to the number of stacks x 10",
+        },
+        onHit: (prev, attacker, object) => {
+          if ("stack" in prev.state && typeof prev.state.stack === "number") {
+            return {
+              state: {
+                stack:
+                  object.health / object.maxHealth >= 0.5
+                    ? prev.state.stack + 1
+                    : 0,
+              },
+              statusBuffs: [],
+              statusUpper: {
+                ...prev.statusUpper,
+                extraDamage: {
+                  ...prev.statusUpper.extraDamage,
+                  add:
+                    object.health / object.maxHealth < 0.5
+                      ? prev.statusUpper.extraDamage.add + prev.state.stack * 10
+                      : prev.statusUpper.extraDamage.add,
+                },
+              },
+            };
+          }
+          return {
+            state: { stack: 0 },
+            statusBuffs: [],
+            statusUpper: prev.statusUpper,
+          };
+        },
+        state: { stack: 0 },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_enchantment",
+  },
+  {
+    code: "rare_CriticalCycle",
+    name: {
+      ja: "クリティカルサイクル",
+      en: "Critical Cycle",
+    },
+
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("critical", "add", 0.1),
+      {
+        type: "custom",
+        description: {
+          ja: "3回に1度、クリティカル率が 60% up",
+          en: "Once every 3 times, the critical rate increases by 60%",
+        },
+        onHit: (prev) => {
+          if ("count" in prev.state && typeof prev.state.count === "number") {
+            return {
+              state: {
+                count: prev.state.count >= 3 ? 0 : prev.state.count + 1,
+              },
+              statusBuffs: [],
+              statusUpper: {
+                ...prev.statusUpper,
+                critical: {
+                  ...prev.statusUpper.critical,
+                  add:
+                    prev.state.count >= 3
+                      ? prev.statusUpper.critical.add + 1
+                      : prev.statusUpper.critical.add,
+                },
+              },
+            };
+          }
+          return {
+            state: { count: 1 },
+            statusBuffs: [],
+            statusUpper: prev.statusUpper,
+          };
+        },
+        state: { count: 0 },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_crit",
+  },
+  {
+    code: "rare_Hardened",
+    name: {
+      ja: "鍛え上げ",
+      en: "Hardened",
+    },
+    rarity: "rare",
+    effect: [
+      generatePassiveStatusUpEffect("attack", "add", 3),
+      generatePassiveStatusUpEffect("attackSpeed", "add", 0.3),
+      generatePassiveStatusUpEffect("chargeEnergy", "add", 0.3),
+    ],
+    demerit: false,
+    icon: "sword_normal",
+  },
+  {
+    code: "rare_SwitchShot",
+    name: {
+      ja: "スイッチショット",
+      en: "Switch Shot",
+    },
+    rarity: "rare",
+    effect: [
+      {
+        type: "custom",
+        description: {
+          ja: "前回と違うターゲットを攻撃するとき 攻撃力 40 % up",
+          en: "When attacking a different target from the previous one, the attack power increases by 40%",
+        },
+        onHit: (prev, attacker, target) => {
+          if (
+            "lastTargetId" in prev.state &&
+            prev.state["lastTargetId"] !== target.id
+          ) {
+            const count =
+              "count" in prev.state && typeof prev.state["count"] === "number"
+                ? prev.state["count"] + 1
+                : 1;
+            return {
+              state: {
+                lastTargetId: target.id,
+                count,
+              },
+              statusBuffs: [],
+              statusUpper: {
+                ...prev.statusUpper,
+                attack: {
+                  ...prev.statusUpper.attack,
+                  rate: prev.statusUpper.attack.rate + 0.4,
+                },
+              },
+            };
+          }
+          return { ...prev, state: { lastTargetId: target.id, count: 0 } };
+        },
+        state: {
+          lastTargetId: null,
+          count: 0,
+        },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_normal",
+  },
+  {
+    code: "rare_SwitchBurst",
+    name: {
+      ja: "スイッチバースト",
+      en: "Switch Burst",
+    },
+    rarity: "rare",
+    effect: [
+      {
+        type: "custom",
+        description: {
+          ja: "前回と違うターゲットを攻撃するとき クリティカル率 40 % up",
+          en: "When attacking a different target from the previous one, the critical rate increases by 40%",
+        },
+        onHit: (prev, attacker, target) => {
+          if (
+            "lastTargetId" in prev.state &&
+            prev.state["lastTargetId"] !== target.id
+          ) {
+            const count =
+              "count" in prev.state && typeof prev.state["count"] === "number"
+                ? prev.state["count"] + 1
+                : 1;
+            return {
+              state: {
+                lastTargetId: target.id,
+                count,
+              },
+              statusBuffs: [],
+              statusUpper: {
+                ...prev.statusUpper,
+                critical: {
+                  ...prev.statusUpper.critical,
+                  add: prev.statusUpper.critical.add + 0.4,
+                },
+              },
+            };
+          }
+          return { ...prev, state: { lastTargetId: target.id, count: 0 } };
+        },
+        state: {
+          lastTargetId: null,
+          count: 0,
+        },
+        order: 0,
+      },
+    ],
+    demerit: false,
+    icon: "sword_crit",
   },
 ];
