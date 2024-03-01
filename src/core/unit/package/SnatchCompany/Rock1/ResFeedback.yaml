@@ -507,12 +507,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:77
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -611,12 +611,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:78
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -715,12 +715,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:79
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:7
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []

@@ -765,7 +765,7 @@ Children:
                               Data: null
                             Material:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:9
+                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:17
                             PreserveAspect:
                               ID: "?"
                               Data: true

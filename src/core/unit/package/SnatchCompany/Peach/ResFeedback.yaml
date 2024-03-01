@@ -450,7 +450,7 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:76
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
                             Materials:
                               ID: "?"
                               Data:
@@ -498,7 +498,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:76
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
                             Sidedness:
                               ID: "?"
                               Data: Front

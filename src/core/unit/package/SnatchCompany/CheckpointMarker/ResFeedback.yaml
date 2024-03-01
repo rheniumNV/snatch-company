@@ -431,7 +431,7 @@ Children:
                       ID: "?"
                       Data:
                         - ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:3
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:8
                     MaterialPropertyBlocks:
                       ID: "?"
                       Data: []

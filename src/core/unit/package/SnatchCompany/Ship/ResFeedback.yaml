@@ -538,7 +538,7 @@ Children:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:10
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:1
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -681,12 +681,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:82
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:0
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -729,7 +729,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:82
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:0
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -785,12 +785,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:83
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:1
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -833,7 +833,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:83
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:1
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -889,12 +889,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:84
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:2
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -937,7 +937,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:84
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:2
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -993,12 +993,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:3
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1041,7 +1041,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:3
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1097,12 +1097,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:4
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1145,7 +1145,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:4
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1201,12 +1201,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:5
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1249,7 +1249,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:5
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1305,12 +1305,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:6
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1353,7 +1353,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:6
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1409,12 +1409,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:7
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1457,7 +1457,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:7
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1513,12 +1513,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:8
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1561,7 +1561,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:8
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1617,12 +1617,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:9
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:2
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -1665,7 +1665,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:9
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -1869,12 +1869,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:10
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -1917,7 +1917,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:10
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -1973,12 +1973,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:11
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:13
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:4
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2021,7 +2021,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:11
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2077,12 +2077,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:12
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2125,7 +2125,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:12
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2181,12 +2181,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:13
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2229,7 +2229,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:13
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2285,12 +2285,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:14
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2333,7 +2333,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:15
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2389,12 +2389,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:98
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:16
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:13
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:4
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2437,7 +2437,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:99
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:17
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2493,12 +2493,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:100
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:18
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2541,7 +2541,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:100
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:18
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2597,12 +2597,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:101
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:19
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2645,7 +2645,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:101
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:19
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2701,12 +2701,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:102
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:20
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2749,7 +2749,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:102
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:20
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2805,12 +2805,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:103
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:21
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2853,7 +2853,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:103
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:21
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2909,12 +2909,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:104
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:22
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:12
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:3
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -2957,7 +2957,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:104
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:22
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -3124,7 +3124,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -3172,7 +3172,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -3228,7 +3228,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -3276,7 +3276,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -3332,12 +3332,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -3382,7 +3382,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -3485,7 +3485,7 @@ Children:
                                 - Linear
                             Texture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:103
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:3
                             TextureScale:
                               ID: "?"
                               Data:
@@ -3498,7 +3498,7 @@ Children:
                                 - -147
                             MaskTexture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:104
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:4
                             MaskScale:
                               ID: "?"
                               Data:
@@ -3621,7 +3621,7 @@ Children:
                                 - Linear
                             Texture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:105
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:5
                             TextureScale:
                               ID: "?"
                               Data:
@@ -3893,7 +3893,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -3941,7 +3941,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -3997,7 +3997,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -4045,7 +4045,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4101,12 +4101,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -4151,7 +4151,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4281,7 +4281,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -4329,7 +4329,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4385,7 +4385,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -4433,7 +4433,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4489,12 +4489,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -4539,7 +4539,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4669,7 +4669,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -4717,7 +4717,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4773,7 +4773,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -4821,7 +4821,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -4877,12 +4877,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -4927,7 +4927,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5057,7 +5057,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5105,7 +5105,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5161,7 +5161,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5209,7 +5209,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5265,12 +5265,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -5315,7 +5315,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5445,7 +5445,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5493,7 +5493,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5549,7 +5549,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5597,7 +5597,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5653,12 +5653,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -5703,7 +5703,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5833,7 +5833,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5881,7 +5881,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -5937,7 +5937,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -5985,7 +5985,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6041,12 +6041,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -6091,7 +6091,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6221,7 +6221,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -6269,7 +6269,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6325,7 +6325,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -6373,7 +6373,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6429,12 +6429,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -6479,7 +6479,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6609,7 +6609,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:105
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:23
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -6657,7 +6657,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:106
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:24
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6713,7 +6713,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:107
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:25
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -6761,7 +6761,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:108
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:26
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -6817,12 +6817,12 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:109
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:27
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:0
                                         - ID: "?"
                                           Data: ID:Mat:Components:FrooxEngine.UnlitMaterial:1
                                     MaterialPropertyBlocks:
@@ -6867,7 +6867,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:110
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
