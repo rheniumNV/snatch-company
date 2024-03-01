@@ -7,20 +7,25 @@ import { StyledSpace } from "./style";
 import { DamageTextManager } from "./common/damageTextManaget";
 import { Vector, getIconUrl } from "../game/util";
 import { ShipRenderer } from "./common/shipRenderer";
-import { GameState } from "../game/type";
+import { GameState, GameStateInGame } from "../game/type";
 import {
   BgmManager,
+  EffectManager,
   LobbyRoom,
   LocalView,
   LocaleSpace,
+  SeManager,
   SkillUi,
   StatusUi,
+  Triangle,
   UserJoinPanel,
   UserJoinPanelElement,
 } from "../../unit/package/SnatchCompany/main";
 import { Slot } from "../../unit/package/Primitive/main";
 import { FunctionEnv } from "../../../lib/mirage-x/common/interactionEvent";
 import { GunRenderer } from "./common/gunRenderer";
+import { Box } from "../../unit/package/ProceduralMesh/main";
+import { getTrianglePoint } from "../game/skill/util";
 
 const round = (value: number, digit: number) => {
   const pow = Math.pow(10, digit);
@@ -239,6 +244,150 @@ const PlayerStatusUi = (props: {
   );
 };
 
+const Se = (props: {
+  gameState: GameState;
+  setCallback: SnatchCompany["setCallback"];
+  clearCallback: SnatchCompany["clearCallback"];
+}) => {
+  const playOnShotSeRef = useRef((code: string) => {});
+  const triggerEffectRef = useRef((code: string) => {});
+
+  const arrivedCheckpointNear =
+    props.gameState.mode === "inGame" &&
+    props.gameState.section.mode === "battle"
+      ? Vector.distance(
+          props.gameState.section.targetPoint,
+          props.gameState.ship.position
+        ) < 90
+      : false;
+
+  // CheckpointNear
+  useEffect(() => {
+    if (arrivedCheckpointNear) {
+      playOnShotSeRef.current("checkpointNear");
+    }
+  }, [arrivedCheckpointNear]);
+
+  // StartGame
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (
+        props.gameState.mode === "inGame" &&
+        props.gameState.section.mode === "battle"
+      ) {
+        playOnShotSeRef.current("startGame");
+      }
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  //callbacks
+  useEffect(() => {
+    //onStartEvent
+    const onStartEventCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartEvent"],
+      undefined
+    >[number] = (_event) => {
+      playOnShotSeRef.current(
+        "battleStart" + Math.floor(Math.random() * 3 + 1)
+      );
+    };
+
+    //onStartBossEvent
+    const onStartBossEventCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartBossEvent"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("startBoss");
+    };
+
+    //onStartCheckpoint
+    const onStartCheckpointCallback: Exclude<
+      SnatchCompany["callbacks"]["onStartCheckpoint"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("startCheckpoint");
+    };
+
+    //gameClear
+    const onGameClearCallback: Exclude<
+      SnatchCompany["callbacks"]["onGameClear"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("gameClear");
+    };
+
+    //gameOver
+    const onGameOverCallback: Exclude<
+      SnatchCompany["callbacks"]["onGameOver"],
+      undefined
+    >[number] = () => {
+      playOnShotSeRef.current("gameOver");
+    };
+
+    //onAttack2Object
+    const onAttack2ObjectCallback: Exclude<
+      SnatchCompany["callbacks"]["onAttack2Object"],
+      undefined
+    >[number] = ({ destroyed, object, hitPoint }) => {
+      const point =
+        props.gameState.mode === "inGame" && object.resourceObjectLevel
+          ? Vector.sub(object.position, props.gameState.ship.position)
+          : hitPoint;
+      if (destroyed) {
+        triggerEffectRef.current(
+          `DestroyEffect,[${point[0]}; ${point[1]}; ${point[2]}]`
+        );
+      }
+    };
+
+    props.setCallback({ onStartEvent: [onStartEventCallback] });
+    props.setCallback({ onStartBossEvent: [onStartBossEventCallback] });
+    props.setCallback({ onStartCheckpoint: [onStartCheckpointCallback] });
+    props.setCallback({ onAttack2Object: [onAttack2ObjectCallback] });
+    props.setCallback({ onGameClear: [onGameClearCallback] });
+    props.setCallback({ onGameOver: [onGameOverCallback] });
+
+    return () => {
+      props.clearCallback(onStartEventCallback);
+      props.clearCallback(onStartBossEventCallback);
+      props.clearCallback(onStartCheckpointCallback);
+      props.clearCallback(onAttack2ObjectCallback);
+      props.clearCallback(onGameClearCallback);
+      props.clearCallback(onGameOverCallback);
+    };
+  }, [props.setCallback, props.clearCallback]);
+
+  const [doneShieldAlert, setDoneShieldAlert] = useState(false);
+
+  useEffect(() => {
+    if (
+      props.gameState.mode === "inGame" &&
+      props.gameState.ship.shield === 0 &&
+      !doneShieldAlert
+    ) {
+      playOnShotSeRef.current("shieldAlert");
+      setDoneShieldAlert(true);
+    }
+  }, [
+    props.gameState.mode === "inGame" && props.gameState.ship.shield,
+    doneShieldAlert,
+  ]);
+
+  return (
+    <>
+      <SeManager
+        dynamicImpulseTriggerRefs={{
+          playOnShotSe: playOnShotSeRef,
+        }}
+      />
+      <EffectManager
+        dynamicImpulseTriggerRefs={{ triggerEffect: triggerEffectRef }}
+      />
+    </>
+  );
+};
+
 const GameRenderer = (props: { game: SnatchCompany; effect: () => void }) => {
   const startGame = useCallback(() => {
     props.game.startGame();
@@ -319,6 +468,7 @@ const GameRenderer = (props: { game: SnatchCompany; effect: () => void }) => {
             selectSkillInCheckpoint={selectSkillInCheckpoint}
             setCallback={setCallback}
             clearCallback={clearCallback}
+            solvePoint={props.game.solvePoint.bind(props.game)}
           />
           <DamageTextManager
             setCallback={setCallback}
@@ -382,8 +532,31 @@ export const Main = () => {
     setOpeningProcessing(false);
   }, []);
 
+  const point1: Vector.Vector3 = [0, 2, 0];
+  const point2: Vector.Vector3 = [0, 2.5, 1];
+  const point3: Vector.Vector3 = [1, 3, 0];
+
   return (
     <StyledSpace>
+      {
+        <Slot position={[0, 15, 0]}>
+          <Triangle point1={point1} point2={point2} point3={point3} />
+          {Array.from({ length: 20 }).map((_, index) => {
+            const x = Math.random();
+            const z = Math.random();
+            return (
+              <Box
+                position={[
+                  x,
+                  getTrianglePoint(point1, point2, point3, x, z),
+                  z,
+                ]}
+                scale={[0.1, 0.1, 0.1]}
+              />
+            );
+          })}
+        </Slot>
+      }
       <LocaleSpace>
         <ShipRenderer />
         {gameRef.current && (
@@ -462,6 +635,7 @@ export const Main = () => {
                     <LocalView userId={player.id}>
                       <GunRenderer
                         key={player.id}
+                        active={gameRef.current.gameState.mode === "inGame"}
                         player={player}
                         setCallback={gameRef.current.setCallback.bind(
                           gameRef.current
@@ -483,6 +657,13 @@ export const Main = () => {
                   )
               )}
             </Slot>
+            <Se
+              gameState={gameRef.current?.gameState}
+              setCallback={gameRef.current.setCallback.bind(gameRef.current)}
+              clearCallback={gameRef.current.clearCallback.bind(
+                gameRef.current
+              )}
+            />
           </>
         )}
       </LocaleSpace>

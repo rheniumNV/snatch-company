@@ -32,21 +32,20 @@ import { FunctionEnv } from "../../../../lib/mirage-x/common/interactionEvent";
 import {
   Checkpoint,
   CheckpointMarker,
+  CheckpointUi,
+  EffectManager,
   LocalView,
   MovedSlot,
   SeManager,
   ShieldAlert,
   ShipDisplay,
   Triangle,
+  UserJoinPanelElement,
 } from "../../../unit/package/SnatchCompany/main";
 import { CheckpointSection, GameStateInGame, Section } from "../../game/type";
 import { AnnouncementManager } from "../common/announcementManager";
 import { PlayerSkillSelect } from "../common/playerSkilSelect";
-
-const noise2D = createNoise2D();
-const solvePoint = (x: number, z: number) =>
-  (noise2D(x / 4, z / 4) + 1) * 3 +
-  Math.abs(noise2D(x / 40, z / 40) * 10 * x * x * 0.001);
+import { getTrianglePoint } from "../../game/skill/util";
 
 const terrainSize = 300;
 const terrainResolution = 15;
@@ -63,7 +62,8 @@ const solveGridPoint = (x: number, z: number) => {
   const x4 = x1 + terrainOneSize;
   const z4 = z1 + terrainOneSize;
   const isUpSide = (x - x1) * (z - z1) > (x2 - x1) * (z4 - z1);
-  const point1Height = solvePoint(x1 - terrainHalfSize, z1 - terrainHalfSize);
+
+  // return getTrianglePoint(isUpSide?[x1,0,z1])
 };
 
 const roundTrianglePosition = (position: [number, number, number]) => [
@@ -72,7 +72,10 @@ const roundTrianglePosition = (position: [number, number, number]) => [
   Math.round(position[2] / 5) * 5,
 ];
 
-const Ground = (props: { shipPosition: [number, number, number] }) => {
+const Ground = (props: {
+  shipPosition: [number, number, number];
+  solvePoint: (x: number, y: number) => number;
+}) => {
   const gridShipPosition: [number, number, number] = useMemo(
     () => [
       Math.round(props.shipPosition[0] / terrainOneSize) * terrainOneSize,
@@ -92,19 +95,19 @@ const Ground = (props: { shipPosition: [number, number, number] }) => {
         (_, i) => {
           const x = i % terrainResolution;
           const z = Math.floor(i / terrainResolution);
-          const point1Height = solvePoint(
+          const point1Height = props.solvePoint(
             gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
             gridShipPosition[2] + z * terrainOneSize - terrainHalfSize
           );
-          const point2Height = solvePoint(
+          const point2Height = props.solvePoint(
             gridShipPosition[0] + (x + 1) * terrainOneSize - terrainHalfSize,
             gridShipPosition[2] + z * terrainOneSize - terrainHalfSize
           );
-          const point3Height = solvePoint(
+          const point3Height = props.solvePoint(
             gridShipPosition[0] + x * terrainOneSize - terrainHalfSize,
             gridShipPosition[2] + (z + 1) * terrainOneSize - terrainHalfSize
           );
-          const point4Height = solvePoint(
+          const point4Height = props.solvePoint(
             gridShipPosition[0] + (x + 1) * terrainOneSize - terrainHalfSize,
             gridShipPosition[2] + (z + 1) * terrainOneSize - terrainHalfSize
           );
@@ -253,103 +256,6 @@ const SkillSelection = (props: {
   );
 };
 
-const Se = (props: {
-  gameState: GameStateInGame<Section>;
-  setCallback: SnatchCompany["setCallback"];
-  clearCallback: SnatchCompany["clearCallback"];
-}) => {
-  const playOnShotSeRef = useRef((code: string) => {});
-
-  const arrivedCheckpointNear =
-    props.gameState.section.mode === "battle"
-      ? Vector.distance(
-          props.gameState.section.targetPoint,
-          props.gameState.ship.position
-        ) < 90
-      : false;
-
-  // CheckpointNear
-  useEffect(() => {
-    if (arrivedCheckpointNear) {
-      playOnShotSeRef.current("checkpointNear");
-    }
-  }, [arrivedCheckpointNear]);
-
-  // StartGame
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (props.gameState.section.mode === "battle") {
-        playOnShotSeRef.current("startGame");
-      }
-    }, 2000);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  //callbacks
-  useEffect(() => {
-    //onStartEvent
-    const onStartEventCallback: Exclude<
-      SnatchCompany["callbacks"]["onStartEvent"],
-      undefined
-    >[number] = (_event) => {
-      playOnShotSeRef.current(
-        "battleStart" + Math.floor(Math.random() * 3 + 1)
-      );
-    };
-
-    //onStartBossEvent
-    const onStartBossEventCallback: Exclude<
-      SnatchCompany["callbacks"]["onStartBossEvent"],
-      undefined
-    >[number] = () => {
-      playOnShotSeRef.current("startBoss");
-    };
-
-    //onStartCheckpoint
-    const onStartCheckpointCallback: Exclude<
-      SnatchCompany["callbacks"]["onStartCheckpoint"],
-      undefined
-    >[number] = () => {
-      playOnShotSeRef.current("startCheckpoint");
-    };
-
-    //gameClear
-    const onGameClearCallback: Exclude<
-      SnatchCompany["callbacks"]["onGameClear"],
-      undefined
-    >[number] = () => {
-      playOnShotSeRef.current("gameClear");
-    };
-
-    props.setCallback({ onStartEvent: [onStartEventCallback] });
-    props.setCallback({ onStartBossEvent: [onStartBossEventCallback] });
-    props.setCallback({ onStartCheckpoint: [onStartCheckpointCallback] });
-
-    return () => {
-      props.clearCallback(onStartEventCallback);
-      props.clearCallback(onStartBossEventCallback);
-      props.clearCallback(onStartCheckpointCallback);
-    };
-  }, [props.setCallback, props.clearCallback]);
-
-  const [doneShieldAlert, setDoneShieldAlert] = useState(false);
-
-  useEffect(() => {
-    if (props.gameState.ship.shield === 0 && !doneShieldAlert) {
-      playOnShotSeRef.current("shieldAlert");
-      setDoneShieldAlert(true);
-    }
-  }, [props.gameState.ship.shield, doneShieldAlert]);
-
-  return (
-    <SeManager
-      dynamicImpulseTriggerRefs={{
-        playOnShotSe: playOnShotSeRef,
-      }}
-    />
-  );
-};
-
 export const InGameRenderer = (props: {
   gameState: GameStateInGame<Section>;
   startNextSection: () => void;
@@ -358,6 +264,7 @@ export const InGameRenderer = (props: {
   selectSkillInCheckpoint: SnatchCompany["selectSkillInCheckpoint"];
   setCallback: SnatchCompany["setCallback"];
   clearCallback: SnatchCompany["clearCallback"];
+  solvePoint: (x: number, y: number) => number;
   children?: ReactNode;
 }) => {
   const addPlayerButtonOnClick = useCallback(
@@ -404,7 +311,10 @@ export const InGameRenderer = (props: {
       >
         <>
           {props.children}
-          <Ground shipPosition={props.gameState.ship.position} />
+          <Ground
+            shipPosition={props.gameState.ship.position}
+            solvePoint={props.solvePoint}
+          />
           {props.gameState.mode === "inGame" &&
             props.gameState.section.mode === "battle" &&
             props.gameState.section.objects.map((object) => (
@@ -427,38 +337,19 @@ export const InGameRenderer = (props: {
         </>
       </GlobalAnchor>
       {props.gameState.section.mode === "checkpoint" ? (
-        <Canvas position={[0, 3, 5]} size={[3000, 1000]}>
-          <StyledImage />
-          <VerticalLayout>
-            <StyledText content="Checkpoint"></StyledText>
-            {setupPlayerCount > 0 && (
-              <StyledText
-                content={`スキル選択中...${setupPlayerCount}人\n${props.gameState.players
-                  .filter((player) => {
-                    if (props.gameState.section.mode === "checkpoint") {
-                      const section = props.gameState.section;
-                      return (
-                        props.gameState.section.skillSelection[player.id]
-                          .length > 0
-                      );
-                    }
-                    return false;
-                  })
-                  .map((player) => player.id)
-                  .join("\n")}`}
-              ></StyledText>
-            )}
-            {setupPlayerCount === 0 && (
-              <StyledButton onClick={props.startNextSection}>
-                <StyledText
-                  content="Go Next"
-                  verticalAlign="Middle"
-                  horizontalAlign="Center"
-                />
-              </StyledButton>
-            )}
-          </VerticalLayout>
-        </Canvas>
+        <Slot position={[0, 2.5, 3]} scale={[2, 2, 2]}>
+          <CheckpointUi
+            playerCount={`${setupPlayerCount}`}
+            progress={props.gameState.section.nextSectionLevel}
+            goNext={props.startNextSection}
+          >
+            {Object.entries(props.gameState.section.skillSelection)
+              .filter(([, select]) => select.length > 0)
+              .map(([playerId, select]) => (
+                <UserJoinPanelElement playerId={playerId} />
+              ))}
+          </CheckpointUi>
+        </Slot>
       ) : (
         <></>
       )}
@@ -592,11 +483,6 @@ export const InGameRenderer = (props: {
           props.gameState.section.mode === "battle" &&
           props.gameState.ship.shield / props.gameState.ship.maxShield < 0.001
         }
-      />
-      <Se
-        gameState={props.gameState}
-        setCallback={props.setCallback}
-        clearCallback={props.clearCallback}
       />
     </Slot>
   );

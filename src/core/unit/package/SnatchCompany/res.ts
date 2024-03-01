@@ -6,12 +6,15 @@ import { res as Boss } from "./Boss/res";
 import { res as Cannon } from "./Cannon/res";
 import { res as Checkpoint } from "./Checkpoint/res";
 import { res as CheckpointMarker } from "./CheckpointMarker/res";
+import { res as CheckpointUi } from "./CheckpointUi/res";
 import { res as DamageEffect } from "./DamageEffect/res";
 import { res as EffectManager } from "./EffectManager/res";
+import { res as GlobalScore } from "./GlobalScore/res";
 import { res as Gun } from "./Gun/res";
 import { res as HealthUi } from "./HealthUi/res";
 import { res as LobbyRoom } from "./LobbyRoom/res";
 import { res as LocaleSpace } from "./LocaleSpace/res";
+import { res as LocalScore } from "./LocalScore/res";
 import { res as LocalView } from "./LocalView/res";
 import { res as Meteorite } from "./Meteorite/res";
 import { res as Missile } from "./Missile/res";
@@ -47,12 +50,15 @@ export const Units = {
   Cannon,
   Checkpoint,
   CheckpointMarker,
+  CheckpointUi,
   DamageEffect,
   EffectManager,
+  GlobalScore,
   Gun,
   HealthUi,
   LobbyRoom,
   LocaleSpace,
+  LocalScore,
   LocalView,
   Meteorite,
   Missile,

@@ -246,4 +246,5 @@ export type Callbacks = {
   onStartGame?: (() => void)[];
   onStartEvent?: ((arg: SnatchCompanyEvent) => void)[];
   onGameClear?: (() => void)[];
+  onGameOver?: (() => void)[];
 };

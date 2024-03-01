@@ -162,6 +162,802 @@ Children:
     Children:
       - Name:
           ID: "?"
+          Data: DV/Static
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data:
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Root
+                Reference:
+                  ID: "?"
+                  Data: ID:Ref:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.Main
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Static.ChildrenParent
+                Reference:
+                  ID: "?"
+                  Data: ID:Main:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+        Children: []
+      - Name:
+          ID: "?"
+          Data: DV/Props
+        Active:
+          ID: "?"
+          Data: true
+        ID: "?"
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children: []
+      - Name:
+          ID: "?"
+          Data: Main
+        Active:
+          ID: "?"
+          Data: true
+        ID: ID:Main:0
+        Persistent-Id: "?"
+        Position:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+        Rotation:
+          ID: "?"
+          Data:
+            - 0
+            - 0
+            - 0
+            - 111111
+        Scale:
+          ID: "?"
+          Data:
+            - 111111
+            - 111111
+            - 111111
+        Tag:
+          ID: "?"
+          Data: ""
+        OrderOffset:
+          ID: "?"
+          Data: 0
+        Components:
+          ID: "?"
+          Data: []
+        Children:
+          - Name:
+              ID: "?"
+              Data: EffectManager
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data: []
+            Children:
+              - Name:
+                  ID: "?"
+                  Data: Prefs
+                Active:
+                  ID: "?"
+                  Data: false
+                ID: ID:Prefs:0
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: DestroyEffect
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: ""
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.DynamicValueVariable`1[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: AudioRandomSpeed
+                            Value:
+                              ID: "?"
+                              Data: true
+                            OverrideOnLink:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.DynamicVariableSpace
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            SpaceName:
+                              ID: "?"
+                              Data: null
+                            OnlyDirectBinding:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: Effect
+                            Reference:
+                              ID: "?"
+                              Data: ID:Effect:0
+                            OverrideOnLink:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.StaticAudioClip
+                          Data:
+                            ID: ID:DestroyEffect:Components:FrooxEngine.StaticAudioClip:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            URL:
+                              ID: "?"
+                              Data: "@resdb:///86a3e47bd293528f768d251dd8b9229933a46d39720a1183716ac241c74527\
+                                42.wav"
+                            LoadMode:
+                              ID: "?"
+                              Data: Automatic
+                            SampleRateMode:
+                              ID: "?"
+                              Data: Conform
+                        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                            FrooxEngine, Version=2024.2.12.1430,
+                            Culture=neutral, PublicKeyToken=null]]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: Audio
+                            Reference:
+                              ID: "?"
+                              Data: ID:DestroyEffect:Components:FrooxEngine.StaticAudioClip:0
+                            OverrideOnLink:
+                              ID: "?"
+                              Data: false
+                    Children:
+                      - Name:
+                          ID: "?"
+                          Data: Effect
+                        Active:
+                          ID: "?"
+                          Data: true
+                        ID: ID:Effect:0
+                        Persistent-Id: "?"
+                        Position:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                        Rotation:
+                          ID: "?"
+                          Data:
+                            - 0
+                            - 0
+                            - 0
+                            - 111111
+                        Scale:
+                          ID: "?"
+                          Data:
+                            - 111111
+                            - 111111
+                            - 111111
+                        Tag:
+                          ID: "?"
+                          Data: ""
+                        OrderOffset:
+                          ID: "?"
+                          Data: 0
+                        Components:
+                          ID: "?"
+                          Data:
+                            - Type: FrooxEngine.SphereEmitter
+                              Data:
+                                ID: "?"
+                                persistent-ID: "?"
+                                UpdateOrder:
+                                  ID: "?"
+                                  Data: 0
+                                Enabled:
+                                  ID: "?"
+                                  Data: true
+                                System:
+                                  ID: "?"
+                                  Data: ID:DestroyEffect:Components:FrooxEngine.ParticleSystem:0
+                                Rate:
+                                  ID: "?"
+                                  Data: 0
+                                BurstOnActivatedMin:
+                                  ID: "?"
+                                  Data: 10000
+                                BurstOnActivatedMax:
+                                  ID: "?"
+                                  Data: 20000
+                                BurstTimeStart:
+                                  ID: "?"
+                                  Data:
+                                    CurrentTime: 12884559.333333334
+                                BurstTimePeriod:
+                                  ID: "?"
+                                  Data: 0
+                                Bursts:
+                                  ID: "?"
+                                  Data: []
+                                Radius:
+                                  ID: "?"
+                                  Data: 166.66666666666666
+                                EmitFromShell:
+                                  ID: "?"
+                                  Data: true
+                                RandomDirection:
+                                  ID: "?"
+                                  Data: 0
+                                ForceDirection:
+                                  ID: "?"
+                                  Data: false
+                                ForcedDirection:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                                DirectionReferencePoint:
+                                  ID: "?"
+                                  Data:
+                                    - 0
+                                    - 0
+                                    - 0
+                        Children: []
+              - Name:
+                  ID: "?"
+                  Data: EffectSpace
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: ID:EffectSpace:0
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: ""
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data: []
+                Children: []
+          - Name:
+              ID: "?"
+              Data: DestroyEffect
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - -1033222.3333333334
+                - 545111
+                - -34222.333333333336
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 13666.666666666666
+                - 0
+                - 110222.33333333333
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: null
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.ParticleSystem
+                  Data:
+                    ID: ID:DestroyEffect:Components:FrooxEngine.ParticleSystem:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    MaxParticles:
+                      ID: "?"
+                      Data: 333333.3333333333
+                    Style:
+                      ID: "?"
+                      Data: ID:DestroyEffect:Components:FrooxEngine.ParticleStyle:0
+                    SimulationSpace:
+                      ID: "?"
+                      Data: {}
+                - Type: FrooxEngine.ParticleStyle
+                  Data:
+                    ID: ID:DestroyEffect:Components:FrooxEngine.ParticleStyle:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    MotionVectorMode:
+                      ID: "?"
+                      Data: Object
+                    MinStartLifetime:
+                      ID: "?"
+                      Data: 166.66666666666666
+                    MaxStartLifetime:
+                      ID: "?"
+                      Data: 1000
+                    MinStartSize:
+                      ID: "?"
+                      Data: 33.333333333333336
+                    MaxStartSize:
+                      ID: "?"
+                      Data: 300
+                    MinStartSpeed:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    MaxStartSpeed:
+                      ID: "?"
+                      Data: 6666.666666666667
+                    MinStartRotation:
+                      ID: "?"
+                      Data: 0
+                    MaxStartRotation:
+                      ID: "?"
+                      Data: 0
+                    MinStartAngularVelocity:
+                      ID: "?"
+                      Data: 0
+                    MaxStartAngularVelocity:
+                      ID: "?"
+                      Data: 0
+                    Use3DRotation:
+                      ID: "?"
+                      Data: true
+                    MinStartRotation3D:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    MaxStartRotation3D:
+                      ID: "?"
+                      Data:
+                        - 60000
+                        - 60000
+                        - 60000
+                    MinStartAngularVelocity3D:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    MaxStartAngularVelocity3D:
+                      ID: "?"
+                      Data:
+                        - 60000
+                        - 60000
+                        - 60000
+                    GravityStrength:
+                      ID: "?"
+                      Data: 466.6666666666667
+                    MinStartColor:
+                      ID: "?"
+                      Data:
+                        - 166.66666666666666
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - sRGB
+                    MaxStartColor:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - sRGB
+                    UseColorOverLifetime:
+                      ID: "?"
+                      Data: false
+                    AlphaOverLifetime:
+                      ID: "?"
+                      Data: []
+                    ColorOverLifetime:
+                      ID: "?"
+                      Data: []
+                    Collisions:
+                      ID: "?"
+                      Data: true
+                    Bounce:
+                      ID: "?"
+                      Data: 66.66666666666667
+                    LifetimeLoss:
+                      ID: "?"
+                      Data: 166.66666666666666
+                    Material:
+                      ID: "?"
+                      Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:4
+                    TrailMaterial:
+                      ID: "?"
+                      Data: null
+                    Mesh:
+                      ID: "?"
+                      Data: null
+                    Alignment:
+                      ID: "?"
+                      Data: Velocity
+                    LengthScale:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    VelocityScale:
+                      ID: "?"
+                      Data: 0
+                    MinParticleSize:
+                      ID: "?"
+                      Data: 0
+                    MaxParticleSize:
+                      ID: "?"
+                      Data: 300
+                    ParticleTrails:
+                      ID: "?"
+                      Data: None
+                    TrailRatio:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    RibbonCount:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    TrailMinimumVertexDistance:
+                      ID: "?"
+                      Data: 66.66666666666667
+                    TrailWorldSpace:
+                      ID: "?"
+                      Data: false
+                    TrailDiesWithParticle:
+                      ID: "?"
+                      Data: true
+                    ParticleSizeAffectsTrailWidth:
+                      ID: "?"
+                      Data: true
+                    ParticleSizeAffectsTrailLifetime:
+                      ID: "?"
+                      Data: false
+                    InheritTrailColorFromParticle:
+                      ID: "?"
+                      Data: true
+                    TrailTextureMode:
+                      ID: "?"
+                      Data: Stretch
+                    MinTrailLifetime:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    MaxTrailLifetime:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    MinTrailColor:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - sRGB
+                    MaxTrailColor:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - 333.3333333333333
+                        - sRGB
+                    MinTrailWidth:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    MaxTrailWidth:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    GenerateLightingDataForTrails:
+                      ID: "?"
+                      Data: false
+                    Light:
+                      ID: "?"
+                      Data: null
+                    LightsRatio:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    LightRandomDistribution:
+                      ID: "?"
+                      Data: true
+                    LightsUseParticleColor:
+                      ID: "?"
+                      Data: true
+                    SizeAffectsLightRange:
+                      ID: "?"
+                      Data: true
+                    AlphaAffectsLightIntensity:
+                      ID: "?"
+                      Data: true
+                    LightRangeMultiplier:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    LightIntensityMultiplier:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    MaximumLights:
+                      ID: "?"
+                      Data: 6666.666666666667
+                    AnimationTiles:
+                      ID: "?"
+                      Data:
+                        - 333.3333333333333
+                        - 333.3333333333333
+                    AnimationCycles:
+                      ID: "?"
+                      Data: 333.3333333333333
+                    AnimationType:
+                      ID: "?"
+                      Data: WholeSheet
+                    UseRowIndex:
+                      ID: "?"
+                      Data: 0
+                    UseRandomRow:
+                      ID: "?"
+                      Data: true
+            Children: []
+      - Name:
+          ID: "?"
           Data: Flux
         Active:
           ID: "?"
@@ -2313,799 +3109,3 @@ Children:
                       ID: "?"
                       Data: ID:Sequence:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Sequence:0
             Children: []
-      - Name:
-          ID: "?"
-          Data: DV/Static
-        Active:
-          ID: "?"
-          Data: true
-        ID: "?"
-        Persistent-Id: "?"
-        Position:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-        Rotation:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-            - 111111
-        Scale:
-          ID: "?"
-          Data:
-            - 111111
-            - 111111
-            - 111111
-        Tag:
-          ID: "?"
-          Data: ""
-        OrderOffset:
-          ID: "?"
-          Data: 0
-        Components:
-          ID: "?"
-          Data:
-            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Static.Root
-                Reference:
-                  ID: "?"
-                  Data: ID:Ref:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Static.Main
-                Reference:
-                  ID: "?"
-                  Data: ID:Main:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Static.ChildrenParent
-                Reference:
-                  ID: "?"
-                  Data: ID:Main:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-        Children: []
-      - Name:
-          ID: "?"
-          Data: DV/Props
-        Active:
-          ID: "?"
-          Data: true
-        ID: "?"
-        Persistent-Id: "?"
-        Position:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-        Rotation:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-            - 111111
-        Scale:
-          ID: "?"
-          Data:
-            - 111111
-            - 111111
-            - 111111
-        Tag:
-          ID: "?"
-          Data: ""
-        OrderOffset:
-          ID: "?"
-          Data: 0
-        Components:
-          ID: "?"
-          Data: []
-        Children: []
-      - Name:
-          ID: "?"
-          Data: Main
-        Active:
-          ID: "?"
-          Data: true
-        ID: ID:Main:0
-        Persistent-Id: "?"
-        Position:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-        Rotation:
-          ID: "?"
-          Data:
-            - 0
-            - 0
-            - 0
-            - 111111
-        Scale:
-          ID: "?"
-          Data:
-            - 111111
-            - 111111
-            - 111111
-        Tag:
-          ID: "?"
-          Data: ""
-        OrderOffset:
-          ID: "?"
-          Data: 0
-        Components:
-          ID: "?"
-          Data: []
-        Children:
-          - Name:
-              ID: "?"
-              Data: EffectManager
-            Active:
-              ID: "?"
-              Data: true
-            ID: "?"
-            Persistent-Id: "?"
-            Position:
-              ID: "?"
-              Data:
-                - 0
-                - 0
-                - 0
-            Rotation:
-              ID: "?"
-              Data:
-                - 0
-                - 0
-                - 0
-                - 111111
-            Scale:
-              ID: "?"
-              Data:
-                - 111111
-                - 111111
-                - 111111
-            Tag:
-              ID: "?"
-              Data: ""
-            OrderOffset:
-              ID: "?"
-              Data: 0
-            Components:
-              ID: "?"
-              Data: []
-            Children:
-              - Name:
-                  ID: "?"
-                  Data: Prefs
-                Active:
-                  ID: "?"
-                  Data: false
-                ID: ID:Prefs:0
-                Persistent-Id: "?"
-                Position:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                Rotation:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                    - 111111
-                Scale:
-                  ID: "?"
-                  Data:
-                    - 111111
-                    - 111111
-                    - 111111
-                Tag:
-                  ID: "?"
-                  Data: ""
-                OrderOffset:
-                  ID: "?"
-                  Data: 0
-                Components:
-                  ID: "?"
-                  Data: []
-                Children:
-                  - Name:
-                      ID: "?"
-                      Data: DestoryEffect
-                    Active:
-                      ID: "?"
-                      Data: true
-                    ID: "?"
-                    Persistent-Id: "?"
-                    Position:
-                      ID: "?"
-                      Data:
-                        - 0
-                        - 0
-                        - 0
-                    Rotation:
-                      ID: "?"
-                      Data:
-                        - 0
-                        - 0
-                        - 0
-                        - 111111
-                    Scale:
-                      ID: "?"
-                      Data:
-                        - 111111
-                        - 111111
-                        - 111111
-                    Tag:
-                      ID: "?"
-                      Data: ""
-                    OrderOffset:
-                      ID: "?"
-                      Data: 0
-                    Components:
-                      ID: "?"
-                      Data:
-                        - Type: FrooxEngine.DynamicValueVariable`1[System.Boolean]
-                          Data:
-                            ID: "?"
-                            persistent-ID: "?"
-                            UpdateOrder:
-                              ID: "?"
-                              Data: 0
-                            Enabled:
-                              ID: "?"
-                              Data: true
-                            VariableName:
-                              ID: "?"
-                              Data: AudioRandomSpeed
-                            Value:
-                              ID: "?"
-                              Data: true
-                            OverrideOnLink:
-                              ID: "?"
-                              Data: false
-                        - Type: FrooxEngine.DynamicVariableSpace
-                          Data:
-                            ID: "?"
-                            persistent-ID: "?"
-                            UpdateOrder:
-                              ID: "?"
-                              Data: 0
-                            Enabled:
-                              ID: "?"
-                              Data: true
-                            SpaceName:
-                              ID: "?"
-                              Data: null
-                            OnlyDirectBinding:
-                              ID: "?"
-                              Data: false
-                        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.Slot]
-                          Data:
-                            ID: "?"
-                            persistent-ID: "?"
-                            UpdateOrder:
-                              ID: "?"
-                              Data: 0
-                            Enabled:
-                              ID: "?"
-                              Data: true
-                            VariableName:
-                              ID: "?"
-                              Data: Effect
-                            Reference:
-                              ID: "?"
-                              Data: ID:Effect:0
-                            OverrideOnLink:
-                              ID: "?"
-                              Data: false
-                        - Type: FrooxEngine.StaticAudioClip
-                          Data:
-                            ID: ID:DestoryEffect:Components:FrooxEngine.StaticAudioClip:0
-                            persistent-ID: "?"
-                            UpdateOrder:
-                              ID: "?"
-                              Data: 0
-                            Enabled:
-                              ID: "?"
-                              Data: true
-                            URL:
-                              ID: "?"
-                              Data: "@resdb:///86a3e47bd293528f768d251dd8b9229933a46d39720a1183716ac241c74527\
-                                42.wav"
-                            LoadMode:
-                              ID: "?"
-                              Data: Automatic
-                            SampleRateMode:
-                              ID: "?"
-                              Data: Conform
-                        - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                            FrooxEngine, Version=2024.2.12.1430,
-                            Culture=neutral, PublicKeyToken=null]]
-                          Data:
-                            ID: "?"
-                            persistent-ID: "?"
-                            UpdateOrder:
-                              ID: "?"
-                              Data: 0
-                            Enabled:
-                              ID: "?"
-                              Data: true
-                            VariableName:
-                              ID: "?"
-                              Data: Audio
-                            Reference:
-                              ID: "?"
-                              Data: ID:DestoryEffect:Components:FrooxEngine.StaticAudioClip:0
-                            OverrideOnLink:
-                              ID: "?"
-                              Data: false
-                    Children:
-                      - Name:
-                          ID: "?"
-                          Data: Effect
-                        Active:
-                          ID: "?"
-                          Data: true
-                        ID: ID:Effect:0
-                        Persistent-Id: "?"
-                        Position:
-                          ID: "?"
-                          Data:
-                            - 0
-                            - 0
-                            - 0
-                        Rotation:
-                          ID: "?"
-                          Data:
-                            - 0
-                            - 0
-                            - 0
-                            - 111111
-                        Scale:
-                          ID: "?"
-                          Data:
-                            - 111111
-                            - 111111
-                            - 111111
-                        Tag:
-                          ID: "?"
-                          Data: ""
-                        OrderOffset:
-                          ID: "?"
-                          Data: 0
-                        Components:
-                          ID: "?"
-                          Data:
-                            - Type: FrooxEngine.SphereEmitter
-                              Data:
-                                ID: "?"
-                                persistent-ID: "?"
-                                UpdateOrder:
-                                  ID: "?"
-                                  Data: 0
-                                Enabled:
-                                  ID: "?"
-                                  Data: true
-                                System:
-                                  ID: "?"
-                                  Data: ID:PS:Components:FrooxEngine.ParticleSystem:0
-                                Rate:
-                                  ID: "?"
-                                  Data: 0
-                                BurstOnActivatedMin:
-                                  ID: "?"
-                                  Data: 10000
-                                BurstOnActivatedMax:
-                                  ID: "?"
-                                  Data: 20000
-                                BurstTimeStart:
-                                  ID: "?"
-                                  Data:
-                                    CurrentTime: 11445891
-                                BurstTimePeriod:
-                                  ID: "?"
-                                  Data: 0
-                                Bursts:
-                                  ID: "?"
-                                  Data: []
-                                Radius:
-                                  ID: "?"
-                                  Data: 166.66666666666666
-                                EmitFromShell:
-                                  ID: "?"
-                                  Data: true
-                                RandomDirection:
-                                  ID: "?"
-                                  Data: 0
-                                ForceDirection:
-                                  ID: "?"
-                                  Data: false
-                                ForcedDirection:
-                                  ID: "?"
-                                  Data:
-                                    - 0
-                                    - 0
-                                    - 0
-                                DirectionReferencePoint:
-                                  ID: "?"
-                                  Data:
-                                    - 0
-                                    - 0
-                                    - 0
-                        Children: []
-                      - Name:
-                          ID: "?"
-                          Data: PS
-                        Active:
-                          ID: "?"
-                          Data: true
-                        ID: "?"
-                        Persistent-Id: "?"
-                        Position:
-                          ID: "?"
-                          Data:
-                            - -1033222.3333333334
-                            - 545111
-                            - -34222.333333333336
-                        Rotation:
-                          ID: "?"
-                          Data:
-                            - 0
-                            - 13666.666666666666
-                            - 0
-                            - 110222.33333333333
-                        Scale:
-                          ID: "?"
-                          Data:
-                            - 111111
-                            - 111111
-                            - 111111
-                        Tag:
-                          ID: "?"
-                          Data: null
-                        OrderOffset:
-                          ID: "?"
-                          Data: 0
-                        Components:
-                          ID: "?"
-                          Data:
-                            - Type: FrooxEngine.ParticleSystem
-                              Data:
-                                ID: ID:PS:Components:FrooxEngine.ParticleSystem:0
-                                persistent-ID: "?"
-                                UpdateOrder:
-                                  ID: "?"
-                                  Data: 0
-                                Enabled:
-                                  ID: "?"
-                                  Data: true
-                                MaxParticles:
-                                  ID: "?"
-                                  Data: 333333.3333333333
-                                Style:
-                                  ID: "?"
-                                  Data: ID:PS:Components:FrooxEngine.ParticleStyle:0
-                                SimulationSpace:
-                                  ID: "?"
-                                  Data: {}
-                            - Type: FrooxEngine.ParticleStyle
-                              Data:
-                                ID: ID:PS:Components:FrooxEngine.ParticleStyle:0
-                                persistent-ID: "?"
-                                UpdateOrder:
-                                  ID: "?"
-                                  Data: 0
-                                Enabled:
-                                  ID: "?"
-                                  Data: true
-                                MotionVectorMode:
-                                  ID: "?"
-                                  Data: Object
-                                MinStartLifetime:
-                                  ID: "?"
-                                  Data: 166.66666666666666
-                                MaxStartLifetime:
-                                  ID: "?"
-                                  Data: 1000
-                                MinStartSize:
-                                  ID: "?"
-                                  Data: 33.333333333333336
-                                MaxStartSize:
-                                  ID: "?"
-                                  Data: 300
-                                MinStartSpeed:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                MaxStartSpeed:
-                                  ID: "?"
-                                  Data: 6666.666666666667
-                                MinStartRotation:
-                                  ID: "?"
-                                  Data: 0
-                                MaxStartRotation:
-                                  ID: "?"
-                                  Data: 0
-                                MinStartAngularVelocity:
-                                  ID: "?"
-                                  Data: 0
-                                MaxStartAngularVelocity:
-                                  ID: "?"
-                                  Data: 0
-                                Use3DRotation:
-                                  ID: "?"
-                                  Data: true
-                                MinStartRotation3D:
-                                  ID: "?"
-                                  Data:
-                                    - 0
-                                    - 0
-                                    - 0
-                                MaxStartRotation3D:
-                                  ID: "?"
-                                  Data:
-                                    - 60000
-                                    - 60000
-                                    - 60000
-                                MinStartAngularVelocity3D:
-                                  ID: "?"
-                                  Data:
-                                    - 0
-                                    - 0
-                                    - 0
-                                MaxStartAngularVelocity3D:
-                                  ID: "?"
-                                  Data:
-                                    - 60000
-                                    - 60000
-                                    - 60000
-                                GravityStrength:
-                                  ID: "?"
-                                  Data: 466.6666666666667
-                                MinStartColor:
-                                  ID: "?"
-                                  Data:
-                                    - 166.66666666666666
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - sRGB
-                                MaxStartColor:
-                                  ID: "?"
-                                  Data:
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - sRGB
-                                UseColorOverLifetime:
-                                  ID: "?"
-                                  Data: false
-                                AlphaOverLifetime:
-                                  ID: "?"
-                                  Data: []
-                                ColorOverLifetime:
-                                  ID: "?"
-                                  Data: []
-                                Collisions:
-                                  ID: "?"
-                                  Data: true
-                                Bounce:
-                                  ID: "?"
-                                  Data: 66.66666666666667
-                                LifetimeLoss:
-                                  ID: "?"
-                                  Data: 166.66666666666666
-                                Material:
-                                  ID: "?"
-                                  Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:10
-                                TrailMaterial:
-                                  ID: "?"
-                                  Data: null
-                                Mesh:
-                                  ID: "?"
-                                  Data: null
-                                Alignment:
-                                  ID: "?"
-                                  Data: Velocity
-                                LengthScale:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                VelocityScale:
-                                  ID: "?"
-                                  Data: 0
-                                MinParticleSize:
-                                  ID: "?"
-                                  Data: 0
-                                MaxParticleSize:
-                                  ID: "?"
-                                  Data: 300
-                                ParticleTrails:
-                                  ID: "?"
-                                  Data: None
-                                TrailRatio:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                RibbonCount:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                TrailMinimumVertexDistance:
-                                  ID: "?"
-                                  Data: 66.66666666666667
-                                TrailWorldSpace:
-                                  ID: "?"
-                                  Data: false
-                                TrailDiesWithParticle:
-                                  ID: "?"
-                                  Data: true
-                                ParticleSizeAffectsTrailWidth:
-                                  ID: "?"
-                                  Data: true
-                                ParticleSizeAffectsTrailLifetime:
-                                  ID: "?"
-                                  Data: false
-                                InheritTrailColorFromParticle:
-                                  ID: "?"
-                                  Data: true
-                                TrailTextureMode:
-                                  ID: "?"
-                                  Data: Stretch
-                                MinTrailLifetime:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                MaxTrailLifetime:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                MinTrailColor:
-                                  ID: "?"
-                                  Data:
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - sRGB
-                                MaxTrailColor:
-                                  ID: "?"
-                                  Data:
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                    - sRGB
-                                MinTrailWidth:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                MaxTrailWidth:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                GenerateLightingDataForTrails:
-                                  ID: "?"
-                                  Data: false
-                                Light:
-                                  ID: "?"
-                                  Data: null
-                                LightsRatio:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                LightRandomDistribution:
-                                  ID: "?"
-                                  Data: true
-                                LightsUseParticleColor:
-                                  ID: "?"
-                                  Data: true
-                                SizeAffectsLightRange:
-                                  ID: "?"
-                                  Data: true
-                                AlphaAffectsLightIntensity:
-                                  ID: "?"
-                                  Data: true
-                                LightRangeMultiplier:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                LightIntensityMultiplier:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                MaximumLights:
-                                  ID: "?"
-                                  Data: 6666.666666666667
-                                AnimationTiles:
-                                  ID: "?"
-                                  Data:
-                                    - 333.3333333333333
-                                    - 333.3333333333333
-                                AnimationCycles:
-                                  ID: "?"
-                                  Data: 333.3333333333333
-                                AnimationType:
-                                  ID: "?"
-                                  Data: WholeSheet
-                                UseRowIndex:
-                                  ID: "?"
-                                  Data: 0
-                                UseRandomRow:
-                                  ID: "?"
-                                  Data: true
-                        Children: []
-              - Name:
-                  ID: "?"
-                  Data: EffectSpace
-                Active:
-                  ID: "?"
-                  Data: true
-                ID: ID:EffectSpace:0
-                Persistent-Id: "?"
-                Position:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                Rotation:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                    - 111111
-                Scale:
-                  ID: "?"
-                  Data:
-                    - 111111
-                    - 111111
-                    - 111111
-                Tag:
-                  ID: "?"
-                  Data: ""
-                OrderOffset:
-                  ID: "?"
-                  Data: 0
-                Components:
-                  ID: "?"
-                  Data: []
-                Children: []

@@ -248,6 +248,14 @@ export class SnatchCompany {
   gameState: GameState;
   private callbacks: Callbacks = {};
 
+  noise2D = createNoise2D();
+  solvePoint(x: number, z: number) {
+    return (
+      (this.noise2D(x / 4, z / 4) + 1) * 3 +
+      Math.abs(this.noise2D(x / 40, z / 40) * 10 * x * x * 0.001)
+    );
+  }
+
   constructor() {
     this.gameState = {
       mode: "lobby",
@@ -345,6 +353,12 @@ export class SnatchCompany {
     this.gameState.players = this.gameState.players.filter(
       (p) => p.id !== userId
     );
+    if (
+      this.gameState.mode === "inGame" &&
+      this.gameState.section.mode === "checkpoint"
+    ) {
+      this.gameState.section.skillSelection[userId] = [];
+    }
     if (this.gameState.players.length === 0) {
       this.gameState.mode = "lobby";
     }
@@ -429,7 +443,7 @@ export class SnatchCompany {
   };
 
   private static generateObject(
-    num: number,
+    position: [number, number, number],
     type: "mineral" | "plant",
     level: number,
     sectionLevel: number,
@@ -439,11 +453,7 @@ export class SnatchCompany {
       id: uuidv4(),
       type,
       resourceObjectLevel: level,
-      position: [
-        Math.random() * 100 - 50,
-        -8,
-        num * 90 + Math.random() * 90 - 45,
-      ],
+      position,
       rotation: [0, 0, 0, 0],
       health: getDpsSample(level, 30) * 3,
       maxHealth: getDpsSample(level, 30) * 3,
@@ -496,9 +506,11 @@ export class SnatchCompany {
 
             data.forEach(({ type, value }) => {
               if (this.gameState.mode === "inGame") {
+                const x = Math.random() * 100 - 50;
+                const z = num * 90 + Math.random() * 90 - 45;
                 this.gameState.section.objects.push(
                   SnatchCompany.generateObject(
-                    num,
+                    [x, this.solvePoint(x, z) - 8, z],
                     type,
                     value,
                     this.gameState.section.mode === "battle"
@@ -1142,7 +1154,6 @@ export class SnatchCompany {
           player.playerScore.totalDamage.mineral += resultDamage;
           player.playerScore.lastHit.mineral += object.health === 0 ? 1 : 0;
         }
-
         this.callbacks.onAttack2Object?.forEach((callback) =>
           callback({
             attacker: player,
@@ -1371,13 +1382,13 @@ export class SnatchCompany {
       ) {
         // 最終セクションだったらリザルト画面に遷移
         if (this.gameState.section.level === 4) {
+          this.callbacks.onGameClear?.forEach((callback) => callback());
           this.gameState = {
             mode: "result",
             isClear: true,
             bossClearTime: this.gameState.section.bossEvent?.time ?? 9999,
             players: this.gameState.players,
           };
-          this.callbacks.onGameClear?.forEach((callback) => callback());
           return;
         }
         // チェックポイントに遷移
@@ -1429,6 +1440,7 @@ export class SnatchCompany {
 
       // 船の体力が0になったらリザルト画面に遷移
       if (this.gameState.ship.health <= 0) {
+        this.callbacks.onGameOver?.forEach((callback) => callback());
         this.gameState = {
           mode: "result",
           isClear: false,

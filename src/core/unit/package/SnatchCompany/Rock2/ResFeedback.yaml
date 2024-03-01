@@ -450,12 +450,12 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:104
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:80
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:11
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []

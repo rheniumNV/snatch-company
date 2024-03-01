@@ -302,10 +302,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill1Name
+                  Data: Props.skill1NameJa
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:1
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -321,10 +321,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill2Name
+                  Data: Props.skill1NameEn
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:4
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:1
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -340,10 +340,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill3Name
+                  Data: Props.skill2NameJa
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:7
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:4
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -359,10 +359,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill1Description
+                  Data: Props.skill2NameEn
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:4
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -378,10 +378,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill2Description
+                  Data: Props.skill3NameJa
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:5
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:7
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -397,10 +397,124 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.skill3Description
+                  Data: Props.skill3NameEn
                 TargetField:
                   ID: "?"
-                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:8
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:7
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill1DescriptionJa
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:2
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill1DescriptionEn
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:2
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill2DescriptionJa
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:5
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill2DescriptionEn
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:5
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill3DescriptionJa
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:8
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.DynamicField`1[System.String]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.skill3DescriptionEn
+                TargetField:
+                  ID: "?"
+                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:8
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -533,7 +647,7 @@ Children:
                   Data: Props.selectSkill1
                 TargetField:
                   ID: "?"
-                  Data: "?"
+                  Data: null
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -552,7 +666,7 @@ Children:
                   Data: Props.selectSkill2
                 TargetField:
                   ID: "?"
-                  Data: "?"
+                  Data: null
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -571,7 +685,7 @@ Children:
                   Data: Props.selectSkill3
                 TargetField:
                   ID: "?"
-                  Data: "?"
+                  Data: null
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -981,10 +1095,10 @@ Children:
                               Data: true
                             Sprite:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:23
+                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:31
                             Material:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:15
+                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:5
                             PreserveAspect:
                               ID: "?"
                               Data: true
@@ -1377,7 +1491,7 @@ Children:
                                       Data: true
                                     Sprite:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                     Material:
                                       ID: "?"
                                       Data: null
@@ -1496,7 +1610,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:33
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -1615,9 +1729,9 @@ Children:
                                               Data: true
                                             Font:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                              Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                             Content:
-                                              ID: "?"
+                                              ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
                                               Data: Choose a new skill
                                             ParseRichText:
                                               ID: "?"
@@ -1649,7 +1763,7 @@ Children:
                                               ID: "?"
                                               Data:
                                                 - ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                             LineHeight:
                                               ID: "?"
                                               Data: 266.6666666666667
@@ -1719,6 +1833,51 @@ Children:
                                                 - 0
                                                 - 0
                                                 - Linear
+                                        - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                          Data:
+                                            ID: "?"
+                                            persistent-ID: "?"
+                                            UpdateOrder:
+                                              ID: "?"
+                                              Data: 0
+                                            Enabled:
+                                              ID: "?"
+                                              Data: true
+                                            Target:
+                                              ID: "?"
+                                              Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
+                                            Index:
+                                              ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:0
+                                              Data: 0
+                                            Values:
+                                              ID: "?"
+                                              Data:
+                                                - ID: "?"
+                                                  Data: Choose a new skill
+                                                - ID: "?"
+                                                  Data: スキル獲得
+                                            AllowWriteBack:
+                                              ID: "?"
+                                              Data: false
+                                        - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                          Data:
+                                            ID: "?"
+                                            persistent-ID: "?"
+                                            UpdateOrder:
+                                              ID: "?"
+                                              Data: 0
+                                            Enabled:
+                                              ID: "?"
+                                              Data: true
+                                            VariableName:
+                                              ID: "?"
+                                              Data: Locale/Local
+                                            Target:
+                                              ID: "?"
+                                              Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:0
+                                            DefaultValue:
+                                              ID: "?"
+                                              Data: 0
                                     Children: []
                       - Name:
                           ID: "?"
@@ -2130,7 +2289,7 @@ Children:
                                               Data: true
                                             Sprite:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:33
                                             Material:
                                               ID: "?"
                                               Data: null
@@ -2455,6 +2614,46 @@ Children:
                                                           Data:
                                                             - 166.66666666666666
                                                             - 166.66666666666666
+                                                    - Type: FrooxEngine.UIX.RawImage
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Texture:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:0
+                                                        Material:
+                                                          ID: "?"
+                                                          Data: null
+                                                        Tint:
+                                                          ID: "?"
+                                                          Data:
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - sRGB
+                                                        UVRect:
+                                                          ID: "?"
+                                                          Data:
+                                                            X: 0
+                                                            Y: 0
+                                                            Width: 333.3333333333333
+                                                            Height: 333.3333333333333
+                                                        Orientation:
+                                                          ID: "?"
+                                                          Data: Default
+                                                        PreserveAspect:
+                                                          ID: "?"
+                                                          Data: true
+                                                        InteractionTarget:
+                                                          ID: "?"
+                                                          Data: true
                                                     - Type: FrooxEngine.StaticTexture2D
                                                       Data:
                                                         ID: ID:Text:Components:FrooxEngine.StaticTexture2D:0
@@ -2522,46 +2721,6 @@ Children:
                                                         Readable:
                                                           ID: "?"
                                                           Data: false
-                                                    - Type: FrooxEngine.UIX.RawImage
-                                                      Data:
-                                                        ID: "?"
-                                                        persistent-ID: "?"
-                                                        UpdateOrder:
-                                                          ID: "?"
-                                                          Data: 0
-                                                        Enabled:
-                                                          ID: "?"
-                                                          Data: true
-                                                        Texture:
-                                                          ID: "?"
-                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:0
-                                                        Material:
-                                                          ID: "?"
-                                                          Data: null
-                                                        Tint:
-                                                          ID: "?"
-                                                          Data:
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - sRGB
-                                                        UVRect:
-                                                          ID: "?"
-                                                          Data:
-                                                            X: 0
-                                                            Y: 0
-                                                            Width: 333.3333333333333
-                                                            Height: 333.3333333333333
-                                                        Orientation:
-                                                          ID: "?"
-                                                          Data: Default
-                                                        PreserveAspect:
-                                                          ID: "?"
-                                                          Data: true
-                                                        InteractionTarget:
-                                                          ID: "?"
-                                                          Data: true
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -2755,10 +2914,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
-                                                          Data: ""
+                                                          Data: Ijounatsumiage
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -2789,7 +2948,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -2859,6 +3018,51 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:1
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:1
+                                                              Data: Ijounatsumiage
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:1
+                                                              Data: 異常な積み上げ
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:1
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -3052,10 +3256,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
-                                                          Data: ""
+                                                          Data: English
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -3086,7 +3290,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -3156,6 +3360,56 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:2
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:2
+                                                              Data: English
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:2
+                                                              Data: >-
+                                                                
+                                                                クリティカル率 100%
+                                                                Down
+
+                                                                クリティカルダメージ 100% Up
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:2
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -3349,7 +3603,7 @@ Children:
                                                           Data: true
                                                         Sprite:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                         Material:
                                                           ID: "?"
                                                           Data: null
@@ -3481,7 +3735,7 @@ Children:
                                                               Data: true
                                                             Sprite:
                                                               ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                             Material:
                                                               ID: "?"
                                                               Data: null
@@ -3612,8 +3866,8 @@ Children:
                                                             PressPoint:
                                                               ID: "?"
                                                               Data:
-                                                                - -129201
-                                                                - -81444.33333333333
+                                                                - -118349.66666666667
+                                                                - -92923.66666666667
                                                             SendSlotEvents:
                                                               ID: "?"
                                                               Data: true
@@ -3641,59 +3895,6 @@ Children:
                                                               ID: "?"
                                                               Data:
                                                                 Target: null
-                                                        - Type: FrooxEngine.DynamicReferenceVariableDriver`1[FrooxEngine.Slot]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            VariableName:
-                                                              ID: "?"
-                                                              Data: AppRoot/Static.System.Func.EmitInteractionEvent
-                                                            Target:
-                                                              ID: "?"
-                                                              Data: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:0
-                                                            DefaultTarget:
-                                                              ID: "?"
-                                                              Data: null
-                                                        - Type: FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            Target:
-                                                              ID: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:0
-                                                              Data: "?"
-                                                            ExcludeDisabled:
-                                                              ID: "?"
-                                                              Data: false
-                                                            PressedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            PressingData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            ReleasedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverEnterData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverStayData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverLeaveData:
-                                                              ID: "?"
-                                                              Data: {}
                                                     Children:
                                                       - Name:
                                                           ID: "?"
@@ -3778,9 +3979,9 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                                 Content:
-                                                                  ID: "?"
+                                                                  ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:3
                                                                   Data: Select
                                                                 ParseRichText:
                                                                   ID: "?"
@@ -3812,7 +4013,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -3882,6 +4083,51 @@ Children:
                                                                     - 0
                                                                     - 0
                                                                     - Linear
+                                                            - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:3
+                                                                Index:
+                                                                  ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:3
+                                                                  Data: 0
+                                                                Values:
+                                                                  ID: "?"
+                                                                  Data:
+                                                                    - ID: "?"
+                                                                      Data: Select
+                                                                    - ID: "?"
+                                                                      Data: セレクト
+                                                                AllowWriteBack:
+                                                                  ID: "?"
+                                                                  Data: false
+                                                            - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                VariableName:
+                                                                  ID: "?"
+                                                                  Data: Locale/Local
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:3
+                                                                DefaultValue:
+                                                                  ID: "?"
+                                                                  Data: 0
                                                         Children: []
                                                   - Name:
                                                       ID: "?"
@@ -4109,7 +4355,7 @@ Children:
                                                   Data: true
                                                 Sprite:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:26
+                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
                                                 Material:
                                                   ID: "?"
                                                   Data: null
@@ -4493,7 +4739,7 @@ Children:
                                               Data: true
                                             Sprite:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:33
                                             Material:
                                               ID: "?"
                                               Data: null
@@ -4818,6 +5064,46 @@ Children:
                                                           Data:
                                                             - 166.66666666666666
                                                             - 166.66666666666666
+                                                    - Type: FrooxEngine.UIX.RawImage
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Texture:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:1
+                                                        Material:
+                                                          ID: "?"
+                                                          Data: null
+                                                        Tint:
+                                                          ID: "?"
+                                                          Data:
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - sRGB
+                                                        UVRect:
+                                                          ID: "?"
+                                                          Data:
+                                                            X: 0
+                                                            Y: 0
+                                                            Width: 333.3333333333333
+                                                            Height: 333.3333333333333
+                                                        Orientation:
+                                                          ID: "?"
+                                                          Data: Default
+                                                        PreserveAspect:
+                                                          ID: "?"
+                                                          Data: true
+                                                        InteractionTarget:
+                                                          ID: "?"
+                                                          Data: true
                                                     - Type: FrooxEngine.StaticTexture2D
                                                       Data:
                                                         ID: ID:Text:Components:FrooxEngine.StaticTexture2D:1
@@ -4885,46 +5171,6 @@ Children:
                                                         Readable:
                                                           ID: "?"
                                                           Data: false
-                                                    - Type: FrooxEngine.UIX.RawImage
-                                                      Data:
-                                                        ID: "?"
-                                                        persistent-ID: "?"
-                                                        UpdateOrder:
-                                                          ID: "?"
-                                                          Data: 0
-                                                        Enabled:
-                                                          ID: "?"
-                                                          Data: true
-                                                        Texture:
-                                                          ID: "?"
-                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:1
-                                                        Material:
-                                                          ID: "?"
-                                                          Data: null
-                                                        Tint:
-                                                          ID: "?"
-                                                          Data:
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - sRGB
-                                                        UVRect:
-                                                          ID: "?"
-                                                          Data:
-                                                            X: 0
-                                                            Y: 0
-                                                            Width: 333.3333333333333
-                                                            Height: 333.3333333333333
-                                                        Orientation:
-                                                          ID: "?"
-                                                          Data: Default
-                                                        PreserveAspect:
-                                                          ID: "?"
-                                                          Data: true
-                                                        InteractionTarget:
-                                                          ID: "?"
-                                                          Data: true
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -5118,10 +5364,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:4
-                                                          Data: ""
+                                                          Data: Ijounatsumiage
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -5152,7 +5398,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -5222,6 +5468,51 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:4
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:4
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:4
+                                                              Data: Ijounatsumiage
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:4
+                                                              Data: 異常な積み上げ
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:4
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -5415,10 +5706,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:5
-                                                          Data: ""
+                                                          Data: English
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -5449,7 +5740,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -5519,6 +5810,56 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:5
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:5
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:5
+                                                              Data: English
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:5
+                                                              Data: >-
+                                                                
+                                                                クリティカル率 100%
+                                                                Down
+
+                                                                クリティカルダメージ 100% Up
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:5
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -5712,7 +6053,7 @@ Children:
                                                           Data: true
                                                         Sprite:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                         Material:
                                                           ID: "?"
                                                           Data: null
@@ -5844,7 +6185,7 @@ Children:
                                                               Data: true
                                                             Sprite:
                                                               ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                             Material:
                                                               ID: "?"
                                                               Data: null
@@ -5975,8 +6316,8 @@ Children:
                                                             PressPoint:
                                                               ID: "?"
                                                               Data:
-                                                                - -129201
-                                                                - -81444.33333333333
+                                                                - -118349.66666666667
+                                                                - -92923.66666666667
                                                             SendSlotEvents:
                                                               ID: "?"
                                                               Data: true
@@ -6004,59 +6345,6 @@ Children:
                                                               ID: "?"
                                                               Data:
                                                                 Target: null
-                                                        - Type: FrooxEngine.DynamicReferenceVariableDriver`1[FrooxEngine.Slot]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            VariableName:
-                                                              ID: "?"
-                                                              Data: AppRoot/Static.System.Func.EmitInteractionEvent
-                                                            Target:
-                                                              ID: "?"
-                                                              Data: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:1
-                                                            DefaultTarget:
-                                                              ID: "?"
-                                                              Data: null
-                                                        - Type: FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            Target:
-                                                              ID: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:1
-                                                              Data: "?"
-                                                            ExcludeDisabled:
-                                                              ID: "?"
-                                                              Data: false
-                                                            PressedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            PressingData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            ReleasedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverEnterData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverStayData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverLeaveData:
-                                                              ID: "?"
-                                                              Data: {}
                                                     Children:
                                                       - Name:
                                                           ID: "?"
@@ -6141,9 +6429,9 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                                 Content:
-                                                                  ID: "?"
+                                                                  ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:6
                                                                   Data: Select
                                                                 ParseRichText:
                                                                   ID: "?"
@@ -6175,7 +6463,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -6245,6 +6533,51 @@ Children:
                                                                     - 0
                                                                     - 0
                                                                     - Linear
+                                                            - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:6
+                                                                Index:
+                                                                  ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:6
+                                                                  Data: 0
+                                                                Values:
+                                                                  ID: "?"
+                                                                  Data:
+                                                                    - ID: "?"
+                                                                      Data: Select
+                                                                    - ID: "?"
+                                                                      Data: セレクト
+                                                                AllowWriteBack:
+                                                                  ID: "?"
+                                                                  Data: false
+                                                            - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                VariableName:
+                                                                  ID: "?"
+                                                                  Data: Locale/Local
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:6
+                                                                DefaultValue:
+                                                                  ID: "?"
+                                                                  Data: 0
                                                         Children: []
                                                   - Name:
                                                       ID: "?"
@@ -6472,7 +6805,7 @@ Children:
                                                   Data: true
                                                 Sprite:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:26
+                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
                                                 Material:
                                                   ID: "?"
                                                   Data: null
@@ -6635,8 +6968,8 @@ Children:
                                                       ID: ID:RarityColor:Components:FrooxEngine.UIX.Image:Tint:1
                                                       Data:
                                                         - 333.3333333333333
-                                                        - 265
-                                                        - 85
+                                                        - 44.666666666666664
+                                                        - 122.33333333333333
                                                         - 333.3333333333333
                                                         - sRGB
                                                 - Type: FrooxEngine.DynamicValueVariableDriver`1[Elements.Core.colorX]
@@ -6651,7 +6984,7 @@ Children:
                                                       Data: true
                                                     VariableName:
                                                       ID: ID:RarityColor:Components:FrooxEngine.DynamicValueVariableDriver`1[Elements.Core.colorX]:VariableName:1
-                                                      Data: Style/Color.Rarity.Rare
+                                                      Data: Style/Color.Rarity.Epic
                                                     Target:
                                                       ID: "?"
                                                       Data: ID:RarityColor:Components:FrooxEngine.UIX.Image:Tint:1
@@ -6856,7 +7189,7 @@ Children:
                                               Data: true
                                             Sprite:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:33
                                             Material:
                                               ID: "?"
                                               Data: null
@@ -7181,6 +7514,46 @@ Children:
                                                           Data:
                                                             - 166.66666666666666
                                                             - 166.66666666666666
+                                                    - Type: FrooxEngine.UIX.RawImage
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Texture:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:2
+                                                        Material:
+                                                          ID: "?"
+                                                          Data: null
+                                                        Tint:
+                                                          ID: "?"
+                                                          Data:
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - 333.3333333333333
+                                                            - sRGB
+                                                        UVRect:
+                                                          ID: "?"
+                                                          Data:
+                                                            X: 0
+                                                            Y: 0
+                                                            Width: 333.3333333333333
+                                                            Height: 333.3333333333333
+                                                        Orientation:
+                                                          ID: "?"
+                                                          Data: Default
+                                                        PreserveAspect:
+                                                          ID: "?"
+                                                          Data: true
+                                                        InteractionTarget:
+                                                          ID: "?"
+                                                          Data: true
                                                     - Type: FrooxEngine.StaticTexture2D
                                                       Data:
                                                         ID: ID:Text:Components:FrooxEngine.StaticTexture2D:2
@@ -7248,46 +7621,6 @@ Children:
                                                         Readable:
                                                           ID: "?"
                                                           Data: false
-                                                    - Type: FrooxEngine.UIX.RawImage
-                                                      Data:
-                                                        ID: "?"
-                                                        persistent-ID: "?"
-                                                        UpdateOrder:
-                                                          ID: "?"
-                                                          Data: 0
-                                                        Enabled:
-                                                          ID: "?"
-                                                          Data: true
-                                                        Texture:
-                                                          ID: "?"
-                                                          Data: ID:Text:Components:FrooxEngine.StaticTexture2D:2
-                                                        Material:
-                                                          ID: "?"
-                                                          Data: null
-                                                        Tint:
-                                                          ID: "?"
-                                                          Data:
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - 333.3333333333333
-                                                            - sRGB
-                                                        UVRect:
-                                                          ID: "?"
-                                                          Data:
-                                                            X: 0
-                                                            Y: 0
-                                                            Width: 333.3333333333333
-                                                            Height: 333.3333333333333
-                                                        Orientation:
-                                                          ID: "?"
-                                                          Data: Default
-                                                        PreserveAspect:
-                                                          ID: "?"
-                                                          Data: true
-                                                        InteractionTarget:
-                                                          ID: "?"
-                                                          Data: true
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -7481,10 +7814,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:7
-                                                          Data: ""
+                                                          Data: Ijounatsumiage
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -7515,7 +7848,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -7585,6 +7918,51 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:7
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:7
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:7
+                                                              Data: Ijounatsumiage
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:7
+                                                              Data: 異常な積み上げ
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:7
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -7778,10 +8156,10 @@ Children:
                                                           Data: true
                                                         Font:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                         Content:
                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:8
-                                                          Data: ""
+                                                          Data: English
                                                         ParseRichText:
                                                           ID: "?"
                                                           Data: true
@@ -7812,7 +8190,7 @@ Children:
                                                           ID: "?"
                                                           Data:
                                                             - ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                         LineHeight:
                                                           ID: "?"
                                                           Data: 266.6666666666667
@@ -7882,6 +8260,56 @@ Children:
                                                             - 0
                                                             - 0
                                                             - Linear
+                                                    - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:8
+                                                        Index:
+                                                          ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:8
+                                                          Data: 0
+                                                        Values:
+                                                          ID: "?"
+                                                          Data:
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.0.ID:8
+                                                              Data: English
+                                                            - ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Values.1.ID:8
+                                                              Data: >-
+                                                                
+                                                                クリティカル率 100%
+                                                                Down
+
+                                                                クリティカルダメージ 100% Up
+                                                        AllowWriteBack:
+                                                          ID: "?"
+                                                          Data: false
+                                                    - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                      Data:
+                                                        ID: "?"
+                                                        persistent-ID: "?"
+                                                        UpdateOrder:
+                                                          ID: "?"
+                                                          Data: 0
+                                                        Enabled:
+                                                          ID: "?"
+                                                          Data: true
+                                                        VariableName:
+                                                          ID: "?"
+                                                          Data: Locale/Local
+                                                        Target:
+                                                          ID: "?"
+                                                          Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:8
+                                                        DefaultValue:
+                                                          ID: "?"
+                                                          Data: 0
                                                 Children: []
                                           - Name:
                                               ID: "?"
@@ -8075,7 +8503,7 @@ Children:
                                                           Data: true
                                                         Sprite:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                         Material:
                                                           ID: "?"
                                                           Data: null
@@ -8207,7 +8635,7 @@ Children:
                                                               Data: true
                                                             Sprite:
                                                               ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
                                                             Material:
                                                               ID: "?"
                                                               Data: null
@@ -8338,8 +8766,8 @@ Children:
                                                             PressPoint:
                                                               ID: "?"
                                                               Data:
-                                                                - -129201
-                                                                - -81444.33333333333
+                                                                - -118349.66666666667
+                                                                - -92923.66666666667
                                                             SendSlotEvents:
                                                               ID: "?"
                                                               Data: true
@@ -8367,59 +8795,6 @@ Children:
                                                               ID: "?"
                                                               Data:
                                                                 Target: null
-                                                        - Type: FrooxEngine.DynamicReferenceVariableDriver`1[FrooxEngine.Slot]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            VariableName:
-                                                              ID: "?"
-                                                              Data: AppRoot/Static.System.Func.EmitInteractionEvent
-                                                            Target:
-                                                              ID: "?"
-                                                              Data: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:2
-                                                            DefaultTarget:
-                                                              ID: "?"
-                                                              Data: null
-                                                        - Type: FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]
-                                                          Data:
-                                                            ID: "?"
-                                                            persistent-ID: "?"
-                                                            UpdateOrder:
-                                                              ID: "?"
-                                                              Data: 0
-                                                            Enabled:
-                                                              ID: "?"
-                                                              Data: true
-                                                            Target:
-                                                              ID: ID:Button:Components:FrooxEngine.ButtonDynamicImpulseTriggerWithValue`1[System.String]:Target:2
-                                                              Data: "?"
-                                                            ExcludeDisabled:
-                                                              ID: "?"
-                                                              Data: false
-                                                            PressedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            PressingData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            ReleasedData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverEnterData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverStayData:
-                                                              ID: "?"
-                                                              Data: {}
-                                                            HoverLeaveData:
-                                                              ID: "?"
-                                                              Data: {}
                                                     Children:
                                                       - Name:
                                                           ID: "?"
@@ -8504,9 +8879,9 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:7
                                                                 Content:
-                                                                  ID: "?"
+                                                                  ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:9
                                                                   Data: Select
                                                                 ParseRichText:
                                                                   ID: "?"
@@ -8538,7 +8913,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:6
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -8608,6 +8983,51 @@ Children:
                                                                     - 0
                                                                     - 0
                                                                     - Linear
+                                                            - Type: FrooxEngine.ValueMultiplexer`1[System.String]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.UIX.Text:Content:9
+                                                                Index:
+                                                                  ID: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:9
+                                                                  Data: 0
+                                                                Values:
+                                                                  ID: "?"
+                                                                  Data:
+                                                                    - ID: "?"
+                                                                      Data: Select
+                                                                    - ID: "?"
+                                                                      Data: セレクト
+                                                                AllowWriteBack:
+                                                                  ID: "?"
+                                                                  Data: false
+                                                            - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Int32]
+                                                              Data:
+                                                                ID: "?"
+                                                                persistent-ID: "?"
+                                                                UpdateOrder:
+                                                                  ID: "?"
+                                                                  Data: 0
+                                                                Enabled:
+                                                                  ID: "?"
+                                                                  Data: true
+                                                                VariableName:
+                                                                  ID: "?"
+                                                                  Data: Locale/Local
+                                                                Target:
+                                                                  ID: "?"
+                                                                  Data: ID:Text:Components:FrooxEngine.ValueMultiplexer`1[System.String]:Index:9
+                                                                DefaultValue:
+                                                                  ID: "?"
+                                                                  Data: 0
                                                         Children: []
                                                   - Name:
                                                       ID: "?"
@@ -8835,7 +9255,7 @@ Children:
                                                   Data: true
                                                 Sprite:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:26
+                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
                                                 Material:
                                                   ID: "?"
                                                   Data: null
@@ -9294,6 +9714,46 @@ Children:
                             TargetField:
                               ID: "?"
                               Data: ID:Main:Components:FrooxEngine.ValueMultiDriver`1[Elements.Core.colorX]:Value:1
+                            OverrideOnLink:
+                              ID: "?"
+                              Data: false
+                        - Type: FrooxEngine.ValueMultiDriver`1[Elements.Core.colorX]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Value:
+                              ID: ID:Main:Components:FrooxEngine.ValueMultiDriver`1[Elements.Core.colorX]:Value:2
+                              Data:
+                                - 13.333333333333334
+                                - 0
+                                - 34
+                                - 333.3333333333333
+                                - sRGB
+                            Drives:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.DynamicField`1[Elements.Core.colorX]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: Style/Color.Main.Dark
+                            TargetField:
+                              ID: "?"
+                              Data: ID:Main:Components:FrooxEngine.ValueMultiDriver`1[Elements.Core.colorX]:Value:2
                             OverrideOnLink:
                               ID: "?"
                               Data: false

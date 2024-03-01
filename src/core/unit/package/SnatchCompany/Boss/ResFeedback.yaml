@@ -625,14 +625,14 @@ Children:
                               Data: true
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:32
                             Materials:
                               ID: "?"
                               Data:
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                 - ID: "?"
-                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                  Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                             MaterialPropertyBlocks:
                               ID: "?"
                               Data: []
@@ -675,7 +675,7 @@ Children:
                               Data: false
                             Mesh:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:85
+                              Data: ID:Assets:FrooxEngine.StaticMesh:ID:32
                             Sidedness:
                               ID: "?"
                               Data: Front
@@ -731,14 +731,14 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:33
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -781,7 +781,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:86
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:33
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -837,12 +837,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:34
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -885,7 +885,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:87
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:34
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -941,14 +941,14 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:35
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                     MaterialPropertyBlocks:
                                       ID: "?"
                                       Data: []
@@ -991,7 +991,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:88
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:35
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -1047,12 +1047,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:36
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -1095,7 +1095,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:89
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:36
                                         Sidedness:
                                           ID: "?"
                                           Data: Front
@@ -1151,12 +1151,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:37
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -1199,7 +1199,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:90
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:37
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -1255,14 +1255,14 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:38
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                     MaterialPropertyBlocks:
                                       ID: "?"
                                       Data: []
@@ -1305,7 +1305,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:91
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:38
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -1361,12 +1361,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:39
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -1409,7 +1409,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:92
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:39
                                         Sidedness:
                                           ID: "?"
                                           Data: Front
@@ -1465,14 +1465,14 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:40
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -1515,7 +1515,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:40
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -1571,12 +1571,12 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:41
                                 Materials:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                 MaterialPropertyBlocks:
                                   ID: "?"
                                   Data: []
@@ -1619,7 +1619,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:41
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -1675,14 +1675,14 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:42
                                     Materials:
                                       ID: "?"
                                       Data:
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         - ID: "?"
-                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:9
+                                          Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:6
                                     MaterialPropertyBlocks:
                                       ID: "?"
                                       Data: []
@@ -1725,7 +1725,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:42
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -1781,12 +1781,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:43
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -1829,7 +1829,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:43
                                         Sidedness:
                                           ID: "?"
                                           Data: Front
@@ -1885,12 +1885,12 @@ Children:
                                           Data: true
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:44
                                         Materials:
                                           ID: "?"
                                           Data:
                                             - ID: "?"
-                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:5
                                         MaterialPropertyBlocks:
                                           ID: "?"
                                           Data: []
@@ -1933,7 +1933,7 @@ Children:
                                           Data: false
                                         Mesh:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:44
                                         Sidedness:
                                           ID: "?"
                                           Data: Front
@@ -1977,4 +1977,325 @@ Children:
                     Components:
                       ID: "?"
                       Data: []
+                    Children: []
+              - Name:
+                  ID: "?"
+                  Data: Audio
+                Active:
+                  ID: "?"
+                  Data: true
+                ID: "?"
+                Persistent-Id: "?"
+                Position:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Rotation:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                    - 111111
+                Scale:
+                  ID: "?"
+                  Data:
+                    - 111111
+                    - 111111
+                    - 111111
+                Tag:
+                  ID: "?"
+                  Data: null
+                OrderOffset:
+                  ID: "?"
+                  Data: 0
+                Components:
+                  ID: "?"
+                  Data:
+                    - Type: FrooxEngine.DynamicVariableSpace
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        SpaceName:
+                          ID: "?"
+                          Data: UserAudioPlayer
+                        OnlyDirectBinding:
+                          ID: "?"
+                          Data: false
+                    - Type: FrooxEngine.AudioPlayerInterface
+                      Data:
+                        ID: "?"
+                        persistent-ID: "?"
+                        UpdateOrder:
+                          ID: "?"
+                          Data: 0
+                        Enabled:
+                          ID: "?"
+                          Data: true
+                        ItemName:
+                          ID: "?"
+                          Data: "?"
+                        SpawningUser:
+                          ID: "?"
+                          Data: null
+                        SpawningUserID:
+                          ID: "?"
+                          Data: null
+                        IsInstance:
+                          ID: "?"
+                          Data: true
+                        URL:
+                          ID: "?"
+                          Data: ID:Asset:Components:FrooxEngine.StaticAudioClip:URL:0
+                        Clip:
+                          ID: "?"
+                          Data: ID:Audio output:Components:FrooxEngine.AudioClipPlayer:Clip:0
+                        Group:
+                          ID: "?"
+                          Data: ID:Audio output:Components:FrooxEngine.AudioOutput:AudioTypeGroup:0
+                        Volume:
+                          ID: "?"
+                          Data: null
+                        Spatialize:
+                          ID: "?"
+                          Data: null
+                        Doppler:
+                          ID: "?"
+                          Data: null
+                        DefaultAudioClip:
+                          ID: "?"
+                          Data: ID:Asset:Components:FrooxEngine.StaticAudioClip:0
+                Children:
+                  - Name:
+                      ID: "?"
+                      Data: Audio output
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.AudioOutput
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Volume:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            Source:
+                              ID: "?"
+                              Data: ID:Audio output:Components:FrooxEngine.AudioClipPlayer:0
+                            SpatialBlend:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            Spatialize:
+                              ID: "?"
+                              Data: true
+                            DopplerLevel:
+                              ID: "?"
+                              Data: 0
+                            RolloffMode:
+                              ID: "?"
+                              Data: Logarithmic
+                            MinDistance:
+                              ID: "?"
+                              Data: 333.3333333333333
+                            MaxDistance:
+                              ID: "?"
+                              Data: 3333.3333333333335
+                            Priority:
+                              ID: "?"
+                              Data: 42666.666666666664
+                            AudioTypeGroup:
+                              ID: ID:Audio output:Components:FrooxEngine.AudioOutput:AudioTypeGroup:0
+                              Data: SoundEffect
+                            DistanceSpace:
+                              ID: "?"
+                              Data: Local
+                            MinScale:
+                              ID: "?"
+                              Data: 0
+                            MaxScale:
+                              ID: "?"
+                              Data: null
+                            IgnoreReverbZones:
+                              ID: "?"
+                              Data: false
+                            excludedUsers:
+                              ID: "?"
+                              Data: []
+                        - Type: FrooxEngine.AudioClipPlayer
+                          Data:
+                            ID: ID:Audio output:Components:FrooxEngine.AudioClipPlayer:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            playback:
+                              ID: "?"
+                              Data:
+                                Play: true
+                                Loop: true
+                                RawPosition: 833065.6666666666
+                                Speed: 333.3333333333333
+                                MaxError: 1666.6666666666667
+                                MaxDeviation: 1666.6666666666667
+                            Clip:
+                              ID: ID:Audio output:Components:FrooxEngine.AudioClipPlayer:Clip:0
+                              Data: ID:Asset:Components:FrooxEngine.StaticAudioClip:0
+                        - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Single]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: spatial_blend
+                            Target:
+                              ID: "?"
+                              Data: null
+                            DefaultValue:
+                              ID: "?"
+                              Data: 0
+                        - Type: FrooxEngine.DynamicValueVariableDriver`1[System.Boolean]
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            VariableName:
+                              ID: "?"
+                              Data: spatialized
+                            Target:
+                              ID: "?"
+                              Data: null
+                            DefaultValue:
+                              ID: "?"
+                              Data: false
+                    Children: []
+                  - Name:
+                      ID: "?"
+                      Data: Asset
+                    Active:
+                      ID: "?"
+                      Data: true
+                    ID: "?"
+                    Persistent-Id: "?"
+                    Position:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                    Rotation:
+                      ID: "?"
+                      Data:
+                        - 0
+                        - 0
+                        - 0
+                        - 111111
+                    Scale:
+                      ID: "?"
+                      Data:
+                        - 111111
+                        - 111111
+                        - 111111
+                    Tag:
+                      ID: "?"
+                      Data: null
+                    OrderOffset:
+                      ID: "?"
+                      Data: 0
+                    Components:
+                      ID: "?"
+                      Data:
+                        - Type: FrooxEngine.StaticAudioClip
+                          Data:
+                            ID: ID:Asset:Components:FrooxEngine.StaticAudioClip:0
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            URL:
+                              ID: ID:Asset:Components:FrooxEngine.StaticAudioClip:URL:0
+                              Data: "@resdb:///adae796f2c34743003bb2f65c9be90edd82cf31ce70d1241950264cf05d557\
+                                f5"
+                            LoadMode:
+                              ID: "?"
+                              Data: Automatic
+                            SampleRateMode:
+                              ID: "?"
+                              Data: Conform
+                        - Type: FrooxEngine.ReferenceProxy
+                          Data:
+                            ID: "?"
+                            persistent-ID: "?"
+                            UpdateOrder:
+                              ID: "?"
+                              Data: 0
+                            Enabled:
+                              ID: "?"
+                              Data: true
+                            Reference:
+                              ID: "?"
+                              Data: ID:Asset:Components:FrooxEngine.StaticAudioClip:0
+                            SpawnInstanceOnTrigger:
+                              ID: "?"
+                              Data: false
                     Children: []

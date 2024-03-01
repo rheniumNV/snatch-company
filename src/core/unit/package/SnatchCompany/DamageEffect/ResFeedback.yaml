@@ -458,13 +458,13 @@ Children:
                   ID: "?"
                   Data:
                     - ID: "?"
-                      Data: ID:Assets:Components:FrooxEngine.StaticAudioClip:0
+                      Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:0
+                    - ID: "?"
+                      Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:1
                     - ID: "?"
                       Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:2
                     - ID: "?"
                       Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:3
-                    - ID: "?"
-                      Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:4
             - Type: FrooxEngine.AudioClipPlayer
               Data:
                 ID: ID:DamageEffect:Components:FrooxEngine.AudioClipPlayer:0
@@ -480,13 +480,13 @@ Children:
                   Data:
                     Play: true
                     Loop: false
-                    RawPosition: 114237
+                    RawPosition: 1552904.6666666667
                     Speed: 333.3333333333333
                     MaxError: 1666.6666666666667
                     MaxDeviation: 1666.6666666666667
                 Clip:
                   ID: ID:DamageEffect:Components:FrooxEngine.AudioClipPlayer:Clip:0
-                  Data: ID:Assets:Components:FrooxEngine.StaticAudioClip:0
+                  Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:0
         Children:
           - Name:
               ID: "?"
@@ -868,7 +868,7 @@ Children:
                         StartTime:
                           ID: "?"
                           Data:
-                            CurrentTime: 45424155
+                            CurrentTime: 46862822.666666664
                 Children: []
               - Name:
                   ID: "?"
@@ -2849,7 +2849,7 @@ Children:
                                   Data: Linear
                                 Font:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.FontChain:ID:19
+                                  Data: ID:Assets:FrooxEngine.FontChain:ID:8
                                 Text:
                                   ID: ID:Outline:Components:FrooxEngine.TextRenderer:Text:0
                                   Data: "0"
@@ -2883,7 +2883,7 @@ Children:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:1
+                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:2
                                 LineHeight:
                                   ID: "?"
                                   Data: 266.6666666666667
@@ -2962,7 +2962,7 @@ Children:
                                   Data: true
                                 Progress:
                                   ID: ID:Outline:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:0
-                                  Data: 45152547
+                                  Data: 46423187.666666664
                                 Target:
                                   ID: "?"
                                   Data: ID:Outline:Components:FrooxEngine.TextRenderer:Color:0
@@ -3237,60 +3237,3 @@ Children:
                       ID: "?"
                       Data: []
             Children: []
-  - Name:
-      ID: "?"
-      Data: Assets
-    Active:
-      ID: "?"
-      Data: true
-    ID: "?"
-    Persistent-Id: "?"
-    Position:
-      ID: "?"
-      Data:
-        - 0
-        - 0
-        - 0
-    Rotation:
-      ID: "?"
-      Data:
-        - 0
-        - 0
-        - 0
-        - 111111
-    Scale:
-      ID: "?"
-      Data:
-        - 111111
-        - 111111
-        - 111111
-    Tag:
-      ID: "?"
-      Data: ""
-    OrderOffset:
-      ID: "?"
-      Data: 0
-    Components:
-      ID: "?"
-      Data:
-        - Type: FrooxEngine.StaticAudioClip
-          Data:
-            ID: ID:Assets:Components:FrooxEngine.StaticAudioClip:0
-            persistent-ID: "?"
-            UpdateOrder:
-              ID: "?"
-              Data: 0
-            Enabled:
-              ID: "?"
-              Data: true
-            URL:
-              ID: "?"
-              Data: "@resdb:///f32b4627244b92eb8cd1236940c12e4c0ee55e78517245f279f2747c449382\
-                b4.wav"
-            LoadMode:
-              ID: "?"
-              Data: Automatic
-            SampleRateMode:
-              ID: "?"
-              Data: Conform
-    Children: []

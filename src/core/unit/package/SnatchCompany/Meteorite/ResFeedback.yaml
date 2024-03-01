@@ -431,7 +431,7 @@ Children:
                       ID: "?"
                       Data:
                         - ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:11
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:10
                     MaterialPropertyBlocks:
                       ID: "?"
                       Data: []
@@ -819,7 +819,7 @@ Children:
                         BurstTimeStart:
                           ID: "?"
                           Data:
-                            CurrentTime: 35688798
+                            CurrentTime: 37127465.666666664
                         BurstTimePeriod:
                           ID: "?"
                           Data: 0
@@ -873,7 +873,7 @@ Children:
                             - Linear
                         Texture:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:83
+                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:94
                         TextureScale:
                           ID: "?"
                           Data:
@@ -886,7 +886,7 @@ Children:
                             - 0
                         MaskTexture:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:83
+                          Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:94
                         MaskScale:
                           ID: "?"
                           Data:

@@ -339,8 +339,8 @@ Children:
             Position:
               ID: ID:Move:Tag:2
               Data:
-                - -65222.333333333336
-                - -13889
+                - 5889
+                - -10666.666666666666
                 - 0
             Rotation:
               ID: "?"
@@ -797,7 +797,7 @@ Children:
                           Data:
                             Play: true
                             Loop: true
-                            RawPosition: 1926886.6666666667
+                            RawPosition: 1998820.3333333333
                             Speed: 16.666666666666668
                             MaxError: 1666.6666666666667
                             MaxDeviation: 1666.6666666666667
@@ -1913,7 +1913,7 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:81
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:28
                                 Materials:
                                   ID: "?"
                                   Data:
@@ -2079,7 +2079,7 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:82
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:29
                                 Materials:
                                   ID: "?"
                                   Data:
@@ -2507,7 +2507,7 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:83
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:30
                                 Materials:
                                   ID: "?"
                                   Data:

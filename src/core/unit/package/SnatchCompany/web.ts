@@ -6,12 +6,15 @@ import { web as Boss } from "./Boss/web";
 import { web as Cannon } from "./Cannon/web";
 import { web as Checkpoint } from "./Checkpoint/web";
 import { web as CheckpointMarker } from "./CheckpointMarker/web";
+import { web as CheckpointUi } from "./CheckpointUi/web";
 import { web as DamageEffect } from "./DamageEffect/web";
 import { web as EffectManager } from "./EffectManager/web";
+import { web as GlobalScore } from "./GlobalScore/web";
 import { web as Gun } from "./Gun/web";
 import { web as HealthUi } from "./HealthUi/web";
 import { web as LobbyRoom } from "./LobbyRoom/web";
 import { web as LocaleSpace } from "./LocaleSpace/web";
+import { web as LocalScore } from "./LocalScore/web";
 import { web as LocalView } from "./LocalView/web";
 import { web as Meteorite } from "./Meteorite/web";
 import { web as Missile } from "./Missile/web";
@@ -47,12 +50,15 @@ export const Units = {
   ...Cannon,
   ...Checkpoint,
   ...CheckpointMarker,
+  ...CheckpointUi,
   ...DamageEffect,
   ...EffectManager,
+  ...GlobalScore,
   ...Gun,
   ...HealthUi,
   ...LobbyRoom,
   ...LocaleSpace,
+  ...LocalScore,
   ...LocalView,
   ...Meteorite,
   ...Missile,

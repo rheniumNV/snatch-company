@@ -1830,3 +1830,97 @@ Children:
                       ID: "?"
                       Data: Conform
             Children: []
+          - Name:
+              ID: "?"
+              Data: gameOver
+            Active:
+              ID: "?"
+              Data: true
+            ID: "?"
+            Persistent-Id: "?"
+            Position:
+              ID: "?"
+              Data:
+                - 0
+                - -643666.6666666666
+                - 0
+            Rotation:
+              ID: "?"
+              Data:
+                - 0
+                - 0
+                - 0
+                - 111111
+            Scale:
+              ID: "?"
+              Data:
+                - 111111
+                - 111111
+                - 111111
+            Tag:
+              ID: "?"
+              Data: ""
+            OrderOffset:
+              ID: "?"
+              Data: 0
+            Components:
+              ID: "?"
+              Data:
+                - Type: FrooxEngine.DynamicVariableSpace
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    SpaceName:
+                      ID: "?"
+                      Data: null
+                    OnlyDirectBinding:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
+                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    PublicKeyToken=null]]
+                  Data:
+                    ID: "?"
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    VariableName:
+                      ID: "?"
+                      Data: AudioClip
+                    Reference:
+                      ID: "?"
+                      Data: ID:gameOver:Components:FrooxEngine.StaticAudioClip:0
+                    OverrideOnLink:
+                      ID: "?"
+                      Data: false
+                - Type: FrooxEngine.StaticAudioClip
+                  Data:
+                    ID: ID:gameOver:Components:FrooxEngine.StaticAudioClip:0
+                    persistent-ID: "?"
+                    UpdateOrder:
+                      ID: "?"
+                      Data: 0
+                    Enabled:
+                      ID: "?"
+                      Data: true
+                    URL:
+                      ID: "?"
+                      Data: "@resdb:///29a97aaf24f42ac225c738ec454ff6412b0aafa48e75c0ee75c6b0baa2fdb3\
+                        5f"
+                    LoadMode:
+                      ID: "?"
+                      Data: Automatic
+                    SampleRateMode:
+                      ID: "?"
+                      Data: Conform
+            Children: []

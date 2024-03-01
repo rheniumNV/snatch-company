@@ -15,6 +15,7 @@ const detail = {
     maxEnergy: UnitProp.Float(100),
     chargeEnergy: UnitProp.Float(30),
     weaponTypeIndex: UnitProp.Int(0),
+    active: UnitProp.Boolean(true),
   },
   dynamicImpulseTriggers: {
     equip: UnitDynamicImpulseTrigger.Void("Func.Equip"),

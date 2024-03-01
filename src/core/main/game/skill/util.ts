@@ -1,4 +1,5 @@
 import { Status, StatusEffect } from "../type";
+import { Vector } from "../util";
 
 const statusNameMap = {
   attack: {
@@ -83,3 +84,17 @@ export const generatePassiveStatusUpEffect = (
   state: {},
   order: 0,
 });
+
+export const getTrianglePoint = (
+  a: [number, number, number],
+  b: [number, number, number],
+  c: [number, number, number],
+  x: number,
+  z: number
+): number => {
+  const g = Vector.div(Vector.add(a, Vector.add(b, c)), 3);
+  const n = Vector.normalize(Vector.cross(Vector.sub(b, a), Vector.sub(c, a)));
+  const p: Vector.Vector3 = [x, 0, z];
+  const y = g[1] + Vector.dot(n, p) / n[1];
+  return y;
+};

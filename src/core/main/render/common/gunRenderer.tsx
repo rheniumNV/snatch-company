@@ -7,6 +7,7 @@ export const GunRenderer = (props: {
   player: GameStateInGame<Section>["players"][number];
   setCallback: (callbacks: SnatchCompany["callbacks"]) => void;
   clearCallback: (callback: Function) => void;
+  active: boolean;
 }) => {
   const equipRef = useRef(() => {});
   const levelupRef = useRef(() => {});
@@ -45,6 +46,7 @@ export const GunRenderer = (props: {
       maxEnergy={props.player.finalStatus.maxEnergy}
       chargeEnergy={props.player.finalStatus.chargeEnergy}
       dynamicImpulseTriggerRefs={{ equip: equipRef, levelup: levelupRef }}
+      active={props.active}
     />
   );
 };

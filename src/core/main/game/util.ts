@@ -80,6 +80,11 @@ export const getDpsSample = (sectionLevel: number, triggerTime: number) => {
     ([1, 1.2, 1.5, 2][sectionLevel] ?? 2)
   );
 };
+/*
+g=avg(a,b,c)
+n=normalize(cross(b-a,c-a))
+y=g.y-dot(n,[x-g.x,0,z-g.z])/n.y
+*/
 
 export const getIconUrl = (key: string) =>
   ({
