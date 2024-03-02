@@ -624,7 +624,7 @@ Children:
                     Clip:
                       ID: "?"
                       Data: ID:ReadDynamicObjectVariable`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
-                        FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                        FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                         PublicKeyToken=null]]:Value:0
                     Volume:
                       ID: "?"
@@ -721,7 +721,7 @@ Children:
               ID: "?"
               Data:
                 - Type: FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -743,7 +743,7 @@ Children:
                       Data: null
                     Value:
                       ID: ID:ReadDynamicObjectVariable`1:Components:FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ReadDynamicObjectVariable`1[FrooxEngine.IAssetProvider`1],
-                        FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                        FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                         PublicKeyToken=null]]:Value:0
                       Data: null
             Children: []
@@ -1037,7 +1037,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1131,7 +1131,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1225,7 +1225,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1319,7 +1319,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1413,7 +1413,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1507,7 +1507,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1601,7 +1601,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1695,7 +1695,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1789,7 +1789,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"
@@ -1883,7 +1883,7 @@ Children:
                       ID: "?"
                       Data: false
                 - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                    FrooxEngine, Version=2024.2.12.1430, Culture=neutral,
+                    FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
                     PublicKeyToken=null]]
                   Data:
                     ID: "?"

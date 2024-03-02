@@ -70,8 +70,11 @@ export class PeachRiver extends SnatchCompanyEvent {
     en: "Many peaches are flowing",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
@@ -112,7 +115,7 @@ export class PeachRiver extends SnatchCompanyEvent {
           }).forEach((_, i) => {
             const z = 100 + this.time * game.gameState.ship.speed;
             const x = this.riverCenter + Math.random() * 30 - 15;
-            const targetPoint: Vector.Vector3 = [x, -8, z];
+            const targetPoint: Vector.Vector3 = [x, this.solvePoint(x, z), z];
             const position: Vector.Vector3 = [
               targetPoint[0],
               50 + Math.random() * 30,

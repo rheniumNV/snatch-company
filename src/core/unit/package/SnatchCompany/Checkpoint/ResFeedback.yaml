@@ -473,7 +473,7 @@ Children:
                             StartTime:
                               ID: "?"
                               Data:
-                                CurrentTime: 26008575.333333332
+                                CurrentTime: 26970778.666666668
                     Children: []
                   - Name:
                       ID: "?"
@@ -1255,14 +1255,14 @@ Children:
                             Source:
                               ID: "?"
                               Data: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                                FrooxEngine, Version=2024.2.12.1430,
+                                FrooxEngine, Version=2024.3.1.1178,
                                 Culture=neutral, PublicKeyToken=null]]:0
                         - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                            FrooxEngine, Version=2024.2.12.1430,
-                            Culture=neutral, PublicKeyToken=null]]
+                            FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
+                            PublicKeyToken=null]]
                           Data:
                             ID: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                              FrooxEngine, Version=2024.2.12.1430,
+                              FrooxEngine, Version=2024.3.1.1178,
                               Culture=neutral, PublicKeyToken=null]]:0
                             persistent-ID: "?"
                             UpdateOrder:
@@ -1589,7 +1589,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[System.Single]:Progress:0
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Animation:Components:FrooxEngine.ValueMultiDriver`1[System.Single]:Value:0
@@ -1632,7 +1632,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:0
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Assets:Components:FrooxEngine.PBS_Metallic:AlbedoColor:0
@@ -1690,7 +1690,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:1
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Assets:Components:FrooxEngine.UnlitMaterial:TintColor:0
@@ -1760,7 +1760,7 @@ Children:
                               Data: true
                             Value:
                               ID: ID:Animation:Components:FrooxEngine.ValueMultiDriver`1[System.Single]:Value:1
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Drives:
                               ID: "?"
                               Data:
@@ -1788,7 +1788,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.float3]:Progress:0
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Assets:Components:FrooxEngine.PBS_SliceMetallic:Slicers.0.Position.ID:0
@@ -1830,7 +1830,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[System.Single]:Progress:1
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Cylinder:Components:FrooxEngine.CylinderMesh:Radius:0
@@ -1873,7 +1873,7 @@ Children:
                               Data: true
                             Progress:
                               ID: ID:Animation:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:2
-                              Data: 5169434
+                              Data: 5226514.666666667
                             Target:
                               ID: "?"
                               Data: ID:Assets:FrooxEngine.UnlitMaterial:TintColor:7
@@ -2009,7 +2009,7 @@ Children:
                                 - Linear
                             AlbedoTexture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:72
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:78
                             EmissiveColor:
                               ID: "?"
                               Data:
@@ -2031,7 +2031,7 @@ Children:
                               Data: null
                             NormalMap:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:73
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:79
                             NormalScale:
                               ID: "?"
                               Data: 333.3333333333333
@@ -2112,7 +2112,7 @@ Children:
                               Data: 83.33333333333333
                             MetallicMap:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:74
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:80
                             _regular-ID: "?"
                             _transparent-ID: "?"
                         - Type: FrooxEngine.UnlitMaterial
@@ -2295,7 +2295,7 @@ Children:
                                 - sRGB
                             AlbedoTexture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:72
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:78
                             EmissiveColor:
                               ID: "?"
                               Data:
@@ -2312,7 +2312,7 @@ Children:
                               Data: 333.3333333333333
                             NormalMap:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:73
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:79
                             HeightMap:
                               ID: "?"
                               Data: null
@@ -2354,7 +2354,7 @@ Children:
                               Data: 83.33333333333333
                             MetallicMap:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:74
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:80
                     Children: []
                   - Name:
                       ID: "?"
@@ -2441,7 +2441,7 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:58
                                 Materials:
                                   ID: "?"
                                   Data:
@@ -2516,7 +2516,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:58
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2761,7 +2761,7 @@ Children:
                                   Data: true
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:58
                                 Materials:
                                   ID: "?"
                                   Data:
@@ -2836,7 +2836,7 @@ Children:
                                   Data: false
                                 Mesh:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:93
+                                  Data: ID:Assets:FrooxEngine.StaticMesh:ID:58
                                 Sidedness:
                                   ID: "?"
                                   Data: Front
@@ -2950,7 +2950,7 @@ Children:
                               Data:
                                 Play: true
                                 Loop: false
-                                RawPosition: 26007742
+                                RawPosition: 26969947.666666668
                                 Speed: 333.3333333333333
                                 MaxError: 1666.6666666666667
                                 MaxDeviation: 1666.6666666666667

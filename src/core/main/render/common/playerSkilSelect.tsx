@@ -31,9 +31,15 @@ const SkillSelect = (props: {
     <Slot position={props.position}>
       <SkillSelectUi
         skill1NameJa={props.selection.skills[0].name.ja}
+        skill1NameEn={props.selection.skills[0].name.en}
         skill1DescriptionJa={props.selection.skills[0].effect
           .map((effect) => {
             return effect.description.ja;
+          })
+          .join("\n")}
+        skill1DescriptionEn={props.selection.skills[0].effect
+          .map((effect) => {
+            return effect.description.en;
           })
           .join("\n")}
         skill1Frame={
@@ -44,9 +50,15 @@ const SkillSelect = (props: {
         skill1Icon={getIconUrl(props.selection.skills[0].icon)}
         selectSkill1={selectSkill1}
         skill2NameJa={props.selection.skills[1].name.ja}
+        skill2NameEn={props.selection.skills[1].name.en}
         skill2DescriptionJa={props.selection.skills[1].effect
           .map((effect) => {
             return effect.description.ja;
+          })
+          .join("\n")}
+        skill2DescriptionEn={props.selection.skills[1].effect
+          .map((effect) => {
+            return effect.description.en;
           })
           .join("\n")}
         skill2Frame={
@@ -57,9 +69,15 @@ const SkillSelect = (props: {
         skill2Icon={getIconUrl(props.selection.skills[1].icon)}
         selectSkill2={selectSkill2}
         skill3NameJa={props.selection.skills[2].name.ja}
+        skill3NameEn={props.selection.skills[2].name.en}
         skill3DescriptionJa={props.selection.skills[2].effect
           .map((effect) => {
             return effect.description.ja;
+          })
+          .join("\n")}
+        skill3DescriptionEn={props.selection.skills[2].effect
+          .map((effect) => {
+            return effect.description.en;
           })
           .join("\n")}
         skill3Frame={
@@ -80,7 +98,7 @@ export const PlayerSkillSelect = (props: {
   selectSkill: SnatchCompany["selectSkillInCheckpoint"];
 }) => {
   return (
-    <Slot position={[0, 1.5, 5]} scale={[2, 2, 2]}>
+    <Slot position={[0, 1.5, 4]} scale={[2, 2, 2]}>
       <LocalView userId={props.player.id}>
         {props.selection.map((skill, index) => (
           <SkillSelect

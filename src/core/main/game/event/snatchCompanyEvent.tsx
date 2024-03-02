@@ -15,8 +15,13 @@ export abstract class SnatchCompanyEvent {
   triggerTime: number;
   time = 0;
   objects: SnatchCompanyObject[] = [];
-  constructor(triggerTime: number) {
+  solvePoint: (x: number, z: number) => number;
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
     this.triggerTime = triggerTime;
+    this.solvePoint = solvePoint;
   }
 
   start(gameState: GameStateInGame<BattleSection>): void {

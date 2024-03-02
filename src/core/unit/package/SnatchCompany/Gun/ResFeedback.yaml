@@ -795,7 +795,7 @@ Children:
                             BurstTimeStart:
                               ID: "?"
                               Data:
-                                CurrentTime: 60438015.333333336
+                                CurrentTime: 61400224
                             BurstTimePeriod:
                               ID: "?"
                               Data: 0
@@ -851,7 +851,7 @@ Children:
                             BurstTimeStart:
                               ID: "?"
                               Data:
-                                CurrentTime: 60438015.333333336
+                                CurrentTime: 61400224
                             BurstTimePeriod:
                               ID: "?"
                               Data: 0
@@ -907,7 +907,7 @@ Children:
                             BurstTimeStart:
                               ID: "?"
                               Data:
-                                CurrentTime: 60438015.333333336
+                                CurrentTime: 61400224
                             BurstTimePeriod:
                               ID: "?"
                               Data: 0
@@ -1000,7 +1000,7 @@ Children:
                         BurstTimeStart:
                           ID: "?"
                           Data:
-                            CurrentTime: 60438015.333333336
+                            CurrentTime: 61400224
                         BurstTimePeriod:
                           ID: "?"
                           Data: 0
@@ -1810,8 +1810,8 @@ Children:
                               ID: "?"
                               Data: false
                         - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                            FrooxEngine, Version=2024.2.12.1430,
-                            Culture=neutral, PublicKeyToken=null]]
+                            FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
+                            PublicKeyToken=null]]
                           Data:
                             ID: "?"
                             persistent-ID: "?"
@@ -3722,7 +3722,7 @@ Children:
                                 StartTime:
                                   ID: "?"
                                   Data:
-                                    CurrentTime: 60686614.333333336
+                                    CurrentTime: 61648822.666666664
                         Children: []
                       - Name:
                           ID: "?"
@@ -5526,7 +5526,7 @@ Children:
                                   Data: true
                                 Target:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:4
+                                  Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:1
                         Children: []
                       - Name:
                           ID: "?"
@@ -6362,7 +6362,7 @@ Children:
                                       Data: true
                                     Progress:
                                       ID: ID:Cylinder:Components:FrooxEngine.ValueGradientDriver`1[Elements.Core.colorX]:Progress:0
-                                      Data: 60276609.333333336
+                                      Data: 60562015.666666664
                                     Target:
                                       ID: "?"
                                       Data: ID:Cylinder:Components:FrooxEngine.UnlitMaterial:TintColor:0
@@ -6541,7 +6541,7 @@ Children:
                                         StartTime:
                                           ID: "?"
                                           Data:
-                                            CurrentTime: 60438015.333333336
+                                            CurrentTime: 61400224
                                 Children: []
                               - Name:
                                   ID: "?"
@@ -7213,14 +7213,14 @@ Children:
                                 Source:
                                   ID: "?"
                                   Data: ID:ObjectValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                                    FrooxEngine, Version=2024.2.12.1430,
+                                    FrooxEngine, Version=2024.3.1.1178,
                                     Culture=neutral, PublicKeyToken=null]]:0
                             - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                                FrooxEngine, Version=2024.2.12.1430,
+                                FrooxEngine, Version=2024.3.1.1178,
                                 Culture=neutral, PublicKeyToken=null]]
                               Data:
                                 ID: ID:ObjectValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
-                                  FrooxEngine, Version=2024.2.12.1430,
+                                  FrooxEngine, Version=2024.3.1.1178,
                                   Culture=neutral, PublicKeyToken=null]]:0
                                 persistent-ID: "?"
                                 UpdateOrder:
@@ -8493,7 +8493,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:48
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -8541,7 +8541,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:94
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:48
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -8597,7 +8597,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:49
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -8645,7 +8645,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:95
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:49
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -8701,7 +8701,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:50
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -8749,7 +8749,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:50
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -8805,7 +8805,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:51
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -8853,7 +8853,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:97
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:51
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -8909,7 +8909,7 @@ Children:
                                       Data: true
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:98
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:52
                                     Materials:
                                       ID: "?"
                                       Data:
@@ -8957,7 +8957,7 @@ Children:
                                       Data: false
                                     Mesh:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:98
+                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:52
                                     Sidedness:
                                       ID: "?"
                                       Data: Front
@@ -9657,7 +9657,7 @@ Children:
                                   Data: Linear
                                 Font:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.FontChain:ID:22
+                                  Data: ID:Assets:FrooxEngine.FontChain:ID:14
                                 Text:
                                   ID: "?"
                                   Data: Equip
@@ -9691,7 +9691,7 @@ Children:
                                   ID: "?"
                                   Data:
                                     - ID: "?"
-                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:3
+                                      Data: ID:Assets:FrooxEngine.TextUnlitMaterial:ID:0
                                 LineHeight:
                                   ID: "?"
                                   Data: 266.6666666666667
@@ -9867,7 +9867,7 @@ Children:
                           ID: "?"
                           Data:
                             - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                                FrooxEngine, Version=2024.2.12.1430,
+                                FrooxEngine, Version=2024.3.1.1178,
                                 Culture=neutral, PublicKeyToken=null]]
                               Data:
                                 ID: "?"
@@ -10653,10 +10653,10 @@ Children:
                                   Data: true
                                 Sprite:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:30
+                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:16
                                 Material:
                                   ID: "?"
-                                  Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:15
+                                  Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:8
                                 PreserveAspect:
                                   ID: "?"
                                   Data: true
@@ -11049,7 +11049,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:31
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:17
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -11168,7 +11168,7 @@ Children:
                                               Data: true
                                             Sprite:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
+                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:18
                                             Material:
                                               ID: "?"
                                               Data: null
@@ -11287,7 +11287,7 @@ Children:
                                                   Data: true
                                                 Font:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:23
+                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:15
                                                 Content:
                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
                                                   Data: Weapon
@@ -11321,7 +11321,7 @@ Children:
                                                   ID: "?"
                                                   Data:
                                                     - ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:17
+                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:11
                                                 LineHeight:
                                                   ID: "?"
                                                   Data: 266.6666666666667
@@ -11629,7 +11629,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:32
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:18
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -11966,7 +11966,7 @@ Children:
                                                       Data: true
                                                     Font:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:23
+                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:15
                                                     Content:
                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
                                                       Data: Snach gun
@@ -12000,7 +12000,7 @@ Children:
                                                       ID: "?"
                                                       Data:
                                                         - ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:17
+                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:11
                                                     LineHeight:
                                                       ID: "?"
                                                       Data: 266.6666666666667
@@ -12430,7 +12430,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:31
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:17
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -12562,7 +12562,7 @@ Children:
                                               Data: true
                                             Sprite:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:31
+                                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:17
                                             Material:
                                               ID: "?"
                                               Data: null
@@ -12840,7 +12840,7 @@ Children:
                                                   Data: true
                                                 Font:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:23
+                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:15
                                                 Content:
                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
                                                   Data: Equip
@@ -12874,7 +12874,7 @@ Children:
                                                   ID: "?"
                                                   Data:
                                                     - ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:17
+                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:11
                                                 LineHeight:
                                                   ID: "?"
                                                   Data: 266.6666666666667
@@ -13076,7 +13076,7 @@ Children:
                                               Data: null
                                             Material:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:16
+                                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:9
                                             PreserveAspect:
                                               ID: "?"
                                               Data: true
@@ -13571,7 +13571,7 @@ Children:
                                                     - sRGB
                                                 AlbedoTexture:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:99
+                                                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:67
                                                 EmissiveColor:
                                                   ID: ID:マテリアル:Components:FrooxEngine.PBS_Metallic:EmissiveColor:0
                                                   Data:
@@ -13582,7 +13582,7 @@ Children:
                                                     - Linear
                                                 EmissiveMap:
                                                   ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:99
+                                                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:67
                                                 NormalScale:
                                                   ID: "?"
                                                   Data: 333.3333333333333
@@ -13961,7 +13961,7 @@ Children:
                                                         - Linear
                                                     AlbedoTexture:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:100
+                                                      Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:68
                                                     EmissiveColor:
                                                       ID: "?"
                                                       Data:
@@ -14137,7 +14137,7 @@ Children:
                                                       Data: true
                                                     Mesh:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:99
+                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:53
                                                     Materials:
                                                       ID: "?"
                                                       Data:
@@ -14206,7 +14206,7 @@ Children:
                                                       Data: true
                                                     Mesh:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:100
+                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:54
                                                     Materials:
                                                       ID: "?"
                                                       Data:
@@ -14275,7 +14275,7 @@ Children:
                                                       Data: true
                                                     Mesh:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:101
+                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:55
                                                     Materials:
                                                       ID: "?"
                                                       Data:
@@ -14344,7 +14344,7 @@ Children:
                                                       Data: true
                                                     Mesh:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:102
+                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:56
                                                     Materials:
                                                       ID: "?"
                                                       Data:
@@ -14413,7 +14413,7 @@ Children:
                                                       Data: true
                                                     Mesh:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:103
+                                                      Data: ID:Assets:FrooxEngine.StaticMesh:ID:57
                                                     Materials:
                                                       ID: "?"
                                                       Data:
@@ -16057,7 +16057,7 @@ Children:
                           Data: null
                         TrailMaterial:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:9
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:4
                         Mesh:
                           ID: "?"
                           Data: null
@@ -16336,7 +16336,7 @@ Children:
                           Data: null
                         TrailMaterial:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:9
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:4
                         Mesh:
                           ID: "?"
                           Data: null
@@ -16631,7 +16631,7 @@ Children:
                           Data: 0
                         Material:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:10
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:5
                         TrailMaterial:
                           ID: "?"
                           Data: null
@@ -16969,7 +16969,7 @@ Children:
                           Data: null
                         TrailMaterial:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:9
+                          Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:4
                         Mesh:
                           ID: "?"
                           Data: null
@@ -19143,7 +19143,7 @@ Children:
                       Data: true
                     Target:
                       ID: "?"
-                      Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:5
+                      Data: ID:Assets:FrooxEngine.StaticAudioClip:ID:0
             Children: []
           - Name:
               ID: "?"
@@ -20248,7 +20248,7 @@ Children:
                     - sRGB
                 AlbedoTexture:
                   ID: "?"
-                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:103
+                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:0
                 EmissiveColor:
                   ID: ID:マテリアル:Components:FrooxEngine.PBS_Metallic:EmissiveColor:1
                   Data:
@@ -20259,7 +20259,7 @@ Children:
                     - Linear
                 EmissiveMap:
                   ID: "?"
-                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:103
+                  Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:0
                 NormalScale:
                   ID: "?"
                   Data: 333.3333333333333

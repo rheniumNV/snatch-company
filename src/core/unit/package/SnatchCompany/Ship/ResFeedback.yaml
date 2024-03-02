@@ -3485,7 +3485,7 @@ Children:
                                 - Linear
                             Texture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:3
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:4
                             TextureScale:
                               ID: "?"
                               Data:
@@ -3498,7 +3498,7 @@ Children:
                                 - -147
                             MaskTexture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:4
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:5
                             MaskScale:
                               ID: "?"
                               Data:
@@ -3621,7 +3621,7 @@ Children:
                                 - Linear
                             Texture:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:5
+                              Data: ID:Assets:FrooxEngine.StaticTexture2D:ID:6
                             TextureScale:
                               ID: "?"
                               Data:

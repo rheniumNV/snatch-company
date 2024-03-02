@@ -585,14 +585,12 @@ export const Main = () => {
             <Slot
               active={!openingProcessing}
               position={
-                gameRef.current.gameState.mode === "inGame" &&
-                gameRef.current.gameState.section.mode === "battle"
+                gameRef.current.gameState.mode === "inGame"
                   ? [0, 1.5, -4]
                   : [0, 1.5, 2]
               }
               rotation={
-                gameRef.current.gameState.mode === "inGame" &&
-                gameRef.current.gameState.section.mode === "battle"
+                gameRef.current.gameState.mode === "inGame"
                   ? [0, 1, 0, 0]
                   : [0, 0, 0, 0]
               }
@@ -633,18 +631,36 @@ export const Main = () => {
                 (player) =>
                   gameRef.current && (
                     <LocalView userId={player.id}>
-                      <GunRenderer
-                        key={player.id}
-                        active={gameRef.current.gameState.mode === "inGame"}
-                        player={player}
-                        setCallback={gameRef.current.setCallback.bind(
-                          gameRef.current
-                        )}
-                        clearCallback={gameRef.current.clearCallback.bind(
-                          gameRef.current
-                        )}
-                      />
-                      <Slot position={[0, 1, 0]}>
+                      <Slot
+                        position={
+                          gameRef.current.gameState.mode === "inGame" &&
+                          gameRef.current.gameState.section.mode === "battle"
+                            ? [0, 0, 0]
+                            : [3.5, 1, 1]
+                        }
+                      >
+                        <GunRenderer
+                          key={player.id}
+                          active={gameRef.current.gameState.mode === "inGame"}
+                          player={player}
+                          setCallback={gameRef.current.setCallback.bind(
+                            gameRef.current
+                          )}
+                          clearCallback={gameRef.current.clearCallback.bind(
+                            gameRef.current
+                          )}
+                        />
+                      </Slot>
+                      <Slot
+                        position={
+                          gameRef.current.gameState.mode === "inGame"
+                            ? gameRef.current.gameState.section.mode ===
+                              "battle"
+                              ? [1.5, 0, 0]
+                              : [2, 1, 1]
+                            : [2, 1, 1]
+                        }
+                      >
                         <PlayerStatusUi
                           active={
                             gameRef.current.gameState.mode === "inGame" ||

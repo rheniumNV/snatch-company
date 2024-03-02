@@ -58,8 +58,11 @@ export class MeteoriteFall extends SnatchCompanyEvent {
     en: "Meteorites are falling towards the ship",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 

@@ -130,8 +130,11 @@ export class BossEvent extends SnatchCompanyEvent {
 
   override objects: (BombObject | BossObject)[] = [];
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
@@ -170,7 +173,9 @@ export class BossEvent extends SnatchCompanyEvent {
           if (this.time > 30) {
             game.damage2Ship(100);
             this.bossState.step = "2";
-            game.addEvent(new BirdStrike(game.gameState.section.time));
+            game.addEvent(
+              new BirdStrike(game.gameState.section.time, this.solvePoint)
+            );
             this.boss.position = [0, 3, 50];
             this.boss.targetPoint = [0, 40, 70];
             this.bossState.startTime = this.time;
@@ -178,7 +183,9 @@ export class BossEvent extends SnatchCompanyEvent {
           }
           if (this.boss.health / this.boss.maxHealth < 0.7) {
             this.bossState.step = "2";
-            game.addEvent(new BirdStrike(game.gameState.section.time));
+            game.addEvent(
+              new BirdStrike(game.gameState.section.time, this.solvePoint)
+            );
             this.boss.position = [0, 3, 50];
             this.boss.targetPoint = [0, 40, 70];
             this.bossState.startTime = this.time;
@@ -206,7 +213,9 @@ export class BossEvent extends SnatchCompanyEvent {
             this.boss.position = [0, 3, 50];
             this.boss.targetPoint = [0, 3, 100];
             this.bossState.startTime = this.time;
-            game.addEvent(new MeteoriteFall(game.gameState.section.time));
+            game.addEvent(
+              new MeteoriteFall(game.gameState.section.time, this.solvePoint)
+            );
             this.boss.health = 0.4 * this.boss.maxHealth;
           }
           if (this.boss.health / this.boss.maxHealth < 0.4) {
@@ -214,7 +223,9 @@ export class BossEvent extends SnatchCompanyEvent {
             this.boss.position = [0, 3, 50];
             this.boss.targetPoint = [0, 3, 100];
             this.bossState.startTime = this.time;
-            game.addEvent(new MeteoriteFall(game.gameState.section.time));
+            game.addEvent(
+              new MeteoriteFall(game.gameState.section.time, this.solvePoint)
+            );
             this.boss.health = 0.4 * this.boss.maxHealth;
           }
           break;

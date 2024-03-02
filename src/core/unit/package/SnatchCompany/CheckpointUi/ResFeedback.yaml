@@ -512,8 +512,8 @@ Children:
                       ID: "?"
                       Data:
                         - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                            FrooxEngine, Version=2024.2.12.1430,
-                            Culture=neutral, PublicKeyToken=null]]
+                            FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
+                            PublicKeyToken=null]]
                           Data:
                             ID: "?"
                             persistent-ID: "?"
@@ -1298,10 +1298,10 @@ Children:
                               Data: true
                             Sprite:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:21
+                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
                             Material:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:13
+                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:21
                             PreserveAspect:
                               ID: "?"
                               Data: true
@@ -1694,7 +1694,7 @@ Children:
                                       Data: true
                                     Sprite:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:22
+                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
                                     Material:
                                       ID: "?"
                                       Data: null
@@ -1813,7 +1813,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:23
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:36
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -1932,7 +1932,7 @@ Children:
                                               Data: true
                                             Font:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                              Data: ID:Assets:FrooxEngine.FontChain:ID:27
                                             Content:
                                               ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
                                               Data: Checkpoint
@@ -1966,7 +1966,7 @@ Children:
                                               ID: "?"
                                               Data:
                                                 - ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:21
                                             LineHeight:
                                               ID: "?"
                                               Data: 266.6666666666667
@@ -2710,7 +2710,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:23
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:36
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -3047,7 +3047,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:27
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
                                                                   Data: Progress
@@ -3081,7 +3081,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:21
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -3511,7 +3511,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:24
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:37
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -3784,7 +3784,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:38
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -3983,7 +3983,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:26
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:39
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -4256,7 +4256,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:38
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -4455,7 +4455,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:27
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:40
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -4728,7 +4728,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:38
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -4927,7 +4927,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:28
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:41
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -5200,7 +5200,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:25
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:38
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -5399,7 +5399,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:29
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:42
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -5674,18 +5674,18 @@ Children:
                                                                       ID: "?"
                                                                       Data: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
                                                                         FrooxEngine,
-                                                                        Version=2024.2.12.1430,
+                                                                        Version=2024.3.1.1178,
                                                                         Culture=neutral,
                                                                         PublicKeyToken=null]]:0
                                                                 - Type: FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
                                                                     FrooxEngine,
-                                                                    Version=2024.2.12.1430,
+                                                                    Version=2024.3.1.1178,
                                                                     Culture=neutral,
                                                                     PublicKeyToken=null]]
                                                                   Data:
                                                                     ID: ID:ValueSource`1:Components:FrooxEngine.ProtoFlux.GlobalReference`1[FrooxEngine.IValue`1],
                                                                       FrooxEngine,
-                                                                      Version=2024.2.12.1430,
+                                                                      Version=2024.3.1.1178,
                                                                       Culture=neutral,
                                                                       PublicKeyToken=null]]:0
                                                                     persistent-ID: "?"
@@ -7295,7 +7295,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:23
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:36
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -7632,7 +7632,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:27
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
                                                                   Data: Player selecting skill
@@ -7666,7 +7666,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:21
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -7974,7 +7974,7 @@ Children:
                                                                   Data: true
                                                                 Sprite:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:23
+                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:36
                                                                 Material:
                                                                   ID: "?"
                                                                   Data: null
@@ -8093,7 +8093,7 @@ Children:
                                                                       Data: true
                                                                     Font:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:27
                                                                     Content:
                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:3
                                                                       Data: ""
@@ -8127,7 +8127,7 @@ Children:
                                                                       ID: "?"
                                                                       Data:
                                                                         - ID: "?"
-                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:21
                                                                     LineHeight:
                                                                       ID: "?"
                                                                       Data: 266.6666666666667
@@ -8781,7 +8781,7 @@ Children:
                                       Data: true
                                     Sprite:
                                       ID: "?"
-                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:22
+                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
                                     Material:
                                       ID: "?"
                                       Data: null
@@ -8913,7 +8913,7 @@ Children:
                                           Data: true
                                         Sprite:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:22
+                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
                                         Material:
                                           ID: "?"
                                           Data: null
@@ -9210,7 +9210,7 @@ Children:
                                               Data: true
                                             Font:
                                               ID: "?"
-                                              Data: ID:Assets:FrooxEngine.FontChain:ID:20
+                                              Data: ID:Assets:FrooxEngine.FontChain:ID:27
                                             Content:
                                               ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:4
                                               Data: Go next
@@ -9244,7 +9244,7 @@ Children:
                                               ID: "?"
                                               Data:
                                                 - ID: "?"
-                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:16
+                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:21
                                             LineHeight:
                                               ID: "?"
                                               Data: 266.6666666666667
@@ -9446,7 +9446,7 @@ Children:
                                           Data: null
                                         Material:
                                           ID: "?"
-                                          Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:14
+                                          Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:22
                                         PreserveAspect:
                                           ID: "?"
                                           Data: true

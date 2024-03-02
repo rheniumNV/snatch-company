@@ -70,8 +70,11 @@ export class ShootingStar extends SnatchCompanyEvent {
     en: "Shooting star is coming.",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
@@ -117,6 +120,7 @@ export class ShootingStar extends SnatchCompanyEvent {
               -7.5,
               40 + Math.random() * 30,
             ];
+            targetPoint[1] = this.solvePoint(targetPoint[0], targetPoint[2]);
             const position: Vector.Vector3 = [-x, 40 + Math.random() * 20, z];
             this.objects.push({
               id: uuidv4(),

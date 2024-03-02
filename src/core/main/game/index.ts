@@ -205,18 +205,32 @@ const finalizeStatus = (
   });
 };
 
-const battleEvents: ((triggerTime: number) => SnatchCompanyEvent)[] = [
-  (triggerTime: number) => new BirdStrike(triggerTime),
-  (triggerTime: number) => new MeteoriteFall(triggerTime),
-  (triggerTime: number) => new SharkAttack(triggerTime),
-  (triggerTime: number) => new BombTrap(triggerTime),
-  (triggerTime: number) => new MissileRain(triggerTime),
+const battleEvents: ((
+  triggerTime: number,
+  solvePoint: (x: number, z: number) => number
+) => SnatchCompanyEvent)[] = [
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new BirdStrike(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new MeteoriteFall(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new SharkAttack(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new BombTrap(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new MissileRain(triggerTime, solvePoint),
 ];
 
-const subEvents: ((triggerTime: number) => SnatchCompanyEvent)[] = [
-  (triggerTime: number) => new TreasureChest(triggerTime),
-  (triggerTime: number) => new PeachRiver(triggerTime),
-  (triggerTime: number) => new ShootingStar(triggerTime),
+const subEvents: ((
+  triggerTime: number,
+  solvePoint: (x: number, z: number) => number
+) => SnatchCompanyEvent)[] = [
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new TreasureChest(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new PeachRiver(triggerTime, solvePoint),
+  (triggerTime: number, solvePoint: (x: number, z: number) => number) =>
+    new ShootingStar(triggerTime, solvePoint),
 ];
 
 const newPlayerScore = (): PlayerScore => ({
@@ -364,26 +378,34 @@ export class SnatchCompany {
     }
   }
 
-  private static getRandomBattleEvents(): SnatchCompanyEvent[] {
+  private static getRandomBattleEvents(
+    solvePoint: (x: number, z: number) => number
+  ): SnatchCompanyEvent[] {
     const event1 = getRandom(battleEvents);
     const event2 = getRandom(battleEvents.filter((event) => event !== event1));
     const event3 = getRandom(
       battleEvents.filter((event) => event !== event1 && event !== event2)
     );
-    return [event1?.(30), event2?.(90), event3?.(150)].filter(
-      (e) => e
-    ) as SnatchCompanyEvent[];
+    return [
+      event1?.(30, solvePoint),
+      event2?.(90, solvePoint),
+      event3?.(150, solvePoint),
+    ].filter((e) => e) as SnatchCompanyEvent[];
   }
 
-  private static getRandomSubEvents(): SnatchCompanyEvent[] {
+  private static getRandomSubEvents(
+    solvePoint: (x: number, z: number) => number
+  ): SnatchCompanyEvent[] {
     const event1 = getRandom(subEvents);
     const event2 = getRandom(subEvents.filter((event) => event !== event1));
     const event3 = getRandom(
       subEvents.filter((event) => event !== event1 && event !== event2)
     );
-    return [event1?.(60), event2?.(120), event3?.(180)].filter(
-      (e) => e
-    ) as SnatchCompanyEvent[];
+    return [
+      event1?.(60, solvePoint),
+      event2?.(120, solvePoint),
+      event3?.(180, solvePoint),
+    ].filter((e) => e) as SnatchCompanyEvent[];
   }
 
   loadGameState(data: GameState) {
@@ -427,11 +449,11 @@ export class SnatchCompany {
     if (num < 21) {
       return {
         mineral: Vector.mul(
-          [0, 9.1 - (num - 14) * 0.1, 0.09 + (num - 14) * 0.1],
+          [0, 0.91 - (num - 14) * 0.1, 0.09 + (num - 14) * 0.1],
           10
         ),
         plant: Vector.mul(
-          [0, 9.1 - (num - 14) * 0.1, 0.09 + (num - 14) * 0.1],
+          [0, 0.91 - (num - 14) * 0.1, 0.09 + (num - 14) * 0.1],
           10
         ),
       };
@@ -579,8 +601,14 @@ export class SnatchCompany {
             //         : [{ type: "exp", value: 0.2, damageReturn: true }],
             //   };
             // }),
-            events: [...SnatchCompany.getRandomBattleEvents()],
-            subEvents: [...SnatchCompany.getRandomSubEvents()],
+            events: [
+              ...SnatchCompany.getRandomBattleEvents(
+                this.solvePoint.bind(this)
+              ),
+            ],
+            subEvents: [
+              ...SnatchCompany.getRandomSubEvents(this.solvePoint.bind(this)),
+            ],
             time: 0,
           },
           ship: {
@@ -684,8 +712,11 @@ export class SnatchCompany {
         //         : [{ type: "exp", value: 0.2, damageReturn: true }],
         //   };
         // }),
-        events: level < 4 ? SnatchCompany.getRandomBattleEvents() : [],
-        subEvents: SnatchCompany.getRandomSubEvents(),
+        events:
+          level < 4
+            ? SnatchCompany.getRandomBattleEvents(this.solvePoint.bind(this))
+            : [],
+        subEvents: SnatchCompany.getRandomSubEvents(this.solvePoint.bind(this)),
         time: 0,
       };
     }
@@ -1303,7 +1334,10 @@ export class SnatchCompany {
           this.gameState.section.time > 30 &&
           !this.gameState.section.bossEvent
         ) {
-          this.gameState.section.bossEvent = new BossEvent(30);
+          this.gameState.section.bossEvent = new BossEvent(
+            30,
+            this.solvePoint.bind(this)
+          );
           this.gameState.section.bossEvent.start({
             ...this.gameState,
             section: this.gameState.section,

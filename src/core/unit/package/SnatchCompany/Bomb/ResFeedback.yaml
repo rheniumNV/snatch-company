@@ -481,14 +481,14 @@ Children:
                           Data: true
                         Mesh:
                           ID: "?"
-                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:79
+                          Data: ID:Assets:FrooxEngine.StaticMesh:ID:96
                         Materials:
                           ID: "?"
                           Data:
                             - ID: "?"
-                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:8
+                              Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:13
                             - ID: "?"
-                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:6
+                              Data: ID:Assets:FrooxEngine.UnlitMaterial:ID:10
                         MaterialPropertyBlocks:
                           ID: "?"
                           Data: []

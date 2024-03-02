@@ -71,8 +71,11 @@ export class TreasureChest extends SnatchCompanyEvent {
     en: "Treasure chests are floating towards the ship",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
@@ -114,6 +117,7 @@ export class TreasureChest extends SnatchCompanyEvent {
               -8,
               z + Math.random() * 10 - 5,
             ];
+            targetPoint[1] = this.solvePoint(targetPoint[0], targetPoint[2]);
             const position: Vector.Vector3 = [
               targetPoint[0],
               50 + Math.random() * 30,

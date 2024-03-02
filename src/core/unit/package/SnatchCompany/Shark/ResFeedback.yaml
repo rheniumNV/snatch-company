@@ -482,7 +482,7 @@ Children:
                       Data:
                         Play: true
                         Loop: true
-                        RawPosition: 805605.6666666666
+                        RawPosition: 824850
                         Speed: 6.666666666666667
                         MaxError: 1666.6666666666667
                         MaxDeviation: 1666.6666666666667

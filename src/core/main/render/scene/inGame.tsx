@@ -293,6 +293,12 @@ export const InGameRenderer = (props: {
         ) < 90
       : false;
 
+  const goNext = useCallback(() => {
+    if (setupPlayerCount === 0) {
+      props.startNextSection();
+    }
+  }, [props.startNextSection, setupPlayerCount]);
+
   return (
     <Slot>
       <GlobalAnchor
@@ -337,11 +343,11 @@ export const InGameRenderer = (props: {
         </>
       </GlobalAnchor>
       {props.gameState.section.mode === "checkpoint" ? (
-        <Slot position={[0, 2.5, 3]} scale={[2, 2, 2]}>
+        <Slot position={[0, 3, 4]} scale={[1.5, 1.5, 1.5]}>
           <CheckpointUi
             playerCount={`${setupPlayerCount}`}
             progress={props.gameState.section.nextSectionLevel}
-            goNext={props.startNextSection}
+            goNext={goNext}
           >
             {Object.entries(props.gameState.section.skillSelection)
               .filter(([, select]) => select.length > 0)

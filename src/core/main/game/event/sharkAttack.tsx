@@ -70,8 +70,11 @@ export class SharkAttack extends SnatchCompanyEvent {
     en: "Protect the ship from the sharks",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 

@@ -645,8 +645,8 @@ Children:
                       ID: "?"
                       Data:
                         - Type: FrooxEngine.DynamicReferenceVariable`1[FrooxEngine.IAssetProvider`1],
-                            FrooxEngine, Version=2024.2.12.1430,
-                            Culture=neutral, PublicKeyToken=null]]
+                            FrooxEngine, Version=2024.3.1.1178, Culture=neutral,
+                            PublicKeyToken=null]]
                           Data:
                             ID: "?"
                             persistent-ID: "?"
@@ -1431,10 +1431,10 @@ Children:
                               Data: true
                             Sprite:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:33
+                              Data: ID:Assets:FrooxEngine.SpriteProvider:ID:43
                             Material:
                               ID: "?"
-                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:18
+                              Data: ID:Assets:FrooxEngine.UI_UnlitMaterial:ID:24
                             PreserveAspect:
                               ID: "?"
                               Data: true
@@ -2282,7 +2282,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:44
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -2401,7 +2401,7 @@ Children:
                                                           Data: true
                                                         Sprite:
                                                           ID: "?"
-                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                          Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                         Material:
                                                           ID: "?"
                                                           Data: null
@@ -2520,7 +2520,7 @@ Children:
                                                               Data: true
                                                             Font:
                                                               ID: "?"
-                                                              Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                              Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                             Content:
                                                               ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:0
                                                               Data: Your score
@@ -2554,7 +2554,7 @@ Children:
                                                               ID: "?"
                                                               Data:
                                                                 - ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                  Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                             LineHeight:
                                                               ID: "?"
                                                               Data: 266.6666666666667
@@ -2862,7 +2862,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -3199,7 +3199,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:1
                                                                   Data: Kill count
@@ -3233,7 +3233,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -3977,7 +3977,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:2
                                                                                   Data: >
@@ -4012,7 +4012,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -4321,7 +4321,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -4440,7 +4440,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:3
                                                                                       Data: "3000"
@@ -4474,7 +4474,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -4955,7 +4955,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:4
                                                                                   Data: Inorganic substance
@@ -4989,7 +4989,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -5297,7 +5297,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -5416,7 +5416,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:5
                                                                                       Data: "300"
@@ -5450,7 +5450,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -5931,7 +5931,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:6
                                                                                   Data: Event
@@ -5965,7 +5965,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -6273,7 +6273,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -6392,7 +6392,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:7
                                                                                       Data: "400"
@@ -6426,7 +6426,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -6907,7 +6907,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:8
                                                                                   Data: Total
@@ -6941,7 +6941,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -7249,7 +7249,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:44
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -7368,7 +7368,7 @@ Children:
                                                                                       Data: true
                                                                                     Sprite:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                     Material:
                                                                                       ID: "?"
                                                                                       Data: null
@@ -7487,7 +7487,7 @@ Children:
                                                                                           Data: true
                                                                                         Font:
                                                                                           ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                         Content:
                                                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:9
                                                                                           Data: "100000"
@@ -7521,7 +7521,7 @@ Children:
                                                                                           ID: "?"
                                                                                           Data:
                                                                                             - ID: "?"
-                                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                         LineHeight:
                                                                                           ID: "?"
                                                                                           Data: 266.6666666666667
@@ -7784,7 +7784,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -8121,7 +8121,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:10
                                                                   Data: Damage
@@ -8155,7 +8155,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -8899,7 +8899,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:11
                                                                                   Data: >
@@ -8934,7 +8934,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -9243,7 +9243,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -9362,7 +9362,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:12
                                                                                       Data: "3000"
@@ -9396,7 +9396,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -9877,7 +9877,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:13
                                                                                   Data: Inorganic substance
@@ -9911,7 +9911,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -10219,7 +10219,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -10338,7 +10338,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:14
                                                                                       Data: "300"
@@ -10372,7 +10372,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -10853,7 +10853,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:15
                                                                                   Data: Event
@@ -10887,7 +10887,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -11195,7 +11195,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -11314,7 +11314,7 @@ Children:
                                                                                       Data: true
                                                                                     Font:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                      Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                     Content:
                                                                                       ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:16
                                                                                       Data: "400"
@@ -11348,7 +11348,7 @@ Children:
                                                                                       ID: "?"
                                                                                       Data:
                                                                                         - ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                          Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                     LineHeight:
                                                                                       ID: "?"
                                                                                       Data: 266.6666666666667
@@ -11829,7 +11829,7 @@ Children:
                                                                                   Data: true
                                                                                 Font:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                 Content:
                                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:17
                                                                                   Data: Total
@@ -11863,7 +11863,7 @@ Children:
                                                                                   ID: "?"
                                                                                   Data:
                                                                                     - ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                 LineHeight:
                                                                                   ID: "?"
                                                                                   Data: 266.6666666666667
@@ -12171,7 +12171,7 @@ Children:
                                                                                   Data: true
                                                                                 Sprite:
                                                                                   ID: "?"
-                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
+                                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:44
                                                                                 Material:
                                                                                   ID: "?"
                                                                                   Data: null
@@ -12290,7 +12290,7 @@ Children:
                                                                                       Data: true
                                                                                     Sprite:
                                                                                       ID: "?"
-                                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                                     Material:
                                                                                       ID: "?"
                                                                                       Data: null
@@ -12409,7 +12409,7 @@ Children:
                                                                                           Data: true
                                                                                         Font:
                                                                                           ID: "?"
-                                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                                         Content:
                                                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:18
                                                                                           Data: "100000"
@@ -12443,7 +12443,7 @@ Children:
                                                                                           ID: "?"
                                                                                           Data:
                                                                                             - ID: "?"
-                                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                                         LineHeight:
                                                                                           ID: "?"
                                                                                           Data: 266.6666666666667
@@ -12706,7 +12706,7 @@ Children:
                                                       Data: true
                                                     Sprite:
                                                       ID: "?"
-                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                     Material:
                                                       ID: "?"
                                                       Data: null
@@ -13043,7 +13043,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:19
                                                                   Data: Number of Attacks
@@ -13077,7 +13077,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -13385,7 +13385,7 @@ Children:
                                                                   Data: true
                                                                 Sprite:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
+                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:44
                                                                 Material:
                                                                   ID: "?"
                                                                   Data: null
@@ -13504,7 +13504,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -13623,7 +13623,7 @@ Children:
                                                                           Data: true
                                                                         Font:
                                                                           ID: "?"
-                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                         Content:
                                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:20
                                                                           Data: "120000"
@@ -13657,7 +13657,7 @@ Children:
                                                                           ID: "?"
                                                                           Data:
                                                                             - ID: "?"
-                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                         LineHeight:
                                                                           ID: "?"
                                                                           Data: 266.6666666666667
@@ -13920,7 +13920,7 @@ Children:
                                                                   Data: true
                                                                 Font:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                  Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                 Content:
                                                                   ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:21
                                                                   Data: Critical Count
@@ -13954,7 +13954,7 @@ Children:
                                                                   ID: "?"
                                                                   Data:
                                                                     - ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                      Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                 LineHeight:
                                                                   ID: "?"
                                                                   Data: 266.6666666666667
@@ -14262,7 +14262,7 @@ Children:
                                                                   Data: true
                                                                 Sprite:
                                                                   ID: "?"
-                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:34
+                                                                  Data: ID:Assets:FrooxEngine.SpriteProvider:ID:44
                                                                 Material:
                                                                   ID: "?"
                                                                   Data: null
@@ -14381,7 +14381,7 @@ Children:
                                                                       Data: true
                                                                     Sprite:
                                                                       ID: "?"
-                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:35
+                                                                      Data: ID:Assets:FrooxEngine.SpriteProvider:ID:45
                                                                     Material:
                                                                       ID: "?"
                                                                       Data: null
@@ -14500,7 +14500,7 @@ Children:
                                                                           Data: true
                                                                         Font:
                                                                           ID: "?"
-                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:24
+                                                                          Data: ID:Assets:FrooxEngine.FontChain:ID:29
                                                                         Content:
                                                                           ID: ID:Text:Components:FrooxEngine.UIX.Text:Content:22
                                                                           Data: "120000"
@@ -14534,7 +14534,7 @@ Children:
                                                                           ID: "?"
                                                                           Data:
                                                                             - ID: "?"
-                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:18
+                                                                              Data: ID:Assets:FrooxEngine.UI_TextUnlitMaterial:ID:22
                                                                         LineHeight:
                                                                           ID: "?"
                                                                           Data: 266.6666666666667

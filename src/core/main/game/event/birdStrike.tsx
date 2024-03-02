@@ -70,8 +70,11 @@ export class BirdStrike extends SnatchCompanyEvent {
     en: "Birds are flying towards the ship\nPlease protect the ship",
   };
 
-  constructor(triggerTime: number) {
-    super(triggerTime);
+  constructor(
+    triggerTime: number,
+    solvePoint: (x: number, z: number) => number
+  ) {
+    super(triggerTime, solvePoint);
     this.drawOnShip = this.drawOnShip.bind(this);
   }
 
